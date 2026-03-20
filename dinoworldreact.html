@@ -2149,6 +2149,41 @@ body {
           }
         );
 
+        // --- ANIMACIÓN LIGADA AL SCROLL (SCRUB): DINOSAURIOS LATERALES ---
+        
+        var dinosTrigger = document.querySelector('.body-row4-capa64-wrapper');
+        var dinosEndTrigger = document.querySelector('.body-row4-ampliacion-wrapper');
+        
+        if (dinosTrigger && dinosEndTrigger) {
+          // Ajustamos el punto de pivote a la base de su cuerpo (escondida)
+          gsap.set('.body-row4-timmyrex-wrapper', { transformOrigin: 'bottom right' });
+          gsap.set('.body-row4-rhubarb-wrapper', { transformOrigin: 'bottom left' });
+
+          var dinosScrubTimeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: dinosTrigger,
+              endTrigger: dinosEndTrigger,
+              start: 'top 90%', // Inicia apenas asoma el paisaje a la vista
+              end: 'top 60%',   // Termina de mostrarse cuando la ampliación llega a la zona visible
+              scrub: 1.5        // El 'scrub' ata la animación al scroll. El '1.5' le da una inercia muy suave y premium.
+            }
+          });
+
+          // T-Rex (Timmy) moviéndose al ritmo del scroll sin desvanecimiento
+          // Usamos un ease muy sutil (power1.out) para que el movimiento se sienta orgánico mientras scrolleas
+          dinosScrubTimeline.fromTo('.body-row4-timmyrex-wrapper',
+            { y: '35%', x: '-8%', rotation: -18, scale: 0.9 },
+            { y: '0%', x: '0%', rotation: 0, scale: 1, ease: 'power1.out' },
+            0 // Tiempo cero para que ambos empiecen exactamente a la vez
+          );
+
+          // Dinosaurio rojo (Rhubarb) moviéndose al ritmo del scroll sin desvanecimiento
+          dinosScrubTimeline.fromTo('.body-row4-rhubarb-wrapper',
+            { y: '35%', x: '8%', rotation: 18, scale: 0.9 },
+            { y: '0%', x: '0%', rotation: 0, scale: 1, ease: 'power1.out' },
+            0
+          );
+        }
 
         var refreshScrollTriggers = function () {
           window.requestAnimationFrame(function () {
@@ -2168,6 +2203,106 @@ body {
           yoyo: true,
           repeat: -1,
           ease: 'sine.inOut',
+        });
+      }
+
+      function runPremiumPlantAnimations() {
+        var gsap = window.gsap;
+        if (prefersReducedMotion() || !gsap) return;
+
+        // --- 1. HOJAS EXTERNAS DEL MARCO (Costados y arriba) ---
+        // Hoja superior izquierda (cuelga)
+        gsap.set('.body-row3-capa46-wrapper', { transformOrigin: 'top left' });
+        gsap.to('.body-row3-capa46-wrapper', {
+          rotation: 6 + Math.random() * 3, // Mayor movimiento (6 a 9 grados)
+          duration: 3.5 + Math.random() * 2,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1,
+          delay: -Math.random() * 4,
+        });
+
+        // Hojas laterales/inferiores externas del marco rojo
+        var frameExternalBaseLeaves = gsap.utils.toArray('.body-row3-capa39-wrapper, .body-row3-capa40-wrapper, .body-row3-capa45-wrapper');
+        frameExternalBaseLeaves.forEach(function (leaf, i) {
+          gsap.set(leaf, { transformOrigin: 'bottom center' });
+          gsap.to(leaf, {
+            rotation: (i % 2 === 0 ? 5 : -5) + (Math.random() * 3), // Mayor movimiento
+            scaleY: 1 + (Math.random() * 0.04),
+            duration: 3 + Math.random() * 2,
+            ease: 'sine.inOut',
+            yoyo: true,
+            repeat: -1,
+            delay: -Math.random() * 4,
+          });
+        });
+
+        // --- 2. HOJAS INTERNAS DEL MARCO ---
+        // Planta azul colgante interna
+        gsap.set('.body-row3-left-planta7-wrapper', { transformOrigin: 'top left' });
+        gsap.to('.body-row3-left-planta7-wrapper', {
+          rotation: 5 + Math.random() * 3, // Un poquito más animada
+          duration: 3.5 + Math.random() * 2,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1,
+          delay: -Math.random() * 4,
+        });
+
+        // Plantas inferiores internas
+        var frameInternalBaseLeaves = gsap.utils.toArray('.body-row3-left-planta4-wrapper, .body-row3-left-planta3-wrapper, .body-row3-left-planta5-wrapper');
+        frameInternalBaseLeaves.forEach(function (leaf, i) {
+          gsap.set(leaf, { transformOrigin: 'bottom center' });
+          gsap.to(leaf, {
+            rotation: (i % 2 === 0 ? 4 : -4) + (Math.random() * 3), // Animación sutil pero notoria
+            scaleY: 1 + (Math.random() * 0.05), // Respiración ligeramente más amplia
+            duration: 3 + Math.random() * 2,
+            ease: 'sine.inOut',
+            yoyo: true,
+            repeat: -1,
+            delay: -Math.random() * 4,
+          });
+        });
+
+        // --- 3. RESTO DE LA VEGETACIÓN (Escena inferior Dinos) ---
+        // Mantiene un movimiento más sutil para no sobrecargar visualmente el bloque grande
+        var basePlantsSelectors = [
+          '.body-row4-planta7-wrapper', '.body-row4-planta6-wrapper', '.body-row4-planta5-wrapper', '.body-row4-planta-wrapper',
+          '.body-row4-planta6-copia-wrapper', '.body-row4-planta5-copia-wrapper', '.body-row4-planta5-copia2-wrapper', '.body-row4-planta3-copia-wrapper'
+        ].join(', ');
+
+        var basePlants = gsap.utils.toArray(basePlantsSelectors);
+        basePlants.forEach(function (plant, i) {
+          gsap.set(plant, { transformOrigin: 'bottom center' });
+          gsap.to(plant, {
+            rotation: (i % 2 === 0 ? 3 : -3) + (Math.random() * 2),
+            scaleY: 1 + (Math.random() * 0.03), 
+            duration: 3.5 + Math.random() * 2.5,
+            ease: 'sine.inOut',
+            yoyo: true,
+            repeat: -1,
+            delay: -Math.random() * 5,
+          });
+        });
+
+        // --- 4. TIRAS DE HIERBA BASE ---
+        var grassStripsSelectors = [
+          '.body-row4-capa62-wrapper', '.body-row4-capa59-wrapper', '.body-row4-capa60-wrapper', 
+          '.body-row4-capa61-wrapper', '.body-row4-capa34-wrapper'
+        ].join(', ');
+
+        var grassStrips = gsap.utils.toArray(grassStripsSelectors);
+        grassStrips.forEach(function (grass, i) {
+          gsap.set(grass, { transformOrigin: 'bottom center' });
+          gsap.to(grass, {
+            x: (i % 2 === 0 ? '0.8%' : '-0.8%'),
+            skewX: (i % 2 === 0 ? 0.8 : -0.8),
+            duration: 4 + Math.random() * 2,
+            ease: 'sine.inOut',
+            yoyo: true,
+            repeat: -1,
+            delay: -Math.random() * 4,
+          });
         });
       }
 
@@ -2237,6 +2372,7 @@ body {
         runHeroAnimations(heroSceneCanvas);
         runHeroScrollTransition();
         runBodySectionAnimations();
+        runPremiumPlantAnimations();
       })();
     </script>
   </body>

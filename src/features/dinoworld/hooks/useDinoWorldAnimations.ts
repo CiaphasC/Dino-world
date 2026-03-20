@@ -296,12 +296,147 @@ export function useDinoWorldAnimations(
         }
       );
 
+      // Animacion scrub para los dinos laterales del bloque STOMP.
+      const dinosTrigger = rootElement.querySelector<HTMLElement>(".body-row4-capa64-wrapper");
+      const dinosEndTrigger = rootElement.querySelector<HTMLElement>(".body-row4-ampliacion-wrapper");
+
+      if (dinosTrigger && dinosEndTrigger) {
+        gsap.set(".body-row4-timmyrex-wrapper", { transformOrigin: "bottom right" });
+        gsap.set(".body-row4-rhubarb-wrapper", { transformOrigin: "bottom left" });
+
+        const dinosScrubTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: dinosTrigger,
+            endTrigger: dinosEndTrigger,
+            start: "top 90%",
+            end: "top 60%",
+            scrub: 1.5,
+          },
+        });
+
+        dinosScrubTimeline.fromTo(
+          ".body-row4-timmyrex-wrapper",
+          { y: "35%", x: "-8%", rotation: -18, scale: 0.9 },
+          { y: "0%", x: "0%", rotation: 0, scale: 1, ease: "power1.out" },
+          0
+        );
+
+        dinosScrubTimeline.fromTo(
+          ".body-row4-rhubarb-wrapper",
+          { y: "35%", x: "8%", rotation: 18, scale: 0.9 },
+          { y: "0%", x: "0%", rotation: 0, scale: 1, ease: "power1.out" },
+          0
+        );
+      }
+
       gsap.to(".body-row2-divider-wrapper .scene-sprite", {
         y: "-=6",
         duration: 2.5,
         yoyo: true,
         repeat: -1,
         ease: "sine.inOut",
+      });
+
+      // Animacion continua de vegetacion para dar vida al bloque body.
+      gsap.set(".body-row3-capa46-wrapper", { transformOrigin: "top left" });
+      gsap.to(".body-row3-capa46-wrapper", {
+        rotation: 6 + Math.random() * 3,
+        duration: 3.5 + Math.random() * 2,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+        delay: -Math.random() * 4,
+      });
+
+      const frameExternalBaseLeaves = gsap.utils.toArray<HTMLElement>(
+        ".body-row3-capa39-wrapper, .body-row3-capa40-wrapper, .body-row3-capa45-wrapper",
+        rootElement
+      );
+      frameExternalBaseLeaves.forEach((leaf, index) => {
+        gsap.set(leaf, { transformOrigin: "bottom center" });
+        gsap.to(leaf, {
+          rotation: (index % 2 === 0 ? 5 : -5) + Math.random() * 3,
+          scaleY: 1 + Math.random() * 0.04,
+          duration: 3 + Math.random() * 2,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+          delay: -Math.random() * 4,
+        });
+      });
+
+      gsap.set(".body-row3-left-planta7-wrapper", { transformOrigin: "top left" });
+      gsap.to(".body-row3-left-planta7-wrapper", {
+        rotation: 5 + Math.random() * 3,
+        duration: 3.5 + Math.random() * 2,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+        delay: -Math.random() * 4,
+      });
+
+      const frameInternalBaseLeaves = gsap.utils.toArray<HTMLElement>(
+        ".body-row3-left-planta4-wrapper, .body-row3-left-planta3-wrapper, .body-row3-left-planta5-wrapper",
+        rootElement
+      );
+      frameInternalBaseLeaves.forEach((leaf, index) => {
+        gsap.set(leaf, { transformOrigin: "bottom center" });
+        gsap.to(leaf, {
+          rotation: (index % 2 === 0 ? 4 : -4) + Math.random() * 3,
+          scaleY: 1 + Math.random() * 0.05,
+          duration: 3 + Math.random() * 2,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+          delay: -Math.random() * 4,
+        });
+      });
+
+      const basePlantsSelectors = [
+        ".body-row4-planta7-wrapper",
+        ".body-row4-planta6-wrapper",
+        ".body-row4-planta5-wrapper",
+        ".body-row4-planta-wrapper",
+        ".body-row4-planta6-copia-wrapper",
+        ".body-row4-planta5-copia-wrapper",
+        ".body-row4-planta5-copia2-wrapper",
+        ".body-row4-planta3-copia-wrapper",
+      ].join(", ");
+
+      const basePlants = gsap.utils.toArray<HTMLElement>(basePlantsSelectors, rootElement);
+      basePlants.forEach((plant, index) => {
+        gsap.set(plant, { transformOrigin: "bottom center" });
+        gsap.to(plant, {
+          rotation: (index % 2 === 0 ? 3 : -3) + Math.random() * 2,
+          scaleY: 1 + Math.random() * 0.03,
+          duration: 3.5 + Math.random() * 2.5,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+          delay: -Math.random() * 5,
+        });
+      });
+
+      const grassStripsSelectors = [
+        ".body-row4-capa62-wrapper",
+        ".body-row4-capa59-wrapper",
+        ".body-row4-capa60-wrapper",
+        ".body-row4-capa61-wrapper",
+        ".body-row4-capa34-wrapper",
+      ].join(", ");
+
+      const grassStrips = gsap.utils.toArray<HTMLElement>(grassStripsSelectors, rootElement);
+      grassStrips.forEach((grass, index) => {
+        gsap.set(grass, { transformOrigin: "bottom center" });
+        gsap.to(grass, {
+          x: index % 2 === 0 ? "0.8%" : "-0.8%",
+          skewX: index % 2 === 0 ? 0.8 : -0.8,
+          duration: 4 + Math.random() * 2,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+          delay: -Math.random() * 4,
+        });
       });
 
       const refreshScrollTriggers = () => {
