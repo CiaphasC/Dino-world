@@ -18,6 +18,7 @@ export function useDinoWorldAnimations(
     let lenis: Lenis | null = null;
     let lenisTicker: ((time: number) => void) | null = null;
     let cloudTicker: (() => void) | null = null;
+    let onWindowLoad: (() => void) | null = null;
 
     const context = gsap.context(() => {
       lenis = new Lenis({
@@ -270,7 +271,8 @@ export function useDinoWorldAnimations(
       });
 
       bodyScrollTimeline.fromTo(".body-row3-layer-wrapper", { y: "30vh" }, { y: "0vh", ease: "none" }, 0);
-      bodyScrollTimeline.fromTo(".body-row4-group", { y: "60vh" }, { y: "0vh", ease: "none" }, 0);
+      // Mantener row4 estable evita desalineaciones al alternar scroll arriba/abajo.
+      gsap.set(".body-row4-group", { y: 0, scale: 1 });
       bodyScrollTimeline.fromTo(
         ".body-row2-divider-wrapper",
         { y: "15vh", scale: 0.8 },
@@ -294,16 +296,6 @@ export function useDinoWorldAnimations(
         }
       );
 
-      gsap.to(".body-row4-group", {
-        y: "+=15",
-        scale: 1.01,
-        transformOrigin: "center bottom",
-        duration: 3.5,
-        yoyo: true,
-        repeat: -1,
-        ease: "sine.inOut",
-      });
-
       gsap.to(".body-row2-divider-wrapper .scene-sprite", {
         y: "-=6",
         duration: 2.5,
@@ -312,10 +304,23 @@ export function useDinoWorldAnimations(
         ease: "sine.inOut",
       });
 
-      ScrollTrigger.refresh();
+      const refreshScrollTriggers = () => {
+        window.requestAnimationFrame(() => ScrollTrigger.refresh());
+      };
+
+      if (document.readyState === "complete") {
+        refreshScrollTriggers();
+      } else {
+        onWindowLoad = refreshScrollTriggers;
+        window.addEventListener("load", onWindowLoad, { once: true });
+      }
     }, rootElement);
 
     return () => {
+      if (onWindowLoad) {
+        window.removeEventListener("load", onWindowLoad);
+      }
+
       if (cloudTicker) {
         gsap.ticker.remove(cloudTicker);
       }

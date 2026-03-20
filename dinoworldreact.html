@@ -1,0 +1,2202 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino World React | Single File Gemini Canvas</title>
+    <meta
+      name="description"
+      content="Version single-file de dinoworld-react para Gemini Canvas, con estructura basada en pruebacine2.html."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              dino: ['"Luckiest Guy"', 'cursive'],
+            },
+            colors: {
+              'dino-text': '#061f72',
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+/* ==========================================================================
+   Reset base y tokens de layout
+   --------------------------------------------------------------------------
+   Objetivo: normalizar el box model y asegurar un lienzo estable para
+   animaciones con pin y scrub en GSAP.
+   ========================================================================== */
+:root {
+  --scene-ratio-default: 3327 / 2314;
+  --bg-cream: #ffffe1;
+  --bg-dark: #03061c;
+  --font-ui: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100svh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--bg-dark);
+  font-family: var(--font-ui);
+}
+
+/* ==========================================================================
+   Shell principal
+   --------------------------------------------------------------------------
+   Nota:
+   - `isolation: isolate` evita interferencias de stacking context externos.
+   - `overflow-x: clip` previene scroll horizontal por capas parallax.
+   ========================================================================== */
+.app-shell {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow-x: clip;
+  isolation: isolate;
+  background-color: var(--bg-cream);
+}
+
+.hero-shell {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 720px;
+  overflow: visible;
+  isolation: isolate;
+  z-index: 40;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 55;
+  pointer-events: none;
+}
+
+.header-canvas {
+  position: relative;
+  width: min(1680px, 100%);
+  height: clamp(6rem, 19vh, 13rem);
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+}
+
+.site-header .brand-paw-logo-wrapper,
+.site-header .brand-menu-left-wrapper,
+.site-header .brand-menu-right-wrapper {
+  position: absolute;
+  transform-origin: center top;
+}
+
+.site-header .brand-paw-logo-wrapper {
+  top: clamp(0.25rem, 1.2vh, 0.9rem);
+  left: 50%;
+  width: clamp(5.9rem, 10.8vw, 11.4rem);
+  transform: translateX(-50%);
+}
+
+.site-header .brand-menu-left-wrapper,
+.site-header .brand-menu-right-wrapper {
+  top: clamp(1rem, 2.3vh, 1.8rem);
+  width: clamp(12.5rem, 22vw, 23rem);
+  pointer-events: auto;
+}
+
+.site-header .brand-menu-left-wrapper {
+  left: clamp(0.7rem, 4.8vw, 7.6rem);
+}
+
+.site-header .brand-menu-right-wrapper {
+  right: clamp(0.7rem, 4.8vw, 7.6rem);
+}
+
+@media (max-width: 640px) {
+  .header-canvas {
+    height: clamp(5.2rem, 16vh, 7.3rem);
+  }
+
+  .site-header .brand-paw-logo-wrapper {
+    top: 0.2rem;
+    width: clamp(5.5rem, 17.8vw, 7.2rem);
+  }
+
+  .site-header .brand-menu-left-wrapper,
+  .site-header .brand-menu-right-wrapper {
+    top: clamp(0.9rem, 2.1vh, 1.35rem);
+    width: clamp(6.6rem, 34vw, 9.8rem);
+  }
+
+  .site-header .brand-menu-left-wrapper {
+    left: 0.45rem;
+  }
+
+  .site-header .brand-menu-right-wrapper {
+    right: 0.45rem;
+  }
+}
+
+/* ==========================================================================
+   Hero stage (escena principal)
+   --------------------------------------------------------------------------
+   Requisito funcional:
+   - Fondo escalable para zoom en scroll.
+   - Capa de nubes independiente con fade y drift lateral.
+   ========================================================================== */
+.hero-stage {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 720px;
+  overflow: visible;
+  isolation: isolate;
+  z-index: 40;
+  margin-bottom: 0;
+  --bg-scale: 1;
+}
+
+/* Fondo base del hero:
+   Se expande fuera del viewport para evitar bordes visibles durante el zoom. */
+.hero-stage::before {
+  content: "";
+  position: absolute;
+  top: -5vh;
+  left: -5vw;
+  width: 110vw;
+  height: 125vh;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--shared-landscape-url, none);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  filter: contrast(1.06) saturate(1.05) brightness(1.01);
+  transform: translateZ(0) scale(var(--bg-scale));
+  transform-origin: top center;
+  will-change: transform;
+}
+
+/* Capa de nubes:
+   - Se dibuja por encima del fondo y por debajo de sprites.
+   - Usa mask para desvanecer borde inferior y evitar corte duro. */
+.image-clouds {
+  position: absolute;
+  top: -5vh;
+  left: -5vw;
+  width: 110vw;
+  height: 55%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  background-repeat: repeat-x;
+  background-position: 0% top;
+  background-size: auto 100%;
+  will-change: transform, opacity, background-position;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.hero-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100vw, calc(100svh * var(--scene-ratio)));
+  min-width: 100vw;
+  aspect-ratio: var(--scene-ratio-default);
+  transform: translate(-50%, -50%);
+  z-index: 41;
+}
+
+/* ==========================================================================
+   Sprites renderizados por JS
+   --------------------------------------------------------------------------
+   Contrato entre CSS y JS:
+   - JS controla posicion/tamano por wrapper.
+   - CSS define comportamiento visual comun.
+   ========================================================================== */
+.sprite-wrapper {
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.scene-sprite {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.is-interactive {
+  pointer-events: auto;
+  cursor: pointer;
+  transition: opacity 220ms ease;
+}
+
+.is-interactive:hover {
+  opacity: 0.88;
+}
+
+/* ==========================================================================
+   Ajustes de profundidad visual (sombras por capa)
+   --------------------------------------------------------------------------
+   Estos filtros ayudan a mantener lectura de planos durante movimiento.
+   ========================================================================== */
+.layer-top-canopy,
+.layer-vine-top {
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.28));
+}
+
+.char-trex {
+  filter: drop-shadow(0 24px 26px rgba(0, 0, 0, 0.42));
+}
+
+.char-skye,
+.char-chase,
+.char-zuma {
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.36));
+}
+
+.char-rex,
+.char-marshall {
+  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.52));
+}
+
+.char-rubble {
+  filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.44));
+}
+
+.tech-dino-foot,
+.tech-paw,
+.tech-meter {
+  opacity: 0.8;
+}
+
+.leaf-top-left,
+.leaf-top-right,
+.leaf-bottom-left,
+.leaf-bottom-right {
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.18));
+}
+
+.brand-paw-logo {
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.35));
+}
+
+.brand-menu-left,
+.brand-menu-right {
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.35));
+}
+
+.brand-dino-world {
+  filter: drop-shadow(0 22px 28px rgba(0, 0, 0, 0.82));
+}
+
+.discover-label {
+  opacity: 0.92;
+}
+
+/* ==========================================================================
+   Body stage
+   --------------------------------------------------------------------------
+   Objetivo de transicion:
+   - Subir desde hero pinneado hacia un fondo crema solido.
+   - Degradado superior para esconder el corte entre etapas.
+   ========================================================================== */
+.body-stage {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: visible;
+  isolation: isolate;
+  background: var(--bg-cream);
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: clamp(3rem, 8vh, 7rem);
+  z-index: 50;
+}
+
+.body-stage::before {
+  display: none;
+}
+
+.body-canvas {
+  position: relative;
+  width: 100vw;
+  min-width: 100vw;
+  aspect-ratio: var(--scene-ratio);
+  overflow: hidden;
+}
+
+.tail-stage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--bg-cream);
+  margin-top: 0;
+  padding-bottom: clamp(2rem, 6vh, 5rem);
+  z-index: 51;
+}
+
+.tail-canvas {
+  position: relative;
+  width: 100vw;
+  min-width: 100vw;
+  aspect-ratio: var(--scene-ratio);
+  overflow: hidden;
+}
+
+.body-row4-group {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Recorte PSD row3-left:
+   las capas internas quedan independientes, pero visibles solo dentro del marco. */
+.body-row3-capa42-wrapper {
+  overflow: hidden;
+  -webkit-mask-image: var(--row3-mask-url);
+  mask-image: var(--row3-mask-url);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-mode: alpha;
+  mask-mode: alpha;
+}
+
+/* ==========================================================================
+   Texto de introduccion (antes manejado con utilidades Tailwind)
+   --------------------------------------------------------------------------
+   Criterio de mantenibilidad:
+   - Tipografia y sombras declaradas en CSS.
+   - JS solo separa caracteres para animacion incremental.
+   ========================================================================== */
+.intro-headline-wrapper {
+  position: absolute;
+  left: 15%;
+  top: 13.6%;
+  width: 70%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.intro-headline {
+  margin: 0;
+  color: #061f72;
+  font-family: "Luckiest Guy", cursive;
+  font-size: clamp(1.05rem, 2.8vw, 3rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intro-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.intro-char {
+  display: inline-block;
+  text-shadow: 0 4px 0 #697193;
+}
+
+.intro-space {
+  display: inline-block;
+  width: 0.28em;
+}
+
+/* ==========================================================================
+   Modo accesible: reduce motion
+   --------------------------------------------------------------------------
+   Politica UX:
+   - Cuando el usuario pide menos movimiento, reducimos transiciones
+     sin romper layout ni funcionalidad principal.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <main id="app-shell" class="app-shell">
+      <section class="hero-shell" aria-label="Escena principal Dino World">
+        <header id="site-header" class="site-header" aria-label="Cabecera principal Dino World">
+          <div id="header-canvas" class="header-canvas"></div>
+        </header>
+
+        <section class="hero-stage" aria-label="Escena hero Dino World">
+          <div id="image-clouds" class="image-clouds"></div>
+          <div id="hero-canvas" class="hero-canvas"></div>
+        </section>
+      </section>
+
+      <section class="body-stage" aria-label="Seccion body Dino World">
+        <div id="body-canvas" class="body-canvas">
+          <div class="intro-headline-wrapper">
+            <h2 id="intro-headline" class="intro-headline">
+              A lost tropical island, teeming with dinosaurs, becomes the epicenter of the adventure
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="tail-stage" aria-label="Continuacion final Dino World">
+        <div id="tail-canvas" class="tail-canvas"></div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+      var GITHUB_RAW_BASE_URL = 'https://raw.githubusercontent.com/CiaphasC/Dino-world/main';
+      var DATA = {
+  "BODY_ROW3_CONTAINER_ID": "body-row3-capa42",
+  "headerSprites": [
+    {
+      "id": "paw-logo",
+      "wrapperClassName": "brand-paw-logo-wrapper",
+      "imageClassName": "brand-paw-logo js-paw-logo",
+      "src": "/assets/hero/logo/PAW_ENG_LOGO.png",
+      "alt": "Logo Paw Patrol Dino Movie"
+    },
+    {
+      "id": "menu-left",
+      "wrapperClassName": "brand-menu-left-wrapper",
+      "imageClassName": "brand-menu-left js-menu-left",
+      "src": "/assets/hero/letras/menu.png",
+      "alt": "Menu superior izquierdo",
+      "interactive": true
+    },
+    {
+      "id": "menu-right",
+      "wrapperClassName": "brand-menu-right-wrapper",
+      "imageClassName": "brand-menu-right js-menu-right",
+      "src": "/assets/hero/letras/menu_2.png",
+      "alt": "Menu superior derecho",
+      "interactive": true
+    }
+  ],
+  "heroSprites": [
+    {
+      "id": "cave-frame",
+      "wrapperClassName": "layer-frame-cave-wrapper",
+      "imageClassName": "layer-frame-cave",
+      "src": "/assets/hero/fondo/Capa_6_copia.png",
+      "alt": "Marco frontal de cueva"
+    },
+    {
+      "id": "border-left",
+      "wrapperClassName": "layer-border-left-wrapper",
+      "imageClassName": "layer-border-left",
+      "src": "/assets/hero/fondo/Capa_58.png",
+      "alt": "Borde izquierdo de selva"
+    },
+    {
+      "id": "border-right",
+      "wrapperClassName": "layer-border-right-wrapper",
+      "imageClassName": "layer-border-right",
+      "src": "/assets/hero/fondo/Capa_57.png",
+      "alt": "Borde derecho de selva"
+    },
+    {
+      "id": "top-canopy",
+      "wrapperClassName": "layer-top-canopy-wrapper",
+      "imageClassName": "layer-top-canopy",
+      "src": "/assets/hero/fondo/Capa_56.png",
+      "alt": "Canopia superior"
+    },
+    {
+      "id": "vine-top",
+      "wrapperClassName": "layer-vine-top-wrapper",
+      "imageClassName": "layer-vine-top js-vine",
+      "src": "/assets/hero/fondo/LIANA.png",
+      "alt": "Liana superior"
+    },
+    {
+      "id": "leaf-top-left",
+      "wrapperClassName": "leaf-top-left-wrapper",
+      "imageClassName": "leaf-top-left js-leaf",
+      "src": "/assets/hero/fondo/Capa_54.png",
+      "alt": "Hoja superior izquierda"
+    },
+    {
+      "id": "leaf-top-right",
+      "wrapperClassName": "leaf-top-right-wrapper",
+      "imageClassName": "leaf-top-right js-leaf",
+      "src": "/assets/hero/fondo/Capa_55.png",
+      "alt": "Hoja superior derecha"
+    },
+    {
+      "id": "skye",
+      "wrapperClassName": "char-skye-wrapper",
+      "imageClassName": "char-skye js-character",
+      "src": "/assets/hero/animales/skye.png",
+      "alt": "Skye"
+    },
+    {
+      "id": "chase",
+      "wrapperClassName": "char-chase-wrapper",
+      "imageClassName": "char-chase js-character",
+      "src": "/assets/hero/animales/chase.png",
+      "alt": "Chase"
+    },
+    {
+      "id": "rex",
+      "wrapperClassName": "char-rex-wrapper",
+      "imageClassName": "char-rex js-character",
+      "src": "/assets/hero/animales/rex2.png",
+      "alt": "Rex en primer plano"
+    },
+    {
+      "id": "trex",
+      "wrapperClassName": "char-trex-wrapper",
+      "imageClassName": "char-trex js-character",
+      "src": "/assets/hero/animales/timmyrex.png",
+      "alt": "T-Rex central"
+    },
+    {
+      "id": "zuma",
+      "wrapperClassName": "char-zuma-wrapper",
+      "imageClassName": "char-zuma js-character",
+      "src": "/assets/hero/animales/zuma.png",
+      "alt": "Zuma"
+    },
+    {
+      "id": "rubble",
+      "wrapperClassName": "char-rubble-wrapper",
+      "imageClassName": "char-rubble js-character",
+      "src": "/assets/hero/animales/rubble.png",
+      "alt": "Rubble"
+    },
+    {
+      "id": "marshall",
+      "wrapperClassName": "char-marshall-wrapper",
+      "imageClassName": "char-marshall js-character",
+      "src": "/assets/hero/animales/marshal.png",
+      "alt": "Marshall en primer plano"
+    },
+    {
+      "id": "tech-dino-foot",
+      "wrapperClassName": "tech-dino-foot-wrapper",
+      "imageClassName": "tech-dino-foot js-tech-ui",
+      "src": "/assets/hero/fondo/Capa_53.png",
+      "alt": "Interfaz holografica izquierda"
+    },
+    {
+      "id": "tech-paw",
+      "wrapperClassName": "tech-paw-wrapper",
+      "imageClassName": "tech-paw js-tech-ui",
+      "src": "/assets/hero/fondo/Capa_51.png",
+      "alt": "Interfaz holografica derecha"
+    },
+    {
+      "id": "tech-meter",
+      "wrapperClassName": "tech-meter-wrapper",
+      "imageClassName": "tech-meter js-tech-ui",
+      "src": "/assets/hero/fondo/Capa_52.png",
+      "alt": "Medidor holografico derecho"
+    },
+    {
+      "id": "leaf-bottom-left",
+      "wrapperClassName": "leaf-bottom-left-wrapper",
+      "imageClassName": "leaf-bottom-left js-leaf",
+      "src": "/assets/hero/fondo/Capa_18.png",
+      "alt": "Hoja inferior izquierda"
+    },
+    {
+      "id": "leaf-bottom-right",
+      "wrapperClassName": "leaf-bottom-right-wrapper",
+      "imageClassName": "leaf-bottom-right js-leaf",
+      "src": "/assets/hero/fondo/Capa_50.png",
+      "alt": "Hoja inferior derecha"
+    },
+    {
+      "id": "vine-bottom",
+      "wrapperClassName": "layer-vine-bottom-wrapper",
+      "imageClassName": "layer-vine-bottom js-vine",
+      "src": "/assets/hero/fondo/LIANA_2.png",
+      "alt": "Liana inferior"
+    },
+    {
+      "id": "dino-world-logo",
+      "wrapperClassName": "brand-dino-world-wrapper",
+      "imageClassName": "brand-dino-world js-dino-logo",
+      "src": "/assets/hero/letras/dinoworld3.png",
+      "alt": "Logo central Dino World"
+    },
+    {
+      "id": "discover-label",
+      "wrapperClassName": "discover-label-wrapper",
+      "imageClassName": "discover-label",
+      "src": "/assets/hero/letras/DISCOVER_NOW.png",
+      "alt": "Texto Discover Now"
+    },
+    {
+      "id": "discover-arrow-1",
+      "wrapperClassName": "discover-arrow-wrapper",
+      "imageClassName": "discover-arrow js-arrow",
+      "src": "/assets/hero/letras/Capa_20.png",
+      "alt": "Flecha superior"
+    },
+    {
+      "id": "discover-arrow-2",
+      "wrapperClassName": "discover-arrow-wrapper",
+      "imageClassName": "discover-arrow js-arrow",
+      "src": "/assets/hero/letras/Capa_20_copia.png",
+      "alt": "Flecha central"
+    },
+    {
+      "id": "discover-arrow-3",
+      "wrapperClassName": "discover-arrow-wrapper",
+      "imageClassName": "discover-arrow js-arrow",
+      "src": "/assets/hero/letras/Capa_20_copia_2.png",
+      "alt": "Flecha inferior"
+    }
+  ],
+  "bodyPrefixSprites": [
+    {
+      "id": "body-row2-divider",
+      "wrapperClassName": "body-row2-divider-wrapper",
+      "imageClassName": "body-row2-divider",
+      "src": "/assets/body/fondo/Capa_32_copia.png",
+      "alt": "Separador decorativo row2"
+    },
+    {
+      "id": "body-row3-capa46",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa46-wrapper",
+      "imageClassName": "body-row3-capa46",
+      "src": "/assets/body/fondo/Capa_46.png",
+      "alt": "Hoja superior decorativa izquierda"
+    },
+    {
+      "id": "body-row3-capa39",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa39-wrapper",
+      "imageClassName": "body-row3-capa39",
+      "src": "/assets/body/fondo/Capa_39_copia.png",
+      "alt": "Hoja inferior decorativa izquierda"
+    },
+    {
+      "id": "body-row3-capa40",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa40-wrapper",
+      "imageClassName": "body-row3-capa40",
+      "src": "/assets/body/fondo/Capa_40.png",
+      "alt": "Hoja lateral izquierda"
+    },
+    {
+      "id": "body-row3-capa41",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa41-wrapper",
+      "imageClassName": "body-row3-capa41",
+      "src": "/assets/body/fondo/Capa_41.png",
+      "alt": "Marco rojo principal"
+    }
+  ],
+  "bodyRow3ClipSprites": [
+    {
+      "id": "body-row3-left-bg",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-bg-wrapper",
+      "imageClassName": "body-row3-left-bg",
+      "src": "/assets/body/animales/Captura_de_pantalla_2026-03-08_a_las_21.35.14_topil.png",
+      "alt": "Fondo tropical dentro del marco rojo"
+    },
+    {
+      "id": "body-row3-left-character",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-character-wrapper",
+      "imageClassName": "body-row3-left-character",
+      "src": "/assets/body/animales/ChatGPT_Image_4_mar_2026__23_30_36_copia_topil.png",
+      "alt": "Humdinger dentro del marco rojo"
+    },
+    {
+      "id": "body-row3-left-planta7",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-planta7-wrapper",
+      "imageClassName": "body-row3-left-planta7",
+      "src": "/assets/body/partial/row3_left_planta7.png",
+      "alt": "Planta superior azul del marco rojo"
+    },
+    {
+      "id": "body-row3-left-planta4",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-planta4-wrapper",
+      "imageClassName": "body-row3-left-planta4",
+      "src": "/assets/body/partial/row3_left_planta4.png",
+      "alt": "Flor lila delantera del marco rojo"
+    },
+    {
+      "id": "body-row3-left-roca2",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-roca2-wrapper",
+      "imageClassName": "body-row3-left-roca2",
+      "src": "/assets/body/partial/row3_left_roca2.png",
+      "alt": "Roca derecha del marco rojo"
+    },
+    {
+      "id": "body-row3-left-planta3",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-planta3-wrapper",
+      "imageClassName": "body-row3-left-planta3",
+      "src": "/assets/body/partial/row3_left_planta3.png",
+      "alt": "Planta izquierda del marco rojo"
+    },
+    {
+      "id": "body-row3-left-roca",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-roca-wrapper",
+      "imageClassName": "body-row3-left-roca",
+      "src": "/assets/body/partial/row3_left_roca.png",
+      "alt": "Roca izquierda del marco rojo"
+    },
+    {
+      "id": "body-row3-left-planta5",
+      "wrapperClassName": "body-row3-left-clip-wrapper body-row3-left-planta5-wrapper",
+      "imageClassName": "body-row3-left-planta5",
+      "src": "/assets/body/partial/row3_left_planta5.png",
+      "alt": "Vegetacion frontal del marco rojo"
+    }
+  ],
+  "bodyRow3RightSprites": [
+    {
+      "id": "body-row3-capa44",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa44-wrapper",
+      "imageClassName": "body-row3-capa44",
+      "src": "/assets/body/fondo/Capa_44.png",
+      "alt": "Marco superior del panel derecho"
+    },
+    {
+      "id": "body-row3-title",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-title-wrapper",
+      "imageClassName": "body-row3-title",
+      "src": "/assets/body/letras/Humdinger_threatens.png",
+      "alt": "Titulo Humdinger threatens"
+    },
+    {
+      "id": "body-row3-description",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-description-wrapper",
+      "imageClassName": "body-row3-description",
+      "src": "/assets/body/letras/But_Humdinger_threatens_the_ecosystem_with_his_exploitation_and.png",
+      "alt": "Descripcion de la amenaza de Humdinger"
+    },
+    {
+      "id": "body-row3-capa48",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa48-wrapper",
+      "imageClassName": "body-row3-capa48",
+      "src": "/assets/body/fondo/Capa_48.png",
+      "alt": "Marco inferior del panel derecho"
+    },
+    {
+      "id": "body-row3-capa49",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa49-wrapper",
+      "imageClassName": "body-row3-capa49",
+      "src": "/assets/body/fondo/Capa_49.png",
+      "alt": "Anclaje inferior izquierdo del panel derecho"
+    },
+    {
+      "id": "body-row3-capa45",
+      "wrapperClassName": "body-row3-layer-wrapper body-row3-capa45-wrapper",
+      "imageClassName": "body-row3-capa45",
+      "src": "/assets/body/fondo/Capa_45.png",
+      "alt": "Planta lateral derecha del panel"
+    }
+  ],
+  "bodyRow4Sprites": [
+    {
+      "id": "body-row4-capa66",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa66-wrapper",
+      "imageClassName": "body-row4-capa66",
+      "src": "/assets/body/letras/Capa_66.png",
+      "alt": "Texto superior We have got"
+    },
+    {
+      "id": "body-row4-capa65",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa65-wrapper",
+      "imageClassName": "body-row4-capa65",
+      "src": "/assets/body/letras/Capa_65.png",
+      "alt": "Texto central Dinos"
+    },
+    {
+      "id": "body-row4-capa64",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa64-wrapper",
+      "imageClassName": "body-row4-capa64",
+      "src": "/assets/body/paisaje/Capa_64.png",
+      "alt": "Paisaje central del bloque dinos"
+    },
+    {
+      "id": "body-row4-capa68",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa68-wrapper",
+      "imageClassName": "body-row4-capa68",
+      "src": "/assets/body/fondo/Capa_68.png",
+      "alt": "Dino lateral derecho del bloque dinos"
+    },
+    {
+      "id": "body-row4-capa70",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa70-wrapper",
+      "imageClassName": "body-row4-capa70",
+      "src": "/assets/body/paisaje/Capa_70_copia.png",
+      "alt": "Suelo medio del bloque dinos"
+    },
+    {
+      "id": "body-row4-ampliacion",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-ampliacion-wrapper",
+      "imageClassName": "body-row4-ampliacion",
+      "src": "/assets/body/paisaje/Ampliación_generativa.png",
+      "alt": "Extension inferior del bloque dinos"
+    },
+    {
+      "id": "body-row4-chase2",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-chase2-wrapper",
+      "imageClassName": "body-row4-chase2",
+      "src": "/assets/body/animales/chase2.png",
+      "alt": "Chase en la escena dinos"
+    },
+    {
+      "id": "body-row4-skye2",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-skye2-wrapper",
+      "imageClassName": "body-row4-skye2",
+      "src": "/assets/body/animales/skye2.png",
+      "alt": "Skye en la escena dinos"
+    },
+    {
+      "id": "body-row4-rubble2",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-rubble2-wrapper",
+      "imageClassName": "body-row4-rubble2",
+      "src": "/assets/body/animales/rubble2.png",
+      "alt": "Rubble en la escena dinos"
+    },
+    {
+      "id": "body-row4-rex",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-rex-wrapper",
+      "imageClassName": "body-row4-rex",
+      "src": "/assets/body/animales/rex.png",
+      "alt": "Rocky en la escena dinos"
+    },
+    {
+      "id": "body-row4-marshall2",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-marshall2-wrapper",
+      "imageClassName": "body-row4-marshall2",
+      "src": "/assets/body/animales/marshall2.png",
+      "alt": "Marshall en la escena dinos"
+    },
+    {
+      "id": "body-row4-rhubarb",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-rhubarb-wrapper",
+      "imageClassName": "body-row4-rhubarb",
+      "src": "/assets/body/animales/rhubarb.png",
+      "alt": "Dino lateral derecho superior"
+    },
+    {
+      "id": "body-row4-timmyrex",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-timmyrex-wrapper",
+      "imageClassName": "body-row4-timmyrex",
+      "src": "/assets/body/animales/timmyrex.png",
+      "alt": "Dino lateral izquierdo superior"
+    },
+    {
+      "id": "body-row4-capa31",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa31-wrapper",
+      "imageClassName": "body-row4-capa31",
+      "src": "/assets/body/letras/Capa_31.png",
+      "alt": "Texto pequeño To"
+    },
+    {
+      "id": "body-row4-capa29",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa29-wrapper",
+      "imageClassName": "body-row4-capa29",
+      "src": "/assets/body/letras/Capa_29.png",
+      "alt": "Texto principal Save base"
+    },
+    {
+      "id": "body-row4-capa63",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa63-wrapper",
+      "imageClassName": "body-row4-capa63",
+      "src": "/assets/body/letras/Capa_63.png",
+      "alt": "Texto Save frontal"
+    },
+    {
+      "id": "body-row4-planta6-copia",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta6-copia-wrapper",
+      "imageClassName": "body-row4-planta6-copia",
+      "src": "/assets/body/plantas/planta6_copia.png",
+      "alt": "Planta lateral derecha capa trasera"
+    },
+    {
+      "id": "body-row4-planta5-copia",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta5-copia-wrapper",
+      "imageClassName": "body-row4-planta5-copia",
+      "src": "/assets/body/plantas/planta5_copia.png",
+      "alt": "Vegetacion lateral derecha alta"
+    },
+    {
+      "id": "body-row4-planta5-copia2",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta5-copia2-wrapper",
+      "imageClassName": "body-row4-planta5-copia2",
+      "src": "/assets/body/plantas/planta5_copia_2.png",
+      "alt": "Vegetacion lateral derecha media"
+    },
+    {
+      "id": "body-row4-planta3-copia",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta3-copia-wrapper",
+      "imageClassName": "body-row4-planta3-copia",
+      "src": "/assets/body/plantas/planta3_copia.png",
+      "alt": "Hoja lateral derecha inferior"
+    },
+    {
+      "id": "body-row4-planta7",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta7-wrapper",
+      "imageClassName": "body-row4-planta7",
+      "src": "/assets/body/plantas/planta7.png",
+      "alt": "Vegetacion frontal izquierda grande"
+    },
+    {
+      "id": "body-row4-planta6",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta6-wrapper",
+      "imageClassName": "body-row4-planta6",
+      "src": "/assets/body/plantas/planta6.png",
+      "alt": "Planta izquierda media"
+    },
+    {
+      "id": "body-row4-planta5",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta5-wrapper",
+      "imageClassName": "body-row4-planta5",
+      "src": "/assets/body/plantas/planta5.png",
+      "alt": "Vegetacion izquierda lateral alta"
+    },
+    {
+      "id": "body-row4-planta",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-planta-wrapper",
+      "imageClassName": "body-row4-planta",
+      "src": "/assets/body/plantas/planta.png",
+      "alt": "Planta frontal izquierda roja"
+    },
+    {
+      "id": "body-row4-capa62",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa62-wrapper",
+      "imageClassName": "body-row4-capa62",
+      "src": "/assets/body/fondo/Capa_62.png",
+      "alt": "Franja frontal superior de hierba"
+    },
+    {
+      "id": "body-row4-capa59",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa59-wrapper",
+      "imageClassName": "body-row4-capa59",
+      "src": "/assets/body/fondo/Capa_59.png",
+      "alt": "Franja frontal central de hierba"
+    },
+    {
+      "id": "body-row4-capa60",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa60-wrapper",
+      "imageClassName": "body-row4-capa60",
+      "src": "/assets/body/fondo/Capa_60.png",
+      "alt": "Franja frontal derecha de hierba"
+    },
+    {
+      "id": "body-row4-capa61",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa61-wrapper",
+      "imageClassName": "body-row4-capa61",
+      "src": "/assets/body/fondo/Capa_61.png",
+      "alt": "Franja frontal izquierda de hierba"
+    },
+    {
+      "id": "body-row4-capa34",
+      "wrapperClassName": "body-row4-layer-wrapper body-row4-capa34-wrapper",
+      "imageClassName": "body-row4-capa34",
+      "src": "/assets/body/fondo/Capa_34.png",
+      "alt": "Base de hierbas frontales del bloque dinos"
+    }
+  ],
+  "tailSprites": [
+    {
+      "id": "tail-row1",
+      "wrapperClassName": "tail-row1-wrapper",
+      "imageClassName": "tail-row1",
+      "src": "/assets/section_island_adventures/fondo/psd2_row1_group_clean.png",
+      "alt": "Bloque On an island full of adventures"
+    },
+    {
+      "id": "tail-row2",
+      "wrapperClassName": "tail-row2-wrapper",
+      "imageClassName": "tail-row2",
+      "src": "/assets/section_island_adventures/fondo/psd2_row2_group.png",
+      "alt": "Bloque Stomp Around con video"
+    },
+    {
+      "id": "tail-row3",
+      "wrapperClassName": "tail-row3-wrapper",
+      "imageClassName": "tail-row3",
+      "src": "/assets/section_island_adventures/fondo/psd2_row3_group.png",
+      "alt": "Bloque Favorite Characters"
+    },
+    {
+      "id": "tail-row4",
+      "wrapperClassName": "tail-row4-wrapper",
+      "imageClassName": "tail-row4",
+      "src": "/assets/section_island_adventures/fondo/psd2_row4_group.png",
+      "alt": "Bloque Customize your favorite heroes"
+    },
+    {
+      "id": "tail-row5",
+      "wrapperClassName": "tail-row5-wrapper",
+      "imageClassName": "tail-row5",
+      "src": "/assets/section_island_adventures/fondo/psd2_row5_group.png",
+      "alt": "Bloque final Take care y Explore"
+    }
+  ],
+  "heroSceneRatio": 1.4377700950734658,
+  "bodySceneRatio": 0.6326020015396459,
+  "tailSceneRatio": 0.3394959719066309,
+  "spriteLayoutMap": {
+    "cave-frame": {
+      "wrapperStyle": {
+        "left": "0%",
+        "top": "0%",
+        "width": "100%",
+        "height": "100%",
+        "zIndex": 10
+      },
+      "imageStyle": {
+        "height": "100%",
+        "objectFit": "cover"
+      }
+    },
+    "border-left": {
+      "wrapperStyle": {
+        "left": "11.722272317403066%",
+        "top": "21.17545375972342%",
+        "width": "22.51277427111512%",
+        "zIndex": 7,
+        "transform": "scaleY(1.28)",
+        "transformOrigin": "top center"
+      }
+    },
+    "border-right": {
+      "wrapperStyle": {
+        "left": "65.58461076044485%",
+        "top": "21.17545375972342%",
+        "width": "24.075743913435527%",
+        "zIndex": 7,
+        "transform": "scaleY(1.28)",
+        "transformOrigin": "top center"
+      }
+    },
+    "top-canopy": {
+      "wrapperStyle": {
+        "left": "31.259392846408176%",
+        "top": "17.372515125324114%",
+        "width": "37.150586113615866%",
+        "zIndex": 7
+      }
+    },
+    "vine-top": {
+      "wrapperStyle": {
+        "left": "32.16110610159303%",
+        "top": "17.199654278305964%",
+        "width": "21.611061015930268%",
+        "zIndex": 7
+      }
+    },
+    "leaf-top-left": {
+      "wrapperStyle": {
+        "left": "3.125939284640818%",
+        "top": "21.477960242005185%",
+        "width": "13.916441238352869%",
+        "zIndex": 12
+      }
+    },
+    "leaf-top-right": {
+      "wrapperStyle": {
+        "left": "81.69522091974753%",
+        "top": "21.2618841832325%",
+        "width": "18.30477908025248%",
+        "zIndex": 12
+      }
+    },
+    "skye": {
+      "wrapperStyle": {
+        "left": "10.069131349564172%",
+        "top": "35.22039757994814%",
+        "width": "14.457469191463781%",
+        "zIndex": 20
+      }
+    },
+    "chase": {
+      "wrapperStyle": {
+        "left": "18.30477908025248%",
+        "top": "38.764044943820224%",
+        "width": "15.81003907424106%",
+        "zIndex": 30
+      }
+    },
+    "rex": {
+      "wrapperStyle": {
+        "left": "18.425007514277127%",
+        "top": "51.46931719965428%",
+        "width": "19.507063420498948%",
+        "zIndex": 40
+      }
+    },
+    "trex": {
+      "wrapperStyle": {
+        "left": "19.957920048091374%",
+        "top": "60.328435609334484%",
+        "width": "41.47880973850316%",
+        "zIndex": 8
+      }
+    },
+    "zuma": {
+      "wrapperStyle": {
+        "left": "76.43522693116923%",
+        "top": "35.22039757994814%",
+        "width": "14.217012323414489%",
+        "zIndex": 20
+      }
+    },
+    "rubble": {
+      "wrapperStyle": {
+        "left": "69.61226330027051%",
+        "top": "45.116681071737254%",
+        "width": "15.779981965734896%",
+        "zIndex": 30
+      }
+    },
+    "marshall": {
+      "wrapperStyle": {
+        "left": "61.647129546137656%",
+        "top": "46.97493517718237%",
+        "width": "14.78809738503156%",
+        "zIndex": 40
+      }
+    },
+    "tech-dino-foot": {
+      "wrapperStyle": {
+        "left": "6.582506762849413%",
+        "top": "61.53846153846154%",
+        "width": "8.566275924256086%",
+        "zIndex": 50
+      }
+    },
+    "tech-paw": {
+      "wrapperStyle": {
+        "left": "87.79681394649835%",
+        "top": "55.834053586862574%",
+        "width": "6.011421701232342%",
+        "zIndex": 50
+      }
+    },
+    "tech-meter": {
+      "wrapperStyle": {
+        "left": "84.8512173128945%",
+        "top": "61.66810717372515%",
+        "width": "1.4427412082957618%",
+        "zIndex": 50
+      }
+    },
+    "leaf-bottom-left": {
+      "wrapperStyle": {
+        "left": "12.533814247069433%",
+        "top": "74.20051858254105%",
+        "width": "11.421701232341448%",
+        "zIndex": 15,
+        "height": "10.63094209161625%"
+      },
+      "imageStyle": {
+        "height": "100%"
+      }
+    },
+    "leaf-bottom-right": {
+      "wrapperStyle": {
+        "left": "72.82837391042982%",
+        "top": "70.95937770095074%",
+        "width": "8.26570483919447%",
+        "zIndex": 80
+      }
+    },
+    "vine-bottom": {
+      "wrapperStyle": {
+        "left": "40.697324917342954%",
+        "top": "96.88850475367329%",
+        "width": "17.43312293357379%",
+        "zIndex": 6
+      }
+    },
+    "dino-world-logo": {
+      "wrapperStyle": {
+        "left": "30.928764652840396%",
+        "top": "67.84788245462403%",
+        "width": "36.9702434625789%",
+        "zIndex": 60
+      }
+    },
+    "discover-label": {
+      "wrapperStyle": {
+        "left": "43.19206492335437%",
+        "top": "82.23854796888504%",
+        "width": "12.233243162007815%",
+        "zIndex": 70
+      }
+    },
+    "discover-arrow-1": {
+      "wrapperStyle": {
+        "left": "48.93297264803126%",
+        "top": "86.12791702679343%",
+        "width": "0.9317703636910128%",
+        "zIndex": 70
+      }
+    },
+    "discover-arrow-2": {
+      "wrapperStyle": {
+        "left": "48.93297264803126%",
+        "top": "86.68971477960243%",
+        "width": "0.9317703636910128%",
+        "zIndex": 70
+      }
+    },
+    "discover-arrow-3": {
+      "wrapperStyle": {
+        "left": "48.93297264803126%",
+        "top": "87.29472774416594%",
+        "width": "0.9317703636910128%",
+        "zIndex": 70
+      }
+    },
+    "body-row2-divider": {
+      "wrapperStyle": {
+        "left": "41.77061149984789%",
+        "top": "20.823710546574286%",
+        "width": "16.48919987830849%",
+        "zIndex": 11
+      }
+    },
+    "body-row3-capa46": {
+      "wrapperStyle": {
+        "left": "31.670216002433833%",
+        "top": "25.69284064665127%",
+        "width": "11.621539397627014%",
+        "zIndex": 18
+      }
+    },
+    "body-row3-capa39": {
+      "wrapperStyle": {
+        "left": "7.879525403103134%",
+        "top": "40.72363356428021%",
+        "width": "10.31335564344387%",
+        "zIndex": 19
+      }
+    },
+    "body-row3-capa40": {
+      "wrapperStyle": {
+        "left": "10.191664131426833%",
+        "top": "34.83448806774442%",
+        "width": "11.986613933678127%",
+        "zIndex": 20
+      }
+    },
+    "body-row3-capa41": {
+      "wrapperStyle": {
+        "left": "13.173106175844234%",
+        "top": "27.367205542725177%",
+        "width": "30.39245512625494%",
+        "zIndex": 22
+      }
+    },
+    "body-row3-capa42": {
+      "wrapperStyle": {
+        "left": "16.48919987830849%",
+        "top": "29.272517321016167%",
+        "width": "24.490416793428658%",
+        "zIndex": 26,
+        "height": "20.496535796766743%"
+      },
+      "imageStyle": {
+        "height": "100%"
+      }
+    },
+    "body-row3-left-bg": {
+      "wrapperStyle": {
+        "left": "-33.54037267080746%",
+        "top": "-21.032863849765256%",
+        "width": "135.527950310559%",
+        "zIndex": 10
+      }
+    },
+    "body-row3-left-character": {
+      "wrapperStyle": {
+        "left": "9.06832298136646%",
+        "top": "3.568075117370892%",
+        "width": "102.48447204968944%",
+        "zIndex": 11
+      }
+    },
+    "body-row3-left-planta7": {
+      "wrapperStyle": {
+        "left": "-23.1055900621118%",
+        "top": "-11.07981220657277%",
+        "width": "61.24223602484472%",
+        "zIndex": 12
+      }
+    },
+    "body-row3-left-planta4": {
+      "wrapperStyle": {
+        "left": "26.70807453416149%",
+        "top": "68.54460093896714%",
+        "width": "52.91925465838509%",
+        "zIndex": 13
+      }
+    },
+    "body-row3-left-roca2": {
+      "wrapperStyle": {
+        "left": "42.857142857142854%",
+        "top": "79.34272300469483%",
+        "width": "55.40372670807453%",
+        "zIndex": 14
+      }
+    },
+    "body-row3-left-planta3": {
+      "wrapperStyle": {
+        "left": "-45.46583850931677%",
+        "top": "47.6056338028169%",
+        "width": "102.98136645962732%",
+        "zIndex": 15
+      }
+    },
+    "body-row3-left-roca": {
+      "wrapperStyle": {
+        "left": "-9.937888198757763%",
+        "top": "67.98122065727699%",
+        "width": "41.73913043478261%",
+        "zIndex": 16
+      }
+    },
+    "body-row3-left-planta5": {
+      "wrapperStyle": {
+        "left": "-57.14285714285714%",
+        "top": "74.74178403755869%",
+        "width": "155.27950310559007%",
+        "zIndex": 17
+      }
+    },
+    "body-row3-capa44": {
+      "wrapperStyle": {
+        "left": "56.5257073319136%",
+        "top": "31.524249422632796%",
+        "width": "33.5564344386979%",
+        "zIndex": 20
+      }
+    },
+    "body-row3-title": {
+      "wrapperStyle": {
+        "left": "58.44234864618193%",
+        "top": "33.429561200923786%",
+        "width": "27.10678430179495%",
+        "zIndex": 24
+      }
+    },
+    "body-row3-description": {
+      "wrapperStyle": {
+        "left": "58.50319440219045%",
+        "top": "35.739030023094685%",
+        "width": "29.540614542135685%",
+        "zIndex": 23
+      }
+    },
+    "body-row3-capa48": {
+      "wrapperStyle": {
+        "left": "61.91055673866748%",
+        "top": "42.12856043110085%",
+        "width": "28.110739275935504%",
+        "zIndex": 21
+      }
+    },
+    "body-row3-capa49": {
+      "wrapperStyle": {
+        "left": "57.134164891998786%",
+        "top": "42.494226327944574%",
+        "width": "12.625494371767571%",
+        "zIndex": 21
+      }
+    },
+    "body-row3-capa45": {
+      "wrapperStyle": {
+        "left": "80.68147246729541%",
+        "top": "42.20554272517321%",
+        "width": "10.161241253422574%",
+        "zIndex": 22
+      }
+    },
+    "body-row4-capa66": {
+      "wrapperStyle": {
+        "left": "38.028597505324%",
+        "top": "62.45188606620478%",
+        "width": "22.604198357164588%",
+        "zIndex": 30
+      }
+    },
+    "body-row4-capa65": {
+      "wrapperStyle": {
+        "left": "31.761484636446607%",
+        "top": "65.78137028483448%",
+        "width": "35.686035898996046%",
+        "zIndex": 31
+      }
+    },
+    "body-row4-capa64": {
+      "wrapperStyle": {
+        "left": "1.0039549741405538%",
+        "top": "62.02848344880677%",
+        "width": "80.37724368725281%",
+        "zIndex": 32
+      }
+    },
+    "body-row4-capa68": {
+      "wrapperStyle": {
+        "left": "48.34195314876787%",
+        "top": "62.1824480369515%",
+        "width": "52.75327045938546%",
+        "zIndex": 33
+      }
+    },
+    "body-row4-capa70": {
+      "wrapperStyle": {
+        "left": "21.417706114998477%",
+        "top": "73.46035411855273%",
+        "width": "70.0943109218132%",
+        "zIndex": 34
+      }
+    },
+    "body-row4-ampliacion": {
+      "wrapperStyle": {
+        "left": "-0.0304228780042592%",
+        "top": "82.06312548113934%",
+        "width": "100.0608457560085%",
+        "zIndex": 35
+      }
+    },
+    "body-row4-chase2": {
+      "wrapperStyle": {
+        "left": "19.80529358077274%",
+        "top": "71.55504234026175%",
+        "width": "15.211439002129602%",
+        "zIndex": 36
+      }
+    },
+    "body-row4-skye2": {
+      "wrapperStyle": {
+        "left": "27.684818983875875%",
+        "top": "74.88452655889145%",
+        "width": "19.592333434742926%",
+        "zIndex": 37
+      }
+    },
+    "body-row4-rubble2": {
+      "wrapperStyle": {
+        "left": "63.827198052935806%",
+        "top": "79.86913010007697%",
+        "width": "17.006388804380894%",
+        "zIndex": 38
+      }
+    },
+    "body-row4-rex": {
+      "wrapperStyle": {
+        "left": "50.77578338910861%",
+        "top": "72.19014626635874%",
+        "width": "18.37541831457256%",
+        "zIndex": 39
+      }
+    },
+    "body-row4-marshall2": {
+      "wrapperStyle": {
+        "left": "37.84606023729845%",
+        "top": "69.07236335642803%",
+        "width": "20.991785822938848%",
+        "zIndex": 40
+      }
+    },
+    "body-row4-rhubarb": {
+      "wrapperStyle": {
+        "left": "82.96318831761485%",
+        "top": "66.5896843725943%",
+        "width": "15.333130514146639%",
+        "zIndex": 41
+      }
+    },
+    "body-row4-timmyrex": {
+      "wrapperStyle": {
+        "left": "-9.431092181320352%",
+        "top": "60.79676674364896%",
+        "width": "32.7350167325829%",
+        "zIndex": 42
+      }
+    },
+    "body-row4-capa31": {
+      "wrapperStyle": {
+        "left": "31.761484636446607%",
+        "top": "70.86220169361047%",
+        "width": "4.137511408579251%",
+        "zIndex": 43
+      }
+    },
+    "body-row4-capa29": {
+      "wrapperStyle": {
+        "left": "33.98235473075753%",
+        "top": "85.54657428791378%",
+        "width": "31.639793124429573%",
+        "zIndex": 44
+      }
+    },
+    "body-row4-capa63": {
+      "wrapperStyle": {
+        "left": "35.50349863097049%",
+        "top": "85.87374903772132%",
+        "width": "28.840888348037723%",
+        "zIndex": 45
+      }
+    },
+    "body-row4-planta6-copia": {
+      "wrapperStyle": {
+        "left": "83.69333738971707%",
+        "top": "69.59199384141648%",
+        "width": "19.44021904472163%",
+        "zIndex": 46
+      }
+    },
+    "body-row4-planta5-copia": {
+      "wrapperStyle": {
+        "left": "83.87587465774263%",
+        "top": "59.79599692070824%",
+        "width": "57.10374201399452%",
+        "zIndex": 47
+      }
+    },
+    "body-row4-planta5-copia2": {
+      "wrapperStyle": {
+        "left": "71.28080316397931%",
+        "top": "75.30792917628946%",
+        "width": "62.6407058107697%",
+        "zIndex": 48
+      }
+    },
+    "body-row4-planta3-copia": {
+      "wrapperStyle": {
+        "left": "78.03468208092485%",
+        "top": "78.52193995381063%",
+        "width": "37.11591116519622%",
+        "zIndex": 49
+      }
+    },
+    "body-row4-planta7": {
+      "wrapperStyle": {
+        "left": "-13.020991785822938%",
+        "top": "78.59892224788298%",
+        "width": "39.123821113477334%",
+        "zIndex": 50
+      }
+    },
+    "body-row4-planta6": {
+      "wrapperStyle": {
+        "left": "-3.772436872528141%",
+        "top": "68.51424172440339%",
+        "width": "19.44021904472163%",
+        "zIndex": 51
+      }
+    },
+    "body-row4-planta5": {
+      "wrapperStyle": {
+        "left": "-39.123821113477334%",
+        "top": "61.47036181678214%",
+        "width": "57.10374201399452%",
+        "zIndex": 52
+      }
+    },
+    "body-row4-planta": {
+      "wrapperStyle": {
+        "left": "-12.260419835716458%",
+        "top": "78.02155504234027%",
+        "width": "30.60541527228476%",
+        "zIndex": 53
+      }
+    },
+    "body-row4-capa62": {
+      "wrapperStyle": {
+        "left": "4.380894432613325%",
+        "top": "85.77752117013087%",
+        "width": "91.26863401277761%",
+        "zIndex": 54
+      }
+    },
+    "body-row4-capa59": {
+      "wrapperStyle": {
+        "left": "0%",
+        "top": "85.48883756735951%",
+        "width": "100%",
+        "zIndex": 55
+      }
+    },
+    "body-row4-capa60": {
+      "wrapperStyle": {
+        "left": "82.96318831761485%",
+        "top": "82.1593533487298%",
+        "width": "26.6200182537268%",
+        "zIndex": 56
+      }
+    },
+    "body-row4-capa61": {
+      "wrapperStyle": {
+        "left": "-6.966839062975358%",
+        "top": "83.98768283294842%",
+        "width": "26.194097961667172%",
+        "zIndex": 57
+      }
+    },
+    "body-row4-capa34": {
+      "wrapperStyle": {
+        "left": "0%",
+        "top": "42.051578137028486%",
+        "width": "100.03042287800426%",
+        "zIndex": 58
+      }
+    },
+    "tail-row1": {
+      "wrapperStyle": {
+        "left": "10.31335564344387%",
+        "top": "0%",
+        "width": "80.3163979312443%",
+        "zIndex": 10
+      }
+    },
+    "tail-row2": {
+      "wrapperStyle": {
+        "left": "0%",
+        "top": "18.539557942573847%",
+        "width": "100%",
+        "zIndex": 11
+      }
+    },
+    "tail-row3": {
+      "wrapperStyle": {
+        "left": "-8.913903255247945%",
+        "top": "36.325139434001244%",
+        "width": "115.69820505019774%",
+        "zIndex": 12
+      }
+    },
+    "tail-row4": {
+      "wrapperStyle": {
+        "left": "12.473379981746273%",
+        "top": "70.37802107002685%",
+        "width": "75.08366291451172%",
+        "zIndex": 13
+      }
+    },
+    "tail-row5": {
+      "wrapperStyle": {
+        "left": "-9.066017645269241%",
+        "top": "87.62652344556909%",
+        "width": "123.06054152722848%",
+        "zIndex": 14
+      }
+    }
+  }
+};
+
+      var reducedMotionMediaQuery =
+        typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+
+      function prefersReducedMotion() {
+        return Boolean(reducedMotionMediaQuery && reducedMotionMediaQuery.matches);
+      }
+
+      function toRepoAsset(localPath) {
+        if (!localPath) return localPath;
+        if (/^https?:\/\//i.test(localPath)) return localPath;
+
+        var normalized = String(localPath).replace(/\\/g, '/').replace(/^\/+/, '');
+        var url = normalized.startsWith('assets/')
+          ? GITHUB_RAW_BASE_URL + '/public/' + normalized
+          : GITHUB_RAW_BASE_URL + '/' + normalized;
+
+        return encodeURI(url);
+      }
+
+      function hydrateSprites(sprites) {
+        return sprites.map(function (sprite) {
+          return Object.assign({}, sprite, { src: toRepoAsset(sprite.src) });
+        });
+      }
+
+      function joinClasses() {
+        return Array.prototype.slice.call(arguments)
+          .filter(function (value) {
+            return typeof value === 'string' && value.trim().length > 0;
+          })
+          .join(' ');
+      }
+
+      function applyStyleObject(element, styleObj) {
+        if (!styleObj) return;
+
+        Object.entries(styleObj).forEach(function (entry) {
+          var key = entry[0];
+          var value = entry[1];
+          if (value === null || value === undefined) return;
+          element.style[key] = String(value);
+        });
+      }
+
+      function renderSpriteLayers(target, sprites, layoutMap) {
+        var fragment = document.createDocumentFragment();
+
+        sprites.forEach(function (sprite) {
+          var wrapper = document.createElement('div');
+          wrapper.className = joinClasses('sprite-wrapper', sprite.wrapperClassName);
+          wrapper.dataset.spriteId = sprite.id;
+
+          var layout = layoutMap[sprite.id];
+          if (layout && layout.wrapperStyle) {
+            applyStyleObject(wrapper, layout.wrapperStyle);
+          }
+
+          var image = document.createElement('img');
+          image.className = joinClasses(
+            'scene-sprite',
+            sprite.imageClassName,
+            sprite.interactive ? 'is-interactive' : ''
+          );
+          image.src = sprite.src;
+          image.alt = sprite.alt;
+          image.draggable = false;
+
+          if (layout && layout.imageStyle) {
+            applyStyleObject(image, layout.imageStyle);
+          }
+
+          wrapper.appendChild(image);
+          fragment.appendChild(wrapper);
+        });
+
+        target.appendChild(fragment);
+      }
+
+      function prepareHeadlineCharacters(elementId) {
+        var element = document.getElementById(elementId);
+        if (!element) return;
+
+        var text = element.innerText.trim();
+        var words = text.split(' ');
+        element.innerHTML = '';
+
+        words.forEach(function (word, wordIndex) {
+          var wordSpan = document.createElement('span');
+          wordSpan.className = 'intro-word';
+
+          Array.from(word).forEach(function (char) {
+            var charSpan = document.createElement('span');
+            charSpan.className = 'intro-char';
+            charSpan.innerText = char;
+            wordSpan.appendChild(charSpan);
+          });
+
+          element.appendChild(wordSpan);
+
+          if (wordIndex < words.length - 1) {
+            var space = document.createElement('span');
+            space.className = 'intro-space';
+            space.innerHTML = '&nbsp;';
+            element.appendChild(space);
+          }
+        });
+      }
+
+      function initSmoothScroll() {
+        if (prefersReducedMotion() || !window.Lenis || !window.gsap || !window.ScrollTrigger) return;
+
+        var lenis = new window.Lenis({
+          lerp: 0.08,
+          smoothWheel: true,
+        });
+
+        lenis.on('scroll', window.ScrollTrigger.update);
+        window.gsap.ticker.add(function (time) {
+          lenis.raf(time * 1000);
+        });
+        window.gsap.ticker.lagSmoothing(0);
+      }
+
+      function runCloudAnimations(cloudsLayer) {
+        var gsap = window.gsap;
+        if (!gsap || prefersReducedMotion() || !cloudsLayer) return;
+
+        var bgPosX = 0;
+        gsap.ticker.add(function () {
+          bgPosX -= 0.8;
+          cloudsLayer.style.backgroundPositionX = bgPosX + 'px';
+        });
+
+        gsap.to(cloudsLayer, {
+          y: '2vh',
+          scale: 1.04,
+          ease: 'sine.inOut',
+          duration: 4.5,
+          yoyo: true,
+          repeat: -1,
+        });
+      }
+
+      function runHeroAnimations(stage) {
+        var gsap = window.gsap;
+        if (prefersReducedMotion() || !gsap) return;
+
+        var selectAll = function (selector) { return Array.from(stage.querySelectorAll(selector)); };
+        var characters = gsap.utils.toArray('.js-character', stage);
+        var pawLogo = gsap.utils.toArray('.js-paw-logo', stage);
+        var menuLeft = gsap.utils.toArray('.js-menu-left', stage);
+        var menuRight = gsap.utils.toArray('.js-menu-right', stage);
+        var dinoLogo = selectAll('.js-dino-logo');
+        var arrows = selectAll('.js-arrow');
+        var techUi = selectAll('.js-tech-ui');
+        var leaves = selectAll('.js-leaf');
+        var vines = selectAll('.js-vine');
+
+        gsap.fromTo(
+          characters,
+          {
+            y: 150,
+            opacity: 0,
+            scale: 0.5,
+            rotation: function (i) { return i % 2 === 0 ? -10 : 10; },
+          },
+          {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            rotation: 0,
+            duration: 1.2,
+            stagger: 0.15,
+            ease: 'back.out(1.4)',
+            onComplete: function () {
+              characters.forEach(function (char, i) {
+                gsap.to(char, {
+                  y: '+=12',
+                  rotation: '+=2',
+                  duration: 2 + (i % 3) * 0.4,
+                  yoyo: true,
+                  repeat: -1,
+                  ease: 'sine.inOut',
+                  delay: i * 0.1,
+                });
+              });
+
+              gsap.to(techUi, {
+                opacity: 0.4,
+                duration: 1.5,
+                yoyo: true,
+                repeat: -1,
+                ease: 'power1.inOut',
+                stagger: 0.3,
+              });
+
+              gsap.to(leaves, {
+                rotation: '+=6',
+                transformOrigin: 'bottom center',
+                duration: 3,
+                yoyo: true,
+                repeat: -1,
+                ease: 'sine.inOut',
+                stagger: 0.2,
+              });
+
+              gsap.to(vines, {
+                rotation: function (i) { return i % 2 === 0 ? 4 : -4; },
+                transformOrigin: 'top center',
+                duration: 4.5,
+                yoyo: true,
+                repeat: -1,
+                ease: 'sine.inOut',
+                stagger: 0.5,
+              });
+            },
+          }
+        );
+
+        gsap.fromTo(pawLogo, { y: -100, opacity: 0 }, { y: 0, opacity: 1, duration: 1.5, ease: 'elastic.out(1, 0.5)', delay: 0.2 });
+        gsap.fromTo(menuLeft, { x: -100, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.4 });
+        gsap.fromTo(menuRight, { x: 100, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.4 });
+        gsap.fromTo(
+          dinoLogo,
+          { scale: 0.5, opacity: 0, y: 50 },
+          {
+            scale: 1,
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            ease: 'back.out(1.5)',
+            delay: 0.6,
+            onComplete: function () {
+              gsap.to(dinoLogo, {
+                y: '+=6',
+                duration: 2,
+                yoyo: true,
+                repeat: -1,
+                ease: 'sine.inOut',
+              });
+            },
+          }
+        );
+
+        gsap.fromTo(
+          arrows,
+          {
+            opacity: 0.28,
+            filter: 'drop-shadow(0 0 0 rgba(89, 255, 92, 0)) brightness(1)',
+          },
+          {
+            opacity: 1,
+            filter: 'drop-shadow(0 0 10px rgba(89, 255, 92, 0.95)) brightness(1.18)',
+            duration: 0.62,
+            stagger: 0.15,
+            yoyo: true,
+            repeat: -1,
+            ease: 'sine.inOut',
+          }
+        );
+      }
+
+      function runHeroScrollTransition() {
+        var gsap = window.gsap;
+        var ScrollTrigger = window.ScrollTrigger;
+        if (prefersReducedMotion() || !gsap || !ScrollTrigger) return;
+        gsap.registerPlugin(ScrollTrigger);
+
+        var leftClusterSelectors = [
+          '.char-skye-wrapper',
+          '.char-chase-wrapper',
+          '.char-rex-wrapper',
+          '.layer-border-left-wrapper',
+          '.brand-menu-left-wrapper',
+          '.leaf-top-left-wrapper',
+          '.leaf-bottom-left-wrapper',
+          '.tech-dino-foot-wrapper',
+        ].join(', ');
+
+        var rightClusterSelectors = [
+          '.char-zuma-wrapper',
+          '.char-rubble-wrapper',
+          '.char-marshall-wrapper',
+          '.layer-border-right-wrapper',
+          '.brand-menu-right-wrapper',
+          '.leaf-top-right-wrapper',
+          '.leaf-bottom-right-wrapper',
+          '.tech-paw-wrapper',
+          '.tech-meter-wrapper',
+        ].join(', ');
+
+        var topClusterSelectors = ['.layer-top-canopy-wrapper', '.layer-vine-top-wrapper', '.brand-paw-logo-wrapper'].join(', ');
+        var bottomClusterSelectors = ['.layer-vine-bottom-wrapper'].join(', ');
+        var centerClusterSelectors = ['.brand-dino-world-wrapper', '.discover-label-wrapper', '.discover-arrow-wrapper'].join(', ');
+
+        var heroScrollTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.hero-shell',
+            start: 'top top',
+            end: '+=150%',
+            pin: true,
+            scrub: 1.2,
+          },
+        });
+
+        heroScrollTimeline
+          .to(
+            '.char-trex-wrapper',
+            {
+              y: '25vh',
+              rotation: 5,
+              transformOrigin: 'bottom center',
+              ease: 'power2.in',
+              duration: 0.4,
+            },
+            0
+          )
+          .addLabel('cavePhase', 0.4)
+          .to('.char-trex-wrapper', { opacity: 0, duration: 0.1 }, 'cavePhase')
+          .to('.hero-stage', { '--bg-scale': 1.15, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to('.image-clouds', { opacity: 1, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to(leftClusterSelectors, { x: '-80vw', opacity: 0, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to(rightClusterSelectors, { x: '80vw', opacity: 0, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to(topClusterSelectors, { y: '-60vh', opacity: 0, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to(bottomClusterSelectors, { y: '60vh', opacity: 0, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to(centerClusterSelectors, { scale: 1.2, opacity: 0, ease: 'power2.inOut', duration: 0.9 }, 'cavePhase')
+          .to(
+            '.layer-frame-cave-wrapper',
+            { scale: 5, opacity: 0, ease: 'power2.in', transformOrigin: 'center center', duration: 0.9 },
+            'cavePhase'
+          );
+      }
+
+      function runBodySectionAnimations() {
+        var gsap = window.gsap;
+        var ScrollTrigger = window.ScrollTrigger;
+        if (prefersReducedMotion() || !gsap || !ScrollTrigger) return;
+
+        prepareHeadlineCharacters('intro-headline');
+
+        var bodyScrollTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.body-stage',
+            start: 'top 85%',
+            end: 'bottom bottom',
+            scrub: 1.5,
+          },
+        });
+
+        bodyScrollTimeline.fromTo('.body-row3-layer-wrapper', { y: '30vh' }, { y: '0vh', ease: 'none' }, 0);
+        bodyScrollTimeline.fromTo('.body-row4-group', { y: '60vh' }, { y: '0vh', ease: 'none' }, 0);
+        bodyScrollTimeline.fromTo(
+          '.body-row2-divider-wrapper',
+          { y: '15vh', scale: 0.8 },
+          { y: '0vh', scale: 1, ease: 'power2.out' },
+          0.1
+        );
+
+        gsap.fromTo(
+          '.intro-char',
+          { opacity: 0 },
+          {
+            opacity: 1,
+            ease: 'steps(1)',
+            stagger: 0.05,
+            scrollTrigger: {
+              trigger: '#intro-headline',
+              start: 'top 95%',
+              end: 'bottom 45%',
+              scrub: true,
+            },
+          }
+        );
+
+        gsap.to('.body-row4-group', {
+          y: '+=15',
+          scale: 1.01,
+          transformOrigin: 'center bottom',
+          duration: 3.5,
+          yoyo: true,
+          repeat: -1,
+          ease: 'sine.inOut',
+        });
+
+        gsap.to('.body-row2-divider-wrapper .scene-sprite', {
+          y: '-=6',
+          duration: 2.5,
+          yoyo: true,
+          repeat: -1,
+          ease: 'sine.inOut',
+        });
+      }
+
+      (function bootstrapDinoWorldSingleFile() {
+        var appRootElement = document.getElementById('app-shell');
+        var headerCanvas = document.getElementById('header-canvas');
+        var heroSceneCanvas = document.getElementById('hero-canvas');
+        var bodySceneCanvas = document.getElementById('body-canvas');
+        var tailSceneCanvas = document.getElementById('tail-canvas');
+        var heroStage = document.querySelector('.hero-stage');
+        var cloudsLayer = document.getElementById('image-clouds');
+
+        if (!appRootElement || !headerCanvas || !heroSceneCanvas || !bodySceneCanvas || !tailSceneCanvas || !heroStage || !cloudsLayer) {
+          throw new Error('No se pudieron inicializar los contenedores principales de la escena.');
+        }
+
+        var hydratedData = Object.assign({}, DATA, {
+          headerSprites: hydrateSprites(DATA.headerSprites),
+          heroSprites: hydrateSprites(DATA.heroSprites),
+          bodyPrefixSprites: hydrateSprites(DATA.bodyPrefixSprites),
+          bodyRow3ClipSprites: hydrateSprites(DATA.bodyRow3ClipSprites),
+          bodyRow3RightSprites: hydrateSprites(DATA.bodyRow3RightSprites),
+          bodyRow4Sprites: hydrateSprites(DATA.bodyRow4Sprites),
+          tailSprites: hydrateSprites(DATA.tailSprites),
+        });
+
+        heroStage.style.setProperty('--shared-landscape-url', "url('" + toRepoAsset('/assets/hero/paisaje/fondoselva.jpg') + "')");
+        cloudsLayer.style.backgroundImage = "url('" + toRepoAsset('/assets/hero/fondo/imgi_7_68ee74b1f45fbfb23fb6405a_clouds.webp') + "')";
+        document.documentElement.style.setProperty('--row3-mask-url', "url('" + toRepoAsset('/assets/body/fondo/Capa_42.png') + "')");
+
+        heroSceneCanvas.style.setProperty('--scene-ratio', String(hydratedData.heroSceneRatio));
+        bodySceneCanvas.style.setProperty('--scene-ratio', String(hydratedData.bodySceneRatio));
+        tailSceneCanvas.style.setProperty('--scene-ratio', String(hydratedData.tailSceneRatio));
+
+        renderSpriteLayers(headerCanvas, hydratedData.headerSprites, hydratedData.spriteLayoutMap);
+        renderSpriteLayers(heroSceneCanvas, hydratedData.heroSprites, hydratedData.spriteLayoutMap);
+
+        var introWrapper = bodySceneCanvas.querySelector('.intro-headline-wrapper');
+        if (introWrapper) {
+          introWrapper.remove();
+        }
+
+        renderSpriteLayers(bodySceneCanvas, hydratedData.bodyPrefixSprites, hydratedData.spriteLayoutMap);
+
+        var row3Container = document.createElement('div');
+        row3Container.className = 'sprite-wrapper body-row3-layer-wrapper body-row3-capa42-wrapper';
+        row3Container.dataset.spriteId = hydratedData.BODY_ROW3_CONTAINER_ID;
+        applyStyleObject(row3Container, hydratedData.spriteLayoutMap[hydratedData.BODY_ROW3_CONTAINER_ID] && hydratedData.spriteLayoutMap[hydratedData.BODY_ROW3_CONTAINER_ID].wrapperStyle);
+        renderSpriteLayers(row3Container, hydratedData.bodyRow3ClipSprites, hydratedData.spriteLayoutMap);
+        bodySceneCanvas.appendChild(row3Container);
+
+        renderSpriteLayers(bodySceneCanvas, hydratedData.bodyRow3RightSprites, hydratedData.spriteLayoutMap);
+
+        var row4Group = document.createElement('div');
+        row4Group.className = 'body-row4-group';
+        renderSpriteLayers(row4Group, hydratedData.bodyRow4Sprites, hydratedData.spriteLayoutMap);
+        bodySceneCanvas.appendChild(row4Group);
+
+        if (introWrapper) {
+          bodySceneCanvas.appendChild(introWrapper);
+        }
+
+        renderSpriteLayers(tailSceneCanvas, hydratedData.tailSprites, hydratedData.spriteLayoutMap);
+
+        initSmoothScroll();
+        runCloudAnimations(cloudsLayer);
+        runHeroAnimations(heroSceneCanvas);
+        runHeroScrollTransition();
+        runBodySectionAnimations();
+      })();
+    </script>
+  </body>
+</html>
