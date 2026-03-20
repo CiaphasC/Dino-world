@@ -467,20 +467,28 @@ const tailSpriteDefinitions: RawSpriteDefinition[] = [
       style: tailBox(339, 209, 2979, 1797, 10),
     },
     {
+      id: "tail-row1-seam",
+      style: tailBox(0, 1821, 3287, 2150, 13),
+    },
+    {
       id: "tail-row2",
-      style: tailBox(0, 2004, 3287, 3948, 11),
+      style: tailBox(0, 2004, 3287, 3948, 12),
+    },
+    {
+      id: "tail-row2-seam",
+      style: tailBox(0, 3879, 3287, 4105, 14),
     },
     {
       id: "tail-row3",
-      style: tailBox(-293, 3726, 3510, 6665, 12),
+      style: tailBox(-293, 3726, 3510, 6665, 11),
     },
     {
       id: "tail-row4",
-      style: tailBox(410, 7023, 2878, 8326, 13),
+      style: tailBox(410, 7023, 2878, 8326, 15),
     },
     {
       id: "tail-row5",
-      style: tailBox(-298, 8693, 3747, 9891, 14),
+      style: tailBox(-298, 8693, 3747, 9891, 16),
     },
   ];
 

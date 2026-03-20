@@ -388,11 +388,21 @@ const spriteCatalog: Record<string, Omit<SpriteMeta, "id">> = {
     imageClassName: "tail-row1",
     src: "/assets/section_island_adventures/fondo/psd2_row1_group_clean.png",
     alt: "Bloque On an island full of adventures"
+  },  "tail-row1-seam": {
+    wrapperClassName: "tail-row1-seam-wrapper",
+    imageClassName: "tail-row1-seam",
+    src: "/assets/section_island_adventures/ambiente/184_capa_13.png",
+    alt: "Transicion crema entre On an island y Stomp Around"
   },  "tail-row2": {
     wrapperClassName: "tail-row2-wrapper",
     imageClassName: "tail-row2",
     src: "/assets/section_island_adventures/fondo/psd2_row2_group.png",
     alt: "Bloque Stomp Around con video"
+  },  "tail-row2-seam": {
+    wrapperClassName: "tail-row2-seam-wrapper",
+    imageClassName: "tail-row2-seam",
+    src: "/assets/section_island_adventures/ambiente/183_capa_21_copia.png",
+    alt: "Franja de union verde entre Stomp Around y Favorite Characters"
   },  "tail-row3": {
     wrapperClassName: "tail-row3-wrapper",
     imageClassName: "tail-row3",
@@ -515,7 +525,7 @@ const BODY_ROW4_IDS = [
   "body-row4-capa34",
 ] as const;
 
-const TAIL_IDS = ["tail-row1", "tail-row2", "tail-row3", "tail-row4", "tail-row5"] as const;
+const TAIL_IDS = ["tail-row1", "tail-row1-seam", "tail-row2", "tail-row2-seam", "tail-row3", "tail-row4", "tail-row5"] as const;
 
 export const BODY_ROW3_CONTAINER_ID = "body-row3-capa42";
 
