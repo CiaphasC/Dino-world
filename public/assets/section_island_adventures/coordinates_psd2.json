@@ -1,0 +1,2149 @@
+{
+  "source_psd": "C:/trabajos/trabajo-oficina/react/trabajos-react/dinoworld2.psd",
+  "canvas": {
+    "width": 3287,
+    "height": 13075
+  },
+  "rows": {
+    "row1": {
+      "x1": 339,
+      "y1": 209,
+      "x2": 2979,
+      "y2": 1945,
+      "layers_total": 18,
+      "layers_visible": 17,
+      "width": 2640,
+      "height": 1736,
+      "pct_canvas": {
+        "left": 10.3134,
+        "top": 1.5985,
+        "width": 80.3164,
+        "height": 13.2772
+      }
+    },
+    "row2": {
+      "x1": 0,
+      "y1": 2004,
+      "x2": 3287,
+      "y2": 3948,
+      "layers_total": 7,
+      "layers_visible": 7,
+      "width": 3287,
+      "height": 1944,
+      "pct_canvas": {
+        "left": 0.0,
+        "top": 15.327,
+        "width": 100.0,
+        "height": 14.8681
+      }
+    },
+    "row3": {
+      "x1": -293,
+      "y1": 3726,
+      "x2": 3510,
+      "y2": 6665,
+      "layers_total": 105,
+      "layers_visible": 28,
+      "width": 3803,
+      "height": 2939,
+      "pct_canvas": {
+        "left": -8.9139,
+        "top": 28.4971,
+        "width": 115.6982,
+        "height": 22.478
+      }
+    },
+    "row4": {
+      "x1": 410,
+      "y1": 7023,
+      "x2": 2878,
+      "y2": 8326,
+      "layers_total": 16,
+      "layers_visible": 15,
+      "width": 2468,
+      "height": 1303,
+      "pct_canvas": {
+        "left": 12.4734,
+        "top": 53.7132,
+        "width": 75.0837,
+        "height": 9.9656
+      }
+    },
+    "row5": {
+      "x1": -298,
+      "y1": 8693,
+      "x2": 3747,
+      "y2": 9891,
+      "layers_total": 6,
+      "layers_visible": 6,
+      "width": 4045,
+      "height": 1198,
+      "pct_canvas": {
+        "left": -9.066,
+        "top": 66.4857,
+        "width": 123.0605,
+        "height": 9.1625
+      }
+    }
+  },
+  "visible_layers_by_row": {
+    "row1": [
+      {
+        "layer_name": "on an island full of adventures",
+        "layer_path": "row1/on an island full of adventures",
+        "kind": "type",
+        "bbox": [
+          1228,
+          209,
+          2061,
+          353
+        ],
+        "size": {
+          "w": 833,
+          "h": 144
+        },
+        "output_path": "assets/section_island_adventures/letras/179_row1_on_an_island_full_of_adventures.png",
+        "pct_canvas": {
+          "left": 37.3593,
+          "top": 1.5985,
+          "width": 25.3423,
+          "height": 1.1013
+        },
+        "pct_row": {
+          "left": 33.6742,
+          "top": 0.0,
+          "width": 31.553,
+          "height": 8.2949
+        }
+      },
+      {
+        "layer_name": "Capa 3",
+        "layer_path": "row1/Capa 3",
+        "kind": "pixel",
+        "bbox": [
+          531,
+          333,
+          2711,
+          1073
+        ],
+        "size": {
+          "w": 2180,
+          "h": 740
+        },
+        "output_path": "assets/section_island_adventures/ambiente/165_row1_capa_3.png",
+        "pct_canvas": {
+          "left": 16.1545,
+          "top": 2.5468,
+          "width": 66.3219,
+          "height": 5.6597
+        },
+        "pct_row": {
+          "left": 7.2727,
+          "top": 7.1429,
+          "width": 82.5758,
+          "height": 42.6267
+        }
+      },
+      {
+        "layer_name": "Capa 5",
+        "layer_path": "row1/Capa 5",
+        "kind": "pixel",
+        "bbox": [
+          2433,
+          380,
+          2819,
+          713
+        ],
+        "size": {
+          "w": 386,
+          "h": 333
+        },
+        "output_path": "assets/section_island_adventures/ambiente/170_row1_capa_5.png",
+        "pct_canvas": {
+          "left": 74.0189,
+          "top": 2.9063,
+          "width": 11.7432,
+          "height": 2.5468
+        },
+        "pct_row": {
+          "left": 79.3182,
+          "top": 9.8502,
+          "width": 14.6212,
+          "height": 19.182
+        }
+      },
+      {
+        "layer_name": "DINOIZQ",
+        "layer_path": "row1/DINOIZQ",
+        "kind": "pixel",
+        "bbox": [
+          541,
+          402,
+          854,
+          732
+        ],
+        "size": {
+          "w": 313,
+          "h": 330
+        },
+        "output_path": "assets/section_island_adventures/personajes/173_row1_dinoizq.png",
+        "pct_canvas": {
+          "left": 16.4588,
+          "top": 3.0746,
+          "width": 9.5224,
+          "height": 2.5239
+        },
+        "pct_row": {
+          "left": 7.6515,
+          "top": 11.1175,
+          "width": 11.8561,
+          "height": 19.0092
+        }
+      },
+      {
+        "layer_name": "AVIÓN",
+        "layer_path": "row1/AVIÓN",
+        "kind": "pixel",
+        "bbox": [
+          1241,
+          507,
+          1621,
+          666
+        ],
+        "size": {
+          "w": 380,
+          "h": 159
+        },
+        "output_path": "assets/section_island_adventures/ambiente/180_row1_avion.png",
+        "pct_canvas": {
+          "left": 37.7548,
+          "top": 3.8776,
+          "width": 11.5607,
+          "height": 1.2161
+        },
+        "pct_row": {
+          "left": 34.1667,
+          "top": 17.1659,
+          "width": 14.3939,
+          "height": 9.159
+        }
+      },
+      {
+        "layer_name": "LINEAS",
+        "layer_path": "row1/LINEAS",
+        "kind": "pixel",
+        "bbox": [
+          889,
+          546,
+          2608,
+          1673
+        ],
+        "size": {
+          "w": 1719,
+          "h": 1127
+        },
+        "output_path": "assets/section_island_adventures/ambiente/181_row1_lineas.png",
+        "pct_canvas": {
+          "left": 27.0459,
+          "top": 4.1759,
+          "width": 52.2969,
+          "height": 8.6195
+        },
+        "pct_row": {
+          "left": 20.8333,
+          "top": 19.4124,
+          "width": 65.1136,
+          "height": 64.9194
+        }
+      },
+      {
+        "layer_name": "Capa 1",
+        "layer_path": "row1/Capa 1",
+        "kind": "pixel",
+        "bbox": [
+          930,
+          703,
+          2357,
+          1714
+        ],
+        "size": {
+          "w": 1427,
+          "h": 1011
+        },
+        "output_path": "assets/section_island_adventures/ambiente/166_row1_capa_1.png",
+        "pct_canvas": {
+          "left": 28.2933,
+          "top": 5.3767,
+          "width": 43.4134,
+          "height": 7.7323
+        },
+        "pct_row": {
+          "left": 22.3864,
+          "top": 28.4562,
+          "width": 54.053,
+          "height": 58.2373
+        }
+      },
+      {
+        "layer_name": "Capa 48",
+        "layer_path": "row1/Capa 48",
+        "kind": "pixel",
+        "bbox": [
+          2282,
+          785,
+          2435,
+          941
+        ],
+        "size": {
+          "w": 153,
+          "h": 156
+        },
+        "output_path": "assets/section_island_adventures/ambiente/178_row1_capa_48.png",
+        "pct_canvas": {
+          "left": 69.425,
+          "top": 6.0038,
+          "width": 4.6547,
+          "height": 1.1931
+        },
+        "pct_row": {
+          "left": 73.5985,
+          "top": 33.1797,
+          "width": 5.7955,
+          "height": 8.9862
+        }
+      },
+      {
+        "layer_name": "Capa 50",
+        "layer_path": "row1/volcan/Capa 50",
+        "kind": "pixel",
+        "bbox": [
+          476,
+          833,
+          916,
+          1213
+        ],
+        "size": {
+          "w": 440,
+          "h": 380
+        },
+        "output_path": "assets/section_island_adventures/paisaje/175_row1_volcan_capa_50.png",
+        "pct_canvas": {
+          "left": 14.4813,
+          "top": 6.3709,
+          "width": 13.3861,
+          "height": 2.9063
+        },
+        "pct_row": {
+          "left": 5.1894,
+          "top": 35.9447,
+          "width": 16.6667,
+          "height": 21.8894
+        }
+      },
+      {
+        "layer_name": "Volcano",
+        "layer_path": "row1/volcan/Volcano",
+        "kind": "pixel",
+        "bbox": [
+          478,
+          861,
+          916,
+          1181
+        ],
+        "size": {
+          "w": 438,
+          "h": 320
+        },
+        "output_path": "assets/section_island_adventures/paisaje/174_row1_volcan_volcano.png",
+        "pct_canvas": {
+          "left": 14.5421,
+          "top": 6.5851,
+          "width": 13.3252,
+          "height": 2.4474
+        },
+        "pct_row": {
+          "left": 5.2652,
+          "top": 37.5576,
+          "width": 16.5909,
+          "height": 18.4332
+        }
+      },
+      {
+        "layer_name": "Capa 49",
+        "layer_path": "row1/screen2/Capa 49",
+        "kind": "pixel",
+        "bbox": [
+          2407,
+          962,
+          2913,
+          1324
+        ],
+        "size": {
+          "w": 506,
+          "h": 362
+        },
+        "output_path": "assets/section_island_adventures/ambiente/172_row1_screen2_capa_49.png",
+        "pct_canvas": {
+          "left": 73.2279,
+          "top": 7.3576,
+          "width": 15.394,
+          "height": 2.7686
+        },
+        "pct_row": {
+          "left": 78.3333,
+          "top": 43.3756,
+          "width": 19.1667,
+          "height": 20.8525
+        }
+      },
+      {
+        "layer_name": "Shore",
+        "layer_path": "row1/screen2/Shore",
+        "kind": "pixel",
+        "bbox": [
+          2435,
+          962,
+          2900,
+          1324
+        ],
+        "size": {
+          "w": 465,
+          "h": 362
+        },
+        "output_path": "assets/section_island_adventures/paisaje/171_row1_screen2_shore.png",
+        "pct_canvas": {
+          "left": 74.0797,
+          "top": 7.3576,
+          "width": 14.1466,
+          "height": 2.7686
+        },
+        "pct_row": {
+          "left": 79.3939,
+          "top": 43.3756,
+          "width": 17.6136,
+          "height": 20.8525
+        }
+      },
+      {
+        "layer_name": "Capa 53",
+        "layer_path": "row1/Capa 53",
+        "kind": "pixel",
+        "bbox": [
+          636,
+          1264,
+          897,
+          1427
+        ],
+        "size": {
+          "w": 261,
+          "h": 163
+        },
+        "output_path": "assets/section_island_adventures/ambiente/176_row1_capa_53.png",
+        "pct_canvas": {
+          "left": 19.349,
+          "top": 9.6673,
+          "width": 7.9404,
+          "height": 1.2467
+        },
+        "pct_row": {
+          "left": 11.25,
+          "top": 60.7719,
+          "width": 9.8864,
+          "height": 9.3894
+        }
+      },
+      {
+        "layer_name": "Capa 6",
+        "layer_path": "row1/Capa 6",
+        "kind": "pixel",
+        "bbox": [
+          2635,
+          1400,
+          2979,
+          1714
+        ],
+        "size": {
+          "w": 344,
+          "h": 314
+        },
+        "output_path": "assets/section_island_adventures/ambiente/168_row1_capa_6.png",
+        "pct_canvas": {
+          "left": 80.1643,
+          "top": 10.7075,
+          "width": 10.4655,
+          "height": 2.4015
+        },
+        "pct_row": {
+          "left": 86.9697,
+          "top": 68.606,
+          "width": 13.0303,
+          "height": 18.0876
+        }
+      },
+      {
+        "layer_name": "Capa 7",
+        "layer_path": "row1/Capa 7",
+        "kind": "pixel",
+        "bbox": [
+          339,
+          1451,
+          690,
+          1797
+        ],
+        "size": {
+          "w": 351,
+          "h": 346
+        },
+        "output_path": "assets/section_island_adventures/ambiente/169_row1_capa_7.png",
+        "pct_canvas": {
+          "left": 10.3134,
+          "top": 11.0975,
+          "width": 10.6784,
+          "height": 2.6463
+        },
+        "pct_row": {
+          "left": 0.0,
+          "top": 71.5438,
+          "width": 13.2955,
+          "height": 19.9309
+        }
+      },
+      {
+        "layer_name": "Capa 46",
+        "layer_path": "row1/Capa 46",
+        "kind": "pixel",
+        "bbox": [
+          1811,
+          1534,
+          2411,
+          1771
+        ],
+        "size": {
+          "w": 600,
+          "h": 237
+        },
+        "output_path": "assets/section_island_adventures/ambiente/167_row1_capa_46.png",
+        "pct_canvas": {
+          "left": 55.0958,
+          "top": 11.7323,
+          "width": 18.2537,
+          "height": 1.8126
+        },
+        "pct_row": {
+          "left": 55.7576,
+          "top": 76.3249,
+          "width": 22.7273,
+          "height": 13.6521
+        }
+      },
+      {
+        "layer_name": "Capa 51",
+        "layer_path": "row1/Capa 51",
+        "kind": "pixel",
+        "bbox": [
+          713,
+          1604,
+          952,
+          1711
+        ],
+        "size": {
+          "w": 239,
+          "h": 107
+        },
+        "output_path": "assets/section_island_adventures/ambiente/182_row1_capa_51.png",
+        "pct_canvas": {
+          "left": 21.6915,
+          "top": 12.2677,
+          "width": 7.2711,
+          "height": 0.8184
+        },
+        "pct_row": {
+          "left": 14.1667,
+          "top": 80.3571,
+          "width": 9.053,
+          "height": 6.1636
+        }
+      }
+    ],
+    "row2": [
+      {
+        "layer_name": "back",
+        "layer_path": "row2/back",
+        "kind": "pixel",
+        "bbox": [
+          0,
+          2004,
+          3287,
+          3948
+        ],
+        "size": {
+          "w": 3287,
+          "h": 1944
+        },
+        "output_path": "assets/section_island_adventures/paisaje/158_row2_back.png",
+        "pct_canvas": {
+          "left": 0.0,
+          "top": 15.327,
+          "width": 100.0,
+          "height": 14.8681
+        },
+        "pct_row": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 100.0
+        }
+      },
+      {
+        "layer_name": "stomparround@2x",
+        "layer_path": "row2/stomparround@2x",
+        "kind": "pixel",
+        "bbox": [
+          313,
+          2273,
+          1541,
+          3595
+        ],
+        "size": {
+          "w": 1228,
+          "h": 1322
+        },
+        "output_path": "assets/section_island_adventures/ambiente/159_row2_stomparround_2x.png",
+        "pct_canvas": {
+          "left": 9.5224,
+          "top": 17.3843,
+          "width": 37.3593,
+          "height": 10.1109
+        },
+        "pct_row": {
+          "left": 9.5224,
+          "top": 13.8374,
+          "width": 37.3593,
+          "height": 68.0041
+        }
+      },
+      {
+        "layer_name": "Discover how !",
+        "layer_path": "row2/bloque videoerecha/Discover how !",
+        "kind": "type",
+        "bbox": [
+          2101,
+          2385,
+          2746,
+          2442
+        ],
+        "size": {
+          "w": 645,
+          "h": 57
+        },
+        "output_path": "assets/section_island_adventures/letras/163_row2_bloque_videoerecha_discover_how.png",
+        "pct_canvas": {
+          "left": 63.9185,
+          "top": 18.2409,
+          "width": 19.6228,
+          "height": 0.4359
+        },
+        "pct_row": {
+          "left": 63.9185,
+          "top": 19.5988,
+          "width": 19.6228,
+          "height": 2.9321
+        }
+      },
+      {
+        "layer_name": "Capa 14",
+        "layer_path": "row2/bloque videoerecha/Capa 14",
+        "kind": "pixel",
+        "bbox": [
+          1748,
+          2513,
+          3036,
+          3462
+        ],
+        "size": {
+          "w": 1288,
+          "h": 949
+        },
+        "output_path": "assets/section_island_adventures/ambiente/161_row2_bloque_videoerecha_capa_14.png",
+        "pct_canvas": {
+          "left": 53.1792,
+          "top": 19.2199,
+          "width": 39.1847,
+          "height": 7.2581
+        },
+        "pct_row": {
+          "left": 53.1792,
+          "top": 26.1831,
+          "width": 39.1847,
+          "height": 48.8169
+        }
+      },
+      {
+        "layer_name": "Capa 15",
+        "layer_path": "row2/bloque videoerecha/Capa 15",
+        "kind": "pixel",
+        "bbox": [
+          1756,
+          2571,
+          3036,
+          3390
+        ],
+        "size": {
+          "w": 1280,
+          "h": 819
+        },
+        "output_path": "assets/section_island_adventures/ambiente/160_row2_bloque_videoerecha_capa_15.png",
+        "pct_canvas": {
+          "left": 53.4226,
+          "top": 19.6635,
+          "width": 38.9413,
+          "height": 6.2639
+        },
+        "pct_row": {
+          "left": 53.4226,
+          "top": 29.1667,
+          "width": 38.9413,
+          "height": 42.1296
+        }
+      },
+      {
+        "layer_name": "SEE VIDEO",
+        "layer_path": "row2/bloque videoerecha/SEE VIDEO",
+        "kind": "type",
+        "bbox": [
+          2192,
+          3373,
+          2390,
+          3411
+        ],
+        "size": {
+          "w": 198,
+          "h": 38
+        },
+        "output_path": "assets/section_island_adventures/letras/162_row2_bloque_videoerecha_see_video.png",
+        "pct_canvas": {
+          "left": 66.6869,
+          "top": 25.7973,
+          "width": 6.0237,
+          "height": 0.2906
+        },
+        "pct_row": {
+          "left": 66.6869,
+          "top": 70.4218,
+          "width": 6.0237,
+          "height": 1.9547
+        }
+      },
+      {
+        "layer_name": "Capa 16",
+        "layer_path": "row2/bloque videoerecha/Capa 16",
+        "kind": "pixel",
+        "bbox": [
+          2145,
+          3382,
+          2171,
+          3412
+        ],
+        "size": {
+          "w": 26,
+          "h": 30
+        },
+        "output_path": "assets/section_island_adventures/ambiente/164_row2_bloque_videoerecha_capa_16.png",
+        "pct_canvas": {
+          "left": 65.2571,
+          "top": 25.8662,
+          "width": 0.791,
+          "height": 0.2294
+        },
+        "pct_row": {
+          "left": 65.2571,
+          "top": 70.8848,
+          "width": 0.791,
+          "height": 1.5432
+        }
+      }
+    ],
+    "row3": [
+      {
+        "layer_name": "Relleno generativo 2 copia",
+        "layer_path": "row3/Relleno generativo 2 copia",
+        "kind": "pixel",
+        "bbox": [
+          0,
+          3726,
+          3287,
+          6429
+        ],
+        "size": {
+          "w": 3287,
+          "h": 2703
+        },
+        "output_path": "assets/section_island_adventures/paisaje/032_row3_relleno_generativo_2_copia.png",
+        "pct_canvas": {
+          "left": 0.0,
+          "top": 28.4971,
+          "width": 100.0,
+          "height": 20.673
+        },
+        "pct_row": {
+          "left": 7.7044,
+          "top": 0.0,
+          "width": 86.4318,
+          "height": 91.9701
+        }
+      },
+      {
+        "layer_name": "ChatGPT Image 24 feb 2026, 17_37_05",
+        "layer_path": "row3/texto/ChatGPT Image 24 feb 2026, 17_37_05",
+        "kind": "pixel",
+        "bbox": [
+          1046,
+          4099,
+          2241,
+          4721
+        ],
+        "size": {
+          "w": 1195,
+          "h": 622
+        },
+        "output_path": "assets/section_island_adventures/letras/156_row3_texto_chatgpt_image_24_feb_2026_17_37_05.png",
+        "pct_canvas": {
+          "left": 31.8223,
+          "top": 31.3499,
+          "width": 36.3553,
+          "height": 4.7572
+        },
+        "pct_row": {
+          "left": 35.209,
+          "top": 12.6914,
+          "width": 31.4226,
+          "height": 21.1637
+        }
+      },
+      {
+        "layer_name": "Capa 27",
+        "layer_path": "row3/texto/Capa 27",
+        "kind": "pixel",
+        "bbox": [
+          1358,
+          4131,
+          1874,
+          4249
+        ],
+        "size": {
+          "w": 516,
+          "h": 118
+        },
+        "output_path": "assets/section_island_adventures/letras/157_row3_texto_capa_27.png",
+        "pct_canvas": {
+          "left": 41.3143,
+          "top": 31.5946,
+          "width": 15.6982,
+          "height": 0.9025
+        },
+        "pct_row": {
+          "left": 43.4131,
+          "top": 13.7802,
+          "width": 13.5682,
+          "height": 4.015
+        }
+      },
+      {
+        "layer_name": "switch3",
+        "layer_path": "row3/switch3",
+        "kind": "smartobject",
+        "bbox": [
+          514,
+          4905,
+          1150,
+          4991
+        ],
+        "size": {
+          "w": 636,
+          "h": 86
+        },
+        "output_path": "assets/section_island_adventures/ambiente/155_row3_switch3.png",
+        "pct_canvas": {
+          "left": 15.6374,
+          "top": 37.5143,
+          "width": 19.349,
+          "height": 0.6577
+        },
+        "pct_row": {
+          "left": 21.2201,
+          "top": 40.1157,
+          "width": 16.7236,
+          "height": 2.9262
+        }
+      },
+      {
+        "layer_name": "Capa 67",
+        "layer_path": "row3/selección perros/SKYE/Capa 67",
+        "kind": "pixel",
+        "bbox": [
+          2784,
+          5030,
+          2981,
+          5254
+        ],
+        "size": {
+          "w": 197,
+          "h": 224
+        },
+        "output_path": "assets/section_island_adventures/personajes/042_row3_seleccion_perros_skye_capa_67.png",
+        "pct_canvas": {
+          "left": 84.6973,
+          "top": 38.4704,
+          "width": 5.9933,
+          "height": 1.7132
+        },
+        "pct_row": {
+          "left": 80.9098,
+          "top": 44.3688,
+          "width": 5.1801,
+          "height": 7.6216
+        }
+      },
+      {
+        "layer_name": "SKYE",
+        "layer_path": "row3/selección perros/SKYE/SKYE",
+        "kind": "type",
+        "bbox": [
+          1790,
+          5046,
+          2269,
+          5193
+        ],
+        "size": {
+          "w": 479,
+          "h": 147
+        },
+        "output_path": "assets/section_island_adventures/letras/046_row3_seleccion_perros_skye_skye.png",
+        "pct_canvas": {
+          "left": 54.457,
+          "top": 38.5927,
+          "width": 14.5726,
+          "height": 1.1243
+        },
+        "pct_row": {
+          "left": 54.7725,
+          "top": 44.9132,
+          "width": 12.5953,
+          "height": 5.0017
+        }
+      },
+      {
+        "layer_name": "Capa 55",
+        "layer_path": "row3/selección perros/SKYE/Capa 55",
+        "kind": "pixel",
+        "bbox": [
+          2465,
+          5077,
+          2920,
+          5823
+        ],
+        "size": {
+          "w": 455,
+          "h": 746
+        },
+        "output_path": "assets/section_island_adventures/personajes/040_row3_seleccion_perros_skye_capa_55.png",
+        "pct_canvas": {
+          "left": 74.9924,
+          "top": 38.8298,
+          "width": 13.8424,
+          "height": 5.7055
+        },
+        "pct_row": {
+          "left": 72.5217,
+          "top": 45.968,
+          "width": 11.9642,
+          "height": 25.3828
+        }
+      },
+      {
+        "layer_name": "Capa 31",
+        "layer_path": "row3/selección perros/Capa 31",
+        "kind": "pixel",
+        "bbox": [
+          243,
+          5112,
+          636,
+          5499
+        ],
+        "size": {
+          "w": 393,
+          "h": 387
+        },
+        "output_path": "assets/section_island_adventures/personajes/033_row3_seleccion_perros_capa_31.png",
+        "pct_canvas": {
+          "left": 7.3928,
+          "top": 39.0975,
+          "width": 11.9562,
+          "height": 2.9598
+        },
+        "pct_row": {
+          "left": 14.0941,
+          "top": 47.1589,
+          "width": 10.3339,
+          "height": 13.1677
+        }
+      },
+      {
+        "layer_name": "skye2",
+        "layer_path": "row3/selección perros/SKYE/skye2",
+        "kind": "smartobject",
+        "bbox": [
+          2159,
+          5118,
+          2985,
+          6020
+        ],
+        "size": {
+          "w": 826,
+          "h": 902
+        },
+        "output_path": "assets/section_island_adventures/personajes/047_row3_seleccion_perros_skye_skye2.png",
+        "pct_canvas": {
+          "left": 65.683,
+          "top": 39.1434,
+          "width": 25.1293,
+          "height": 6.8987
+        },
+        "pct_row": {
+          "left": 64.4754,
+          "top": 47.363,
+          "width": 21.7197,
+          "height": 30.6907
+        }
+      },
+      {
+        "layer_name": "marshal",
+        "layer_path": "row3/selección perros/marshal",
+        "kind": "smartobject",
+        "bbox": [
+          697,
+          5123,
+          1060,
+          5501
+        ],
+        "size": {
+          "w": 363,
+          "h": 378
+        },
+        "output_path": "assets/section_island_adventures/personajes/037_row3_seleccion_perros_marshal.png",
+        "pct_canvas": {
+          "left": 21.2047,
+          "top": 39.1816,
+          "width": 11.0435,
+          "height": 2.891
+        },
+        "pct_row": {
+          "left": 26.0321,
+          "top": 47.5332,
+          "width": 9.5451,
+          "height": 12.8615
+        }
+      },
+      {
+        "layer_name": "Capa 32",
+        "layer_path": "row3/selección perros/Capa 32",
+        "kind": "pixel",
+        "bbox": [
+          1130,
+          5132,
+          1529,
+          5481
+        ],
+        "size": {
+          "w": 399,
+          "h": 349
+        },
+        "output_path": "assets/section_island_adventures/personajes/036_row3_seleccion_perros_capa_32.png",
+        "pct_canvas": {
+          "left": 34.3779,
+          "top": 39.2505,
+          "width": 12.1387,
+          "height": 2.6692
+        },
+        "pct_row": {
+          "left": 37.4178,
+          "top": 47.8394,
+          "width": 10.4917,
+          "height": 11.8748
+        }
+      },
+      {
+        "layer_name": "Capa 66",
+        "layer_path": "row3/selección perros/SKYE/Capa 66",
+        "kind": "pixel",
+        "bbox": [
+          1756,
+          5241,
+          1799,
+          5280
+        ],
+        "size": {
+          "w": 43,
+          "h": 39
+        },
+        "output_path": "assets/section_island_adventures/personajes/050_row3_seleccion_perros_skye_capa_66.png",
+        "pct_canvas": {
+          "left": 53.4226,
+          "top": 40.0841,
+          "width": 1.3082,
+          "height": 0.2983
+        },
+        "pct_row": {
+          "left": 53.8785,
+          "top": 51.5481,
+          "width": 1.1307,
+          "height": 1.327
+        }
+      },
+      {
+        "layer_name": "THIS PUP´S",
+        "layer_path": "row3/selección perros/SKYE/THIS PUP´S",
+        "kind": "type",
+        "bbox": [
+          1818,
+          5251,
+          2013,
+          5280
+        ],
+        "size": {
+          "w": 195,
+          "h": 29
+        },
+        "output_path": "assets/section_island_adventures/letras/049_row3_seleccion_perros_skye_this_pup_s.png",
+        "pct_canvas": {
+          "left": 55.3088,
+          "top": 40.1606,
+          "width": 5.9325,
+          "height": 0.2218
+        },
+        "pct_row": {
+          "left": 55.5088,
+          "top": 51.8884,
+          "width": 5.1275,
+          "height": 0.9867
+        }
+      },
+      {
+        "layer_name": "Capa 63 copia",
+        "layer_path": "row3/selección perros/SKYE/Capa 63 copia",
+        "kind": "pixel",
+        "bbox": [
+          2124,
+          5286,
+          2167,
+          5325
+        ],
+        "size": {
+          "w": 43,
+          "h": 39
+        },
+        "output_path": "assets/section_island_adventures/personajes/051_row3_seleccion_perros_skye_capa_63_copia.png",
+        "pct_canvas": {
+          "left": 64.6182,
+          "top": 40.4283,
+          "width": 1.3082,
+          "height": 0.2983
+        },
+        "pct_row": {
+          "left": 63.5551,
+          "top": 53.0793,
+          "width": 1.1307,
+          "height": 1.327
+        }
+      },
+      {
+        "layer_name": "GOTTA FLY!",
+        "layer_path": "row3/selección perros/SKYE/GOTTA FLY!",
+        "kind": "type",
+        "bbox": [
+          1751,
+          5299,
+          2117,
+          5376
+        ],
+        "size": {
+          "w": 366,
+          "h": 77
+        },
+        "output_path": "assets/section_island_adventures/letras/048_row3_seleccion_perros_skye_gotta_fly.png",
+        "pct_canvas": {
+          "left": 53.2705,
+          "top": 40.5277,
+          "width": 11.1348,
+          "height": 0.5889
+        },
+        "pct_row": {
+          "left": 53.747,
+          "top": 53.5216,
+          "width": 9.624,
+          "height": 2.6199
+        }
+      },
+      {
+        "layer_name": "Capa 61",
+        "layer_path": "row3/selección perros/SKYE/SCREEN/Capa 61",
+        "kind": "pixel",
+        "bbox": [
+          1746,
+          5420,
+          2351,
+          5817
+        ],
+        "size": {
+          "w": 605,
+          "h": 397
+        },
+        "output_path": "assets/section_island_adventures/personajes/043_row3_seleccion_perros_skye_screen_capa_61.png",
+        "pct_canvas": {
+          "left": 53.1183,
+          "top": 41.4532,
+          "width": 18.4058,
+          "height": 3.0363
+        },
+        "pct_row": {
+          "left": 53.6156,
+          "top": 57.6387,
+          "width": 15.9085,
+          "height": 13.508
+        }
+      },
+      {
+        "layer_name": "Gameplay (3)",
+        "layer_path": "row3/selección perros/SKYE/SCREEN/Gameplay (3)",
+        "kind": "pixel",
+        "bbox": [
+          1759,
+          5439,
+          2350,
+          5772
+        ],
+        "size": {
+          "w": 591,
+          "h": 333
+        },
+        "output_path": "assets/section_island_adventures/personajes/045_row3_seleccion_perros_skye_screen_gameplay_3.png",
+        "pct_canvas": {
+          "left": 53.5138,
+          "top": 41.5985,
+          "width": 17.9799,
+          "height": 2.5468
+        },
+        "pct_row": {
+          "left": 53.9574,
+          "top": 58.2851,
+          "width": 15.5404,
+          "height": 11.3304
+        }
+      },
+      {
+        "layer_name": "Capa 23",
+        "layer_path": "row3/selección perros/SKYE/Capa 23",
+        "kind": "pixel",
+        "bbox": [
+          1902,
+          5443,
+          2255,
+          5678
+        ],
+        "size": {
+          "w": 353,
+          "h": 235
+        },
+        "output_path": "assets/section_island_adventures/personajes/041_row3_seleccion_perros_skye_capa_23.png",
+        "pct_canvas": {
+          "left": 57.8643,
+          "top": 41.6291,
+          "width": 10.7393,
+          "height": 1.7973
+        },
+        "pct_row": {
+          "left": 57.7176,
+          "top": 58.4212,
+          "width": 9.2821,
+          "height": 7.9959
+        }
+      },
+      {
+        "layer_name": "Capa 59",
+        "layer_path": "row3/selección perros/SKYE/SCREEN/Capa 59",
+        "kind": "pixel",
+        "bbox": [
+          1769,
+          5446,
+          2321,
+          5765
+        ],
+        "size": {
+          "w": 552,
+          "h": 319
+        },
+        "output_path": "assets/section_island_adventures/personajes/044_row3_seleccion_perros_skye_screen_capa_59.png",
+        "pct_canvas": {
+          "left": 53.8181,
+          "top": 41.652,
+          "width": 16.7934,
+          "height": 2.4398
+        },
+        "pct_row": {
+          "left": 54.2204,
+          "top": 58.5233,
+          "width": 14.5149,
+          "height": 10.854
+        }
+      },
+      {
+        "layer_name": "rubble copia",
+        "layer_path": "row3/selección perros/rubble copia",
+        "kind": "smartobject",
+        "bbox": [
+          264,
+          5566,
+          636,
+          5917
+        ],
+        "size": {
+          "w": 372,
+          "h": 351
+        },
+        "output_path": "assets/section_island_adventures/personajes/038_row3_seleccion_perros_rubble_copia.png",
+        "pct_canvas": {
+          "left": 8.0316,
+          "top": 42.5698,
+          "width": 11.3173,
+          "height": 2.6845
+        },
+        "pct_row": {
+          "left": 14.6463,
+          "top": 62.6063,
+          "width": 9.7818,
+          "height": 11.9428
+        }
+      },
+      {
+        "layer_name": "ROCKY",
+        "layer_path": "row3/selección perros/ROCKY",
+        "kind": "smartobject",
+        "bbox": [
+          687,
+          5572,
+          1063,
+          5920
+        ],
+        "size": {
+          "w": 376,
+          "h": 348
+        },
+        "output_path": "assets/section_island_adventures/personajes/035_row3_seleccion_perros_rocky.png",
+        "pct_canvas": {
+          "left": 20.9005,
+          "top": 42.6157,
+          "width": 11.439,
+          "height": 2.6616
+        },
+        "pct_row": {
+          "left": 25.7691,
+          "top": 62.8105,
+          "width": 9.8869,
+          "height": 11.8408
+        }
+      },
+      {
+        "layer_name": "zuma",
+        "layer_path": "row3/selección perros/zuma",
+        "kind": "pixel",
+        "bbox": [
+          1130,
+          5576,
+          1499,
+          5917
+        ],
+        "size": {
+          "w": 369,
+          "h": 341
+        },
+        "output_path": "assets/section_island_adventures/personajes/034_row3_seleccion_perros_zuma.png",
+        "pct_canvas": {
+          "left": 34.3779,
+          "top": 42.6463,
+          "width": 11.226,
+          "height": 2.608
+        },
+        "pct_row": {
+          "left": 37.4178,
+          "top": 62.9466,
+          "width": 9.7029,
+          "height": 11.6026
+        }
+      },
+      {
+        "layer_name": "Capa 56",
+        "layer_path": "row3/selección perros/SKYE/Capa 56",
+        "kind": "pixel",
+        "bbox": [
+          2183,
+          5797,
+          2823,
+          5917
+        ],
+        "size": {
+          "w": 640,
+          "h": 120
+        },
+        "output_path": "assets/section_island_adventures/personajes/039_row3_seleccion_perros_skye_capa_56.png",
+        "pct_canvas": {
+          "left": 66.4131,
+          "top": 44.3365,
+          "width": 19.4706,
+          "height": 0.9178
+        },
+        "pct_row": {
+          "left": 65.1065,
+          "top": 70.4661,
+          "width": 16.8288,
+          "height": 4.083
+        }
+      },
+      {
+        "layer_name": "planta3",
+        "layer_path": "row3/plantas/planta3",
+        "kind": "smartobject",
+        "bbox": [
+          1497,
+          5936,
+          3156,
+          6665
+        ],
+        "size": {
+          "w": 1659,
+          "h": 729
+        },
+        "output_path": "assets/section_island_adventures/vegetales/028_row3_plantas_planta3.png",
+        "pct_canvas": {
+          "left": 45.543,
+          "top": 45.3996,
+          "width": 50.4716,
+          "height": 5.5755
+        },
+        "pct_row": {
+          "left": 47.0681,
+          "top": 75.1956,
+          "width": 43.6235,
+          "height": 24.8044
+        }
+      },
+      {
+        "layer_name": "PLANTA9",
+        "layer_path": "row3/plantas/PLANTA9",
+        "kind": "smartobject",
+        "bbox": [
+          2498,
+          5998,
+          3510,
+          6587
+        ],
+        "size": {
+          "w": 1012,
+          "h": 589
+        },
+        "output_path": "assets/section_island_adventures/vegetales/031_row3_plantas_planta9.png",
+        "pct_canvas": {
+          "left": 75.9963,
+          "top": 45.8738,
+          "width": 30.788,
+          "height": 4.5048
+        },
+        "pct_row": {
+          "left": 73.3894,
+          "top": 77.3052,
+          "width": 26.6106,
+          "height": 20.0408
+        }
+      },
+      {
+        "layer_name": "planta7",
+        "layer_path": "row3/plantas/planta7",
+        "kind": "smartobject",
+        "bbox": [
+          -293,
+          6030,
+          1171,
+          6571
+        ],
+        "size": {
+          "w": 1464,
+          "h": 541
+        },
+        "output_path": "assets/section_island_adventures/vegetales/029_row3_plantas_planta7.png",
+        "pct_canvas": {
+          "left": -8.9139,
+          "top": 46.1185,
+          "width": 44.5391,
+          "height": 4.1377
+        },
+        "pct_row": {
+          "left": 0.0,
+          "top": 78.394,
+          "width": 38.4959,
+          "height": 18.4076
+        }
+      },
+      {
+        "layer_name": "LIANA copia",
+        "layer_path": "row3/plantas/LIANA copia",
+        "kind": "pixel",
+        "bbox": [
+          1670,
+          6220,
+          2250,
+          6517
+        ],
+        "size": {
+          "w": 580,
+          "h": 297
+        },
+        "output_path": "assets/section_island_adventures/vegetales/027_row3_plantas_liana_copia.png",
+        "pct_canvas": {
+          "left": 50.8062,
+          "top": 47.5717,
+          "width": 17.6453,
+          "height": 2.2715
+        },
+        "pct_row": {
+          "left": 51.6171,
+          "top": 84.8588,
+          "width": 15.2511,
+          "height": 10.1055
+        }
+      },
+      {
+        "layer_name": "LIANA",
+        "layer_path": "row3/plantas/LIANA",
+        "kind": "smartobject",
+        "bbox": [
+          934,
+          6300,
+          1514,
+          6644
+        ],
+        "size": {
+          "w": 580,
+          "h": 344
+        },
+        "output_path": "assets/section_island_adventures/vegetales/030_row3_plantas_liana.png",
+        "pct_canvas": {
+          "left": 28.415,
+          "top": 48.1836,
+          "width": 17.6453,
+          "height": 2.631
+        },
+        "pct_row": {
+          "left": 32.264,
+          "top": 87.5808,
+          "width": 15.2511,
+          "height": 11.7047
+        }
+      }
+    ],
+    "row4": [
+      {
+        "layer_name": "Capa 34",
+        "layer_path": "row4/Grupo 5/barra/Capa 34",
+        "kind": "pixel",
+        "bbox": [
+          410,
+          7023,
+          2878,
+          7158
+        ],
+        "size": {
+          "w": 2468,
+          "h": 135
+        },
+        "output_path": "assets/section_island_adventures/ambiente/016_row4_grupo_5_barra_capa_34.png",
+        "pct_canvas": {
+          "left": 12.4734,
+          "top": 53.7132,
+          "width": 75.0837,
+          "height": 1.0325
+        },
+        "pct_row": {
+          "left": 0.0,
+          "top": 0.0,
+          "width": 100.0,
+          "height": 10.3607
+        }
+      },
+      {
+        "layer_name": "Capa 36",
+        "layer_path": "row4/Grupo 5/barra/Capa 36",
+        "kind": "pixel",
+        "bbox": [
+          718,
+          7050,
+          1144,
+          7137
+        ],
+        "size": {
+          "w": 426,
+          "h": 87
+        },
+        "output_path": "assets/section_island_adventures/ambiente/017_row4_grupo_5_barra_capa_36.png",
+        "pct_canvas": {
+          "left": 21.8436,
+          "top": 53.9197,
+          "width": 12.9601,
+          "height": 0.6654
+        },
+        "pct_row": {
+          "left": 12.4797,
+          "top": 2.0721,
+          "width": 17.2609,
+          "height": 6.6769
+        }
+      },
+      {
+        "layer_name": "Capa 36 copia 2",
+        "layer_path": "row4/Grupo 5/barra/Capa 36 copia 2",
+        "kind": "pixel",
+        "bbox": [
+          2197,
+          7050,
+          2623,
+          7137
+        ],
+        "size": {
+          "w": 426,
+          "h": 87
+        },
+        "output_path": "assets/section_island_adventures/ambiente/019_row4_grupo_5_barra_capa_36_copia_2.png",
+        "pct_canvas": {
+          "left": 66.8391,
+          "top": 53.9197,
+          "width": 12.9601,
+          "height": 0.6654
+        },
+        "pct_row": {
+          "left": 72.4068,
+          "top": 2.0721,
+          "width": 17.2609,
+          "height": 6.6769
+        }
+      },
+      {
+        "layer_name": "VEHICULOS",
+        "layer_path": "row4/Grupo 5/barra/VEHICULOS",
+        "kind": "type",
+        "bbox": [
+          1789,
+          7075,
+          2038,
+          7107
+        ],
+        "size": {
+          "w": 249,
+          "h": 32
+        },
+        "output_path": "assets/section_island_adventures/letras/023_row4_grupo_5_barra_vehiculos.png",
+        "pct_canvas": {
+          "left": 54.4265,
+          "top": 54.1109,
+          "width": 7.5753,
+          "height": 0.2447
+        },
+        "pct_row": {
+          "left": 55.8752,
+          "top": 3.9908,
+          "width": 10.0891,
+          "height": 2.4559
+        }
+      },
+      {
+        "layer_name": "CUSTOMIZE",
+        "layer_path": "row4/Grupo 5/barra/CUSTOMIZE",
+        "kind": "type",
+        "bbox": [
+          801,
+          7076,
+          1059,
+          7107
+        ],
+        "size": {
+          "w": 258,
+          "h": 31
+        },
+        "output_path": "assets/section_island_adventures/letras/021_row4_grupo_5_barra_customize.png",
+        "pct_canvas": {
+          "left": 24.3687,
+          "top": 54.1185,
+          "width": 7.8491,
+          "height": 0.2371
+        },
+        "pct_row": {
+          "left": 15.8428,
+          "top": 4.0675,
+          "width": 10.4538,
+          "height": 2.3791
+        }
+      },
+      {
+        "layer_name": "RESCUES",
+        "layer_path": "row4/Grupo 5/barra/RESCUES",
+        "kind": "type",
+        "bbox": [
+          1329,
+          7076,
+          1523,
+          7107
+        ],
+        "size": {
+          "w": 194,
+          "h": 31
+        },
+        "output_path": "assets/section_island_adventures/letras/022_row4_grupo_5_barra_rescues.png",
+        "pct_canvas": {
+          "left": 40.432,
+          "top": 54.1185,
+          "width": 5.902,
+          "height": 0.2371
+        },
+        "pct_row": {
+          "left": 37.2366,
+          "top": 4.0675,
+          "width": 7.8606,
+          "height": 2.3791
+        }
+      },
+      {
+        "layer_name": "DINOSAURIOS",
+        "layer_path": "row4/Grupo 5/barra/DINOSAURIOS",
+        "kind": "type",
+        "bbox": [
+          2258,
+          7076,
+          2564,
+          7107
+        ],
+        "size": {
+          "w": 306,
+          "h": 31
+        },
+        "output_path": "assets/section_island_adventures/letras/024_row4_grupo_5_barra_dinosaurios.png",
+        "pct_canvas": {
+          "left": 68.6949,
+          "top": 54.1185,
+          "width": 9.3094,
+          "height": 0.2371
+        },
+        "pct_row": {
+          "left": 74.8784,
+          "top": 4.0675,
+          "width": 12.3987,
+          "height": 2.3791
+        }
+      },
+      {
+        "layer_name": "Capa 72",
+        "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 72",
+        "kind": "pixel",
+        "bbox": [
+          1873,
+          7270,
+          2720,
+          8326
+        ],
+        "size": {
+          "w": 847,
+          "h": 1056
+        },
+        "output_path": "assets/section_island_adventures/ambiente/009_row4_personaliza_copia_grupo_3_copia_3_capa_72.png",
+        "pct_canvas": {
+          "left": 56.9821,
+          "top": 55.6023,
+          "width": 25.7682,
+          "height": 8.0765
+        },
+        "pct_row": {
+          "left": 59.2788,
+          "top": 18.9563,
+          "width": 34.3193,
+          "height": 81.0437
+        }
+      },
+      {
+        "layer_name": "Capa 79",
+        "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 79",
+        "kind": "pixel",
+        "bbox": [
+          965,
+          7346,
+          1537,
+          7468
+        ],
+        "size": {
+          "w": 572,
+          "h": 122
+        },
+        "output_path": "assets/section_island_adventures/ambiente/012_row4_personaliza_copia_grupo_3_copia_3_capa_79.png",
+        "pct_canvas": {
+          "left": 29.3581,
+          "top": 56.1836,
+          "width": 17.4019,
+          "height": 0.9331
+        },
+        "pct_row": {
+          "left": 22.4878,
+          "top": 24.7889,
+          "width": 23.1767,
+          "height": 9.363
+        }
+      },
+      {
+        "layer_name": "Capa 78",
+        "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 78",
+        "kind": "pixel",
+        "bbox": [
+          468,
+          7371,
+          1653,
+          8129
+        ],
+        "size": {
+          "w": 1185,
+          "h": 758
+        },
+        "output_path": "assets/section_island_adventures/ambiente/015_row4_personaliza_copia_grupo_3_copia_3_capa_78.png",
+        "pct_canvas": {
+          "left": 14.2379,
+          "top": 56.3748,
+          "width": 36.0511,
+          "height": 5.7973
+        },
+        "pct_row": {
+          "left": 2.3501,
+          "top": 26.7076,
+          "width": 48.0146,
+          "height": 58.1734
+        }
+      },
+      {
+        "layer_name": "ChatGPT Image 11 mar 2026, 12_44_54",
+        "layer_path": "row4/personaliza copia/Grupo 3 copia 3/ChatGPT Image 11 mar 2026, 12_44_54",
+        "kind": "smartobject",
+        "bbox": [
+          2018,
+          7466,
+          2534,
+          8161
+        ],
+        "size": {
+          "w": 516,
+          "h": 695
+        },
+        "output_path": "assets/section_island_adventures/ambiente/011_row4_personaliza_copia_grupo_3_copia_3_chatgpt_image_11_mar_2026_12_44_54.png",
+        "pct_canvas": {
+          "left": 61.3934,
+          "top": 57.1013,
+          "width": 15.6982,
+          "height": 5.3155
+        },
+        "pct_row": {
+          "left": 65.154,
+          "top": 33.9985,
+          "width": 20.9076,
+          "height": 53.3384
+        }
+      },
+      {
+        "layer_name": "CUSTOMIZE YOUR FAVORITE HEROES",
+        "layer_path": "row4/Grupo 5/CUSTOMIZE YOUR FAVORITE HEROES",
+        "kind": "type",
+        "bbox": [
+          678,
+          7594,
+          1275,
+          7723
+        ],
+        "size": {
+          "w": 597,
+          "h": 129
+        },
+        "output_path": "assets/section_island_adventures/letras/026_row4_grupo_5_customize_your_favorite_heroes.png",
+        "pct_canvas": {
+          "left": 20.6267,
+          "top": 58.0803,
+          "width": 18.1625,
+          "height": 0.9866
+        },
+        "pct_row": {
+          "left": 10.859,
+          "top": 43.8219,
+          "width": 24.1896,
+          "height": 9.9002
+        }
+      },
+      {
+        "layer_name": "BY COMBINING THEIR EQUIPMENT, HELMET, TOOLS, COLORS...ALL KINDS",
+        "layer_path": "row4/Grupo 5/BY COMBINING THEIR EQUIPMENT, HELMET, TOOLS, COLORS...ALL KINDS",
+        "kind": "type",
+        "bbox": [
+          677,
+          7788,
+          1443,
+          7974
+        ],
+        "size": {
+          "w": 766,
+          "h": 186
+        },
+        "output_path": "assets/section_island_adventures/letras/025_row4_grupo_5_by_combining_their_equipment_helmet_tools_colors_all_kinds.png",
+        "pct_canvas": {
+          "left": 20.5963,
+          "top": 59.5641,
+          "width": 23.3039,
+          "height": 1.4226
+        },
+        "pct_row": {
+          "left": 10.8185,
+          "top": 58.7107,
+          "width": 31.0373,
+          "height": 14.2748
+        }
+      },
+      {
+        "layer_name": "Capa 80",
+        "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 80",
+        "kind": "pixel",
+        "bbox": [
+          533,
+          8125,
+          953,
+          8259
+        ],
+        "size": {
+          "w": 420,
+          "h": 134
+        },
+        "output_path": "assets/section_island_adventures/ambiente/013_row4_personaliza_copia_grupo_3_copia_3_capa_80.png",
+        "pct_canvas": {
+          "left": 16.2154,
+          "top": 62.1415,
+          "width": 12.7776,
+          "height": 1.0249
+        },
+        "pct_row": {
+          "left": 4.9838,
+          "top": 84.5741,
+          "width": 17.0178,
+          "height": 10.284
+        }
+      },
+      {
+        "layer_name": "Capa 81",
+        "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 81",
+        "kind": "pixel",
+        "bbox": [
+          1210,
+          8126,
+          1612,
+          8291
+        ],
+        "size": {
+          "w": 402,
+          "h": 165
+        },
+        "output_path": "assets/section_island_adventures/ambiente/014_row4_personaliza_copia_grupo_3_copia_3_capa_81.png",
+        "pct_canvas": {
+          "left": 36.8117,
+          "top": 62.1491,
+          "width": 12.23,
+          "height": 1.262
+        },
+        "pct_row": {
+          "left": 32.4149,
+          "top": 84.6508,
+          "width": 16.2885,
+          "height": 12.6631
+        }
+      }
+    ],
+    "row5": [
+      {
+        "layer_name": "Capa 43",
+        "layer_path": "row5/TAKECARE/Capa 43",
+        "kind": "pixel",
+        "bbox": [
+          -103,
+          8693,
+          1565,
+          9883
+        ],
+        "size": {
+          "w": 1668,
+          "h": 1190
+        },
+        "output_path": "assets/section_island_adventures/ambiente/004_row5_takecare_capa_43.png",
+        "pct_canvas": {
+          "left": -3.1336,
+          "top": 66.4857,
+          "width": 50.7454,
+          "height": 9.1013
+        },
+        "pct_row": {
+          "left": 4.8208,
+          "top": 0.0,
+          "width": 41.2361,
+          "height": 99.3322
+        }
+      },
+      {
+        "layer_name": "Capa 43 copia",
+        "layer_path": "row5/EXPLORE/Capa 43 copia",
+        "kind": "pixel",
+        "bbox": [
+          1788,
+          8693,
+          3456,
+          9883
+        ],
+        "size": {
+          "w": 1668,
+          "h": 1190
+        },
+        "output_path": "assets/section_island_adventures/ambiente/007_row5_explore_capa_43_copia.png",
+        "pct_canvas": {
+          "left": 54.3961,
+          "top": 66.4857,
+          "width": 50.7454,
+          "height": 9.1013
+        },
+        "pct_row": {
+          "left": 51.5698,
+          "top": 0.0,
+          "width": 41.2361,
+          "height": 99.3322
+        }
+      },
+      {
+        "layer_name": "Chase with Dinos (29)",
+        "layer_path": "row5/TAKECARE/Chase with Dinos (29)",
+        "kind": "pixel",
+        "bbox": [
+          -298,
+          8748,
+          1565,
+          9891
+        ],
+        "size": {
+          "w": 1863,
+          "h": 1143
+        },
+        "output_path": "assets/section_island_adventures/personajes/003_row5_takecare_chase_with_dinos_29.png",
+        "pct_canvas": {
+          "left": -9.066,
+          "top": 66.9063,
+          "width": 56.6778,
+          "height": 8.7419
+        },
+        "pct_row": {
+          "left": 0.0,
+          "top": 4.591,
+          "width": 46.0569,
+          "height": 95.409
+        }
+      },
+      {
+        "layer_name": "TAKE CARE",
+        "layer_path": "row5/TAKECARE/TAKE CARE",
+        "kind": "type",
+        "bbox": [
+          732,
+          8765,
+          1026,
+          8811
+        ],
+        "size": {
+          "w": 294,
+          "h": 46
+        },
+        "output_path": "assets/section_island_adventures/letras/005_row5_takecare_take_care.png",
+        "pct_canvas": {
+          "left": 22.2695,
+          "top": 67.0363,
+          "width": 8.9443,
+          "height": 0.3518
+        },
+        "pct_row": {
+          "left": 25.4635,
+          "top": 6.01,
+          "width": 7.2682,
+          "height": 3.8397
+        }
+      },
+      {
+        "layer_name": "EXPLORE",
+        "layer_path": "row5/EXPLORE/EXPLORE",
+        "kind": "type",
+        "bbox": [
+          2649,
+          8766,
+          2887,
+          8812
+        ],
+        "size": {
+          "w": 238,
+          "h": 46
+        },
+        "output_path": "assets/section_island_adventures/letras/008_row5_explore_explore.png",
+        "pct_canvas": {
+          "left": 80.5902,
+          "top": 67.044,
+          "width": 7.2406,
+          "height": 0.3518
+        },
+        "pct_row": {
+          "left": 72.8554,
+          "top": 6.0935,
+          "width": 5.8838,
+          "height": 3.8397
+        }
+      },
+      {
+        "layer_name": "Skye Airplane (9)_NIN",
+        "layer_path": "row5/EXPLORE/Skye Airplane (9)_NIN",
+        "kind": "pixel",
+        "bbox": [
+          1797,
+          8771,
+          3747,
+          9868
+        ],
+        "size": {
+          "w": 1950,
+          "h": 1097
+        },
+        "output_path": "assets/section_island_adventures/personajes/006_row5_explore_skye_airplane_9_nin.png",
+        "pct_canvas": {
+          "left": 54.6699,
+          "top": 67.0822,
+          "width": 59.3246,
+          "height": 8.3901
+        },
+        "pct_row": {
+          "left": 51.7923,
+          "top": 6.5109,
+          "width": 48.2077,
+          "height": 91.5693
+        }
+      }
+    ]
+  },
+  "notes": [
+    "Coordinates extracted from dinoworld2.psd via exported manifest in section_island_adventures.",
+    "Use pct_row to position elements inside each row container and pct_canvas for global composition."
+  ]
+}

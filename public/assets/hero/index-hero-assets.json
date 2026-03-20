@@ -1,0 +1,181 @@
+{
+  "folder": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\hero-assets",
+  "source_root": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\assets-export-independent-v1",
+  "categories": {
+    "fondo": [
+      {
+        "file": "Capa_6_copia.png",
+        "size_bytes": 5380851,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_6_copia.png"
+      },
+      {
+        "file": "Capa_13.png",
+        "size_bytes": 98302,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_13.png"
+      },
+      {
+        "file": "Capa_18.png",
+        "size_bytes": 187241,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_18.png"
+      },
+      {
+        "file": "Capa_50.png",
+        "size_bytes": 58699,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_50.png"
+      },
+      {
+        "file": "Capa_51.png",
+        "size_bytes": 14821,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_51.png"
+      },
+      {
+        "file": "Capa_52.png",
+        "size_bytes": 1171,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_52.png"
+      },
+      {
+        "file": "Capa_53.png",
+        "size_bytes": 19861,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_53.png"
+      },
+      {
+        "file": "Capa_54.png",
+        "size_bytes": 66791,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_54.png"
+      },
+      {
+        "file": "Capa_55.png",
+        "size_bytes": 85645,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_55.png"
+      },
+      {
+        "file": "Capa_56.png",
+        "size_bytes": 23303,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_56.png"
+      },
+      {
+        "file": "Capa_57.png",
+        "size_bytes": 129777,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_57.png"
+      },
+      {
+        "file": "Capa_58.png",
+        "size_bytes": 128032,
+        "source": "demo1\\assets-export-independent-v1\\row1\\Capa_58.png"
+      },
+      {
+        "file": "LIANA.png",
+        "size_bytes": 65073,
+        "source": "demo1\\assets-export-independent-v1\\row1\\LIANA.png"
+      },
+      {
+        "file": "LIANA_2.png",
+        "size_bytes": 90296,
+        "source": "demo1\\assets-export-independent-v1\\row1\\LIANA_2.png"
+      }
+    ],
+    "paisaje": [
+      {
+        "file": "ChatGPT_Image_22_feb_2026__21_00_08.png",
+        "size_bytes": 6336782,
+        "source": "demo1\\assets-export-independent-v1\\row1\\ChatGPT_Image_22_feb_2026__21_00_08.png"
+      }
+    ],
+    "animales": [
+      {
+        "file": "chase.png",
+        "size_bytes": 316976,
+        "source": "demo1\\assets-export-independent-v1\\row1\\chase.png"
+      },
+      {
+        "file": "timmyrex.png",
+        "size_bytes": 978489,
+        "source": "demo1\\assets-export-independent-v1\\row1\\timmyrex.png"
+      },
+      {
+        "file": "marshal.png",
+        "size_bytes": 428856,
+        "source": "demo1\\assets-export-independent-v1\\row1\\perros\\marshal.png"
+      },
+      {
+        "file": "rex2.png",
+        "size_bytes": 572399,
+        "source": "demo1\\assets-export-independent-v1\\row1\\perros\\rex2.png"
+      },
+      {
+        "file": "rubble.png",
+        "size_bytes": 357438,
+        "source": "demo1\\assets-export-independent-v1\\row1\\perros\\rubble.png"
+      },
+      {
+        "file": "skye.png",
+        "size_bytes": 324617,
+        "source": "demo1\\assets-export-independent-v1\\row1\\perros\\skye.png"
+      },
+      {
+        "file": "zuma.png",
+        "size_bytes": 311936,
+        "source": "demo1\\assets-export-independent-v1\\row1\\perros\\zuma.png"
+      },
+      {
+        "file": "perros.png",
+        "size_bytes": 1916285,
+        "source": "demo1\\assets-export-independent-v1\\groups\\row1\\perros.png"
+      }
+    ],
+    "letras": [
+      {
+        "file": "dinoworld3.png",
+        "size_bytes": 464913,
+        "source": "demo1\\assets-export-independent-v1\\row1\\dinoworld3.png"
+      },
+      {
+        "file": "DISCOVER_NOW.png",
+        "size_bytes": 2107,
+        "source": "demo1\\assets-export-independent-v1\\row1\\discovernow\\DISCOVER_NOW.png"
+      },
+      {
+        "file": "Capa_20.png",
+        "size_bytes": 956,
+        "source": "demo1\\assets-export-independent-v1\\row1\\discovernow\\Capa_20.png"
+      },
+      {
+        "file": "Capa_20_copia.png",
+        "size_bytes": 955,
+        "source": "demo1\\assets-export-independent-v1\\row1\\discovernow\\Capa_20_copia.png"
+      },
+      {
+        "file": "Capa_20_copia_2.png",
+        "size_bytes": 957,
+        "source": "demo1\\assets-export-independent-v1\\row1\\discovernow\\Capa_20_copia_2.png"
+      },
+      {
+        "file": "menu.png",
+        "size_bytes": 22270,
+        "source": "demo1\\assets-export-independent-v1\\row1\\header\\menu.png"
+      },
+      {
+        "file": "menu_2.png",
+        "size_bytes": 15951,
+        "source": "demo1\\assets-export-independent-v1\\row1\\header\\menu_2.png"
+      },
+      {
+        "file": "discovernow.png",
+        "size_bytes": 4076,
+        "source": "demo1\\assets-export-independent-v1\\groups\\row1\\discovernow.png"
+      },
+      {
+        "file": "header.png",
+        "size_bytes": 41412,
+        "source": "demo1\\assets-export-independent-v1\\groups\\row1\\header.png"
+      }
+    ],
+    "logo": [
+      {
+        "file": "PAW_ENG_LOGO.png",
+        "size_bytes": 108190,
+        "source": "demo1\\assets-export-independent-v1\\PAW_ENG_LOGO.png"
+      }
+    ]
+  }
+}

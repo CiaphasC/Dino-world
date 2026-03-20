@@ -1,0 +1,432 @@
+/* ==========================================================================
+   Reset base y tokens de layout
+   --------------------------------------------------------------------------
+   Objetivo: normalizar el box model y asegurar un lienzo estable para
+   animaciones con pin y scrub en GSAP.
+   ========================================================================== */
+:root {
+  --scene-ratio-default: 3327 / 2314;
+  --bg-cream: #ffffe1;
+  --bg-dark: #03061c;
+  --font-ui: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100svh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--bg-dark);
+  font-family: var(--font-ui);
+}
+
+/* ==========================================================================
+   Shell principal
+   --------------------------------------------------------------------------
+   Nota:
+   - `isolation: isolate` evita interferencias de stacking context externos.
+   - `overflow-x: clip` previene scroll horizontal por capas parallax.
+   ========================================================================== */
+.app-shell {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow-x: clip;
+  isolation: isolate;
+  background-color: var(--bg-cream);
+}
+
+.hero-shell {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 720px;
+  overflow: visible;
+  isolation: isolate;
+  z-index: 40;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 55;
+  pointer-events: none;
+}
+
+.header-canvas {
+  position: relative;
+  width: min(1680px, 100%);
+  height: clamp(6rem, 19vh, 13rem);
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+}
+
+.site-header .brand-paw-logo-wrapper,
+.site-header .brand-menu-left-wrapper,
+.site-header .brand-menu-right-wrapper {
+  position: absolute;
+  transform-origin: center top;
+}
+
+.site-header .brand-paw-logo-wrapper {
+  top: clamp(0.25rem, 1.2vh, 0.9rem);
+  left: 50%;
+  width: clamp(5.9rem, 10.8vw, 11.4rem);
+  transform: translateX(-50%);
+}
+
+.site-header .brand-menu-left-wrapper,
+.site-header .brand-menu-right-wrapper {
+  top: clamp(1rem, 2.3vh, 1.8rem);
+  width: clamp(12.5rem, 22vw, 23rem);
+  pointer-events: auto;
+}
+
+.site-header .brand-menu-left-wrapper {
+  left: clamp(0.7rem, 4.8vw, 7.6rem);
+}
+
+.site-header .brand-menu-right-wrapper {
+  right: clamp(0.7rem, 4.8vw, 7.6rem);
+}
+
+@media (max-width: 640px) {
+  .header-canvas {
+    height: clamp(5.2rem, 16vh, 7.3rem);
+  }
+
+  .site-header .brand-paw-logo-wrapper {
+    top: 0.2rem;
+    width: clamp(5.5rem, 17.8vw, 7.2rem);
+  }
+
+  .site-header .brand-menu-left-wrapper,
+  .site-header .brand-menu-right-wrapper {
+    top: clamp(0.9rem, 2.1vh, 1.35rem);
+    width: clamp(6.6rem, 34vw, 9.8rem);
+  }
+
+  .site-header .brand-menu-left-wrapper {
+    left: 0.45rem;
+  }
+
+  .site-header .brand-menu-right-wrapper {
+    right: 0.45rem;
+  }
+}
+
+/* ==========================================================================
+   Hero stage (escena principal)
+   --------------------------------------------------------------------------
+   Requisito funcional:
+   - Fondo escalable para zoom en scroll.
+   - Capa de nubes independiente con fade y drift lateral.
+   ========================================================================== */
+.hero-stage {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 720px;
+  overflow: visible;
+  isolation: isolate;
+  z-index: 40;
+  margin-bottom: 0;
+  --bg-scale: 1;
+}
+
+/* Fondo base del hero:
+   Se expande fuera del viewport para evitar bordes visibles durante el zoom. */
+.hero-stage::before {
+  content: "";
+  position: absolute;
+  top: -5vh;
+  left: -5vw;
+  width: 110vw;
+  height: 125vh;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--shared-landscape-url, none);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  filter: contrast(1.06) saturate(1.05) brightness(1.01);
+  transform: translateZ(0) scale(var(--bg-scale));
+  transform-origin: top center;
+  will-change: transform;
+}
+
+/* Capa de nubes:
+   - Se dibuja por encima del fondo y por debajo de sprites.
+   - Usa mask para desvanecer borde inferior y evitar corte duro. */
+.image-clouds {
+  position: absolute;
+  top: -5vh;
+  left: -5vw;
+  width: 110vw;
+  height: 55%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  background-repeat: repeat-x;
+  background-position: 0% top;
+  background-size: auto 100%;
+  will-change: transform, opacity, background-position;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.hero-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100vw, calc(100svh * var(--scene-ratio)));
+  min-width: 100vw;
+  aspect-ratio: var(--scene-ratio-default);
+  transform: translate(-50%, -50%);
+  z-index: 41;
+}
+
+/* ==========================================================================
+   Sprites renderizados por JS
+   --------------------------------------------------------------------------
+   Contrato entre CSS y JS:
+   - JS controla posicion/tamano por wrapper.
+   - CSS define comportamiento visual comun.
+   ========================================================================== */
+.sprite-wrapper {
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.scene-sprite {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.is-interactive {
+  pointer-events: auto;
+  cursor: pointer;
+  transition: opacity 220ms ease;
+}
+
+.is-interactive:hover {
+  opacity: 0.88;
+}
+
+/* ==========================================================================
+   Ajustes de profundidad visual (sombras por capa)
+   --------------------------------------------------------------------------
+   Estos filtros ayudan a mantener lectura de planos durante movimiento.
+   ========================================================================== */
+.layer-top-canopy,
+.layer-vine-top {
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.28));
+}
+
+.char-trex {
+  filter: drop-shadow(0 24px 26px rgba(0, 0, 0, 0.42));
+}
+
+.char-skye,
+.char-chase,
+.char-zuma {
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.36));
+}
+
+.char-rex,
+.char-marshall {
+  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.52));
+}
+
+.char-rubble {
+  filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.44));
+}
+
+.tech-dino-foot,
+.tech-paw,
+.tech-meter {
+  opacity: 0.8;
+}
+
+.leaf-top-left,
+.leaf-top-right,
+.leaf-bottom-left,
+.leaf-bottom-right {
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.18));
+}
+
+.brand-paw-logo {
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.35));
+}
+
+.brand-menu-left,
+.brand-menu-right {
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.35));
+}
+
+.brand-dino-world {
+  filter: drop-shadow(0 22px 28px rgba(0, 0, 0, 0.82));
+}
+
+.discover-label {
+  opacity: 0.92;
+}
+
+/* ==========================================================================
+   Body stage
+   --------------------------------------------------------------------------
+   Objetivo de transicion:
+   - Subir desde hero pinneado hacia un fondo crema solido.
+   - Degradado superior para esconder el corte entre etapas.
+   ========================================================================== */
+.body-stage {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  overflow: visible;
+  isolation: isolate;
+  background: var(--bg-cream);
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: clamp(3rem, 8vh, 7rem);
+  z-index: 50;
+}
+
+.body-stage::before {
+  display: none;
+}
+
+.body-canvas {
+  position: relative;
+  width: 100vw;
+  min-width: 100vw;
+  aspect-ratio: var(--scene-ratio);
+  overflow: hidden;
+}
+
+.tail-stage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--bg-cream);
+  margin-top: 0;
+  padding-bottom: clamp(2rem, 6vh, 5rem);
+  z-index: 51;
+}
+
+.tail-canvas {
+  position: relative;
+  width: 100vw;
+  min-width: 100vw;
+  aspect-ratio: var(--scene-ratio);
+  overflow: hidden;
+}
+
+.body-row4-group {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Recorte PSD row3-left:
+   las capas internas quedan independientes, pero visibles solo dentro del marco. */
+.body-row3-capa42-wrapper {
+  overflow: hidden;
+  -webkit-mask-image: url("/assets/body/fondo/Capa_42.png");
+  mask-image: url("/assets/body/fondo/Capa_42.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-mode: alpha;
+  mask-mode: alpha;
+}
+
+/* ==========================================================================
+   Texto de introduccion (antes manejado con utilidades Tailwind)
+   --------------------------------------------------------------------------
+   Criterio de mantenibilidad:
+   - Tipografia y sombras declaradas en CSS.
+   - JS solo separa caracteres para animacion incremental.
+   ========================================================================== */
+.intro-headline-wrapper {
+  position: absolute;
+  left: 15%;
+  top: 13.6%;
+  width: 70%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.intro-headline {
+  margin: 0;
+  color: #061f72;
+  font-family: "Luckiest Guy", cursive;
+  font-size: clamp(1.05rem, 2.8vw, 3rem);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intro-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.intro-char {
+  display: inline-block;
+  text-shadow: 0 4px 0 #697193;
+}
+
+.intro-space {
+  display: inline-block;
+  width: 0.28em;
+}
+
+/* ==========================================================================
+   Modo accesible: reduce motion
+   --------------------------------------------------------------------------
+   Politica UX:
+   - Cuando el usuario pide menos movimiento, reducimos transiciones
+     sin romper layout ni funcionalidad principal.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

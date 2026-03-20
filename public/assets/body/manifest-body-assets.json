@@ -1,0 +1,699 @@
+{
+  "body_root": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body",
+  "counts": {
+    "total_written": 98,
+    "fondo": 30,
+    "letras": 14,
+    "paisaje": 8,
+    "animales": 22,
+    "plantas": 24
+  },
+  "entries": [
+    {
+      "hash": "0ee1c7ef4687a7692824038849d0d45767fb005f",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_66.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_66.png"
+    },
+    {
+      "hash": "d45fce85bbe1d45d5a19dc47dbf45a639cafaf31",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_65.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_65.png"
+    },
+    {
+      "hash": "ce4c6fc3b87a026357621178d0c0eb7ffea3f409",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_64.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Capa_64.png"
+    },
+    {
+      "hash": "f2acd293e0e6ffea8393731a45c5b053e695379d",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_68.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_68.png"
+    },
+    {
+      "hash": "bbda8dd63c5117037531369c04475d1400b26c35",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_70_copia.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Capa_70_copia.png"
+    },
+    {
+      "hash": "efcad3c8fcde7df49fd826dcf6cd09b0afbe0047",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Ampliación_generativa.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Ampliación_generativa.png"
+    },
+    {
+      "hash": "7d2ab3888cba0d0fd8fd3ab105865f9f8d4b9b07",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\perros\\chase2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\chase2.png"
+    },
+    {
+      "hash": "f661659fc2a6ec5c32737ab5c6e1818c17708e7b",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\perros\\skye2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\skye2.png"
+    },
+    {
+      "hash": "6243a117feab903bf48c836839e786192e108177",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\perros\\rubble2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\rubble2.png"
+    },
+    {
+      "hash": "98f145961150119f46c646a4dacfb2a44ac6731d",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\perros\\rex.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\rex.png"
+    },
+    {
+      "hash": "de39a01937f092086081c0ea3b0ff0b825b69481",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\perros\\marshall2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\marshall2.png"
+    },
+    {
+      "hash": "6f83c74fa77e927be6908929b7975173f32c1856",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\dinos\\rhubarb.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\rhubarb.png"
+    },
+    {
+      "hash": "1e3b453c8320b0791769b7b08939a3fb811378f6",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\dinos\\timmyrex.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\timmyrex.png"
+    },
+    {
+      "hash": "c4d87a88764a82ec50a57ef224fe0498a4a51e1a",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_31.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_31.png"
+    },
+    {
+      "hash": "fcffc7c813fdd7f42109cc42498b4db51c0dd9b0",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_29.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_29.png"
+    },
+    {
+      "hash": "9458f5c895b8afc64ea7be8605a9d30930def6ad",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\Capa_63.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_63.png"
+    },
+    {
+      "hash": "41eccd03d2c36ecdc02e9e13f18db814202dbad7",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta6_copia.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta6_copia.png"
+    },
+    {
+      "hash": "fb46350f215a94506059af33a4908f511bbe6c7f",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta5_copia.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta5_copia.png"
+    },
+    {
+      "hash": "5ff67f066192ec66ebdc48cc08c73120014ac0d8",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta5_copia_2.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta5_copia_2.png"
+    },
+    {
+      "hash": "0e9bf88382cfb6df6d12085b0108a5d6b01157f2",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta3_copia.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta3_copia.png"
+    },
+    {
+      "hash": "24170c61736bd73f04979ab13f7956aeb926f331",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta7.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta7.png"
+    },
+    {
+      "hash": "b2d8df3d4db646a6e9c3cb09a139e234f203bdf0",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta6.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta6.png"
+    },
+    {
+      "hash": "74a0e7b09e7deae83b8df246519711fd1733e25a",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta5.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta5.png"
+    },
+    {
+      "hash": "2b648ade3acf2f06a028b10932247ffa9a540aa2",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\planta.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta.png"
+    },
+    {
+      "hash": "0b889a8bcb7700aee9feb39feae537eaf9f2fd09",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\hierbasfront\\Capa_62.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\Capa_62.png"
+    },
+    {
+      "hash": "3a010234f161ecf2c5f3203bd2ef63c4c7409943",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\hierbasfront\\Capa_59.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\Capa_59.png"
+    },
+    {
+      "hash": "701d8a6ec0c741d6f199d5df06b0d31c724b78c9",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\hierbasfront\\Capa_60.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\Capa_60.png"
+    },
+    {
+      "hash": "324dba0ca332dca794bd910836d34a22fd20f0c1",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\hierbasfront\\Capa_61.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\Capa_61.png"
+    },
+    {
+      "hash": "595fab51fcc6d2c18fdb650c7d31f9e456c72135",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\ROW4\\hierbasfront\\Capa_34.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\Capa_34.png"
+    },
+    {
+      "hash": "345277d979a54041a66ebf67fdaecf27d16ca502",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\left\\Capa_46.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_46.png"
+    },
+    {
+      "hash": "dd57afe20e8f34755b00c261231a9906191cb88b",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\left\\Capa_39_copia.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_39_copia.png"
+    },
+    {
+      "hash": "76915ba48e928e5b01a0aaeb299b3faf04ba38fc",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\left\\Capa_40.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_40.png"
+    },
+    {
+      "hash": "59a5ba519b3c983a54be5398f44d2a5944b06225",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\left\\Capa_41.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_41.png"
+    },
+    {
+      "hash": "130cac0c8255595f5c22e8ad1384540a1abf141e",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\left\\Capa_42.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_42.png"
+    },
+    {
+      "hash": "c48cc433623ab5c805a3c9946e72b39fb53e9e82",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\left\\plants\\ChatGPT_Image_4_mar_2026__23_30_36_copia_2.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\ChatGPT_Image_4_mar_2026__23_30_36_copia_2.png"
+    },
+    {
+      "hash": "eb5a79d80510f6ecdcbdd2e7b0e6d7623487be59",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\right\\But_Humdinger_threatens_the_ecosystem_with_his_exploitation_and.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\But_Humdinger_threatens_the_ecosystem_with_his_exploitation_and.png"
+    },
+    {
+      "hash": "c89de5f2621a80e29ffe1fb1dc7db0ffefb53c70",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\right\\Capa_44.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_44.png"
+    },
+    {
+      "hash": "b42f08094c627505fb7d2990cb59afdc09138935",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\right\\Capa_45.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_45.png"
+    },
+    {
+      "hash": "5b72d71c75db32abf1d4c8e669ef16d45ff0201d",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\right\\Humdinger_threatens.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Humdinger_threatens.png"
+    },
+    {
+      "hash": "e5fef9b311ccccf0961f8b2cc18d80d295c03aee",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\right\\Capa_48.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_48.png"
+    },
+    {
+      "hash": "22c4d71c0af9bf42a8542b3d1141e95576a647a9",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row3\\right\\Capa_49.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_49.png"
+    },
+    {
+      "hash": "3e864828745213397dbc6e4b1e8a87d069dc2b48",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row2\\Capa_7.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Capa_7.png"
+    },
+    {
+      "hash": "27b2d0b2dda45cd0da489a694c934620ae0aa18f",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row2\\Capa_32_copia.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_32_copia.png"
+    },
+    {
+      "hash": "8e9d56ba39a40301c9caa8bd8fc48f9b301fa1d9",
+      "source": "psd",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\_tmp_psd_export\\row2\\A_lost_tropical_island__teeming_with_dinosaurs__becomes_the_epi.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\A_lost_tropical_island__teeming_with_dinosaurs__becomes_the_epi.png"
+    },
+    {
+      "hash": "dc42ef37969d249af349b31490512b81e5276ce4",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\backgrounds\\row2\\Capa_7.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Capa_7_2.png"
+    },
+    {
+      "hash": "93c8707a598eebaf2d295f9a6745144f2a36b043",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\backgrounds\\row4\\Capa_64.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Capa_64_2.png"
+    },
+    {
+      "hash": "f3a682525909ee68255a5032d6e1ef0a74dbe368",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row2\\A_lost_tropical_island__teeming_with_dinosaurs__becomes_the_epi.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\A_lost_tropical_island__teeming_with_dinosaurs__becomes_the_epi_2.png"
+    },
+    {
+      "hash": "a490a75b0bd304391f3255d44d2f5c2819f92698",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\chase2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\chase2_2.png"
+    },
+    {
+      "hash": "84d97bb0ebf556a52360e20b07a8cbf5b15c45fe",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\marshall2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\marshall2_2.png"
+    },
+    {
+      "hash": "ee18fe8f7d7f9435df93b2a6ca0ea0b5380ce358",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\rex.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\rex_2.png"
+    },
+    {
+      "hash": "91192df0c159cd76e40d35ec7865bb19fe2c3d55",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\rhubarb.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\rhubarb_2.png"
+    },
+    {
+      "hash": "617827f6170c1437d48db8c7de557a6391315b5d",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\rubble2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\rubble2_2.png"
+    },
+    {
+      "hash": "bf94db488aaf04303f5cd70826d83959ff884054",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\skye2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\skye2_2.png"
+    },
+    {
+      "hash": "b78040358adfa0209d8081a7902945c05b1913e5",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\characters\\row4\\timmyrex.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\timmyrex_2.png"
+    },
+    {
+      "hash": "53e8dc0f6ea94fb2d21dde89ab745b3bc8fa8aa2",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\But_Humdinger_threatens_the_ecosystem_with_his_exploitation_and.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\But_Humdinger_threatens_the_ecosystem_with_his_exploitation_and_2.png"
+    },
+    {
+      "hash": "8b731059f5843a29f9143ee798af5fde62206086",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_39_copia.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_39_copia_2.png"
+    },
+    {
+      "hash": "a1778e01408daa532073ae46c26538d8b364e243",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_40.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_40_2.png"
+    },
+    {
+      "hash": "557e398a2a6dfc5306f9f3cbab6a5b854e488c54",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_41.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_41_2.png"
+    },
+    {
+      "hash": "719fbbab6261edcc42f986b2866021999c9724f1",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_42.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_42_2.png"
+    },
+    {
+      "hash": "3dd888b447a4fea471e4ce2c4a32aa88867bf453",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_44.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_44_2.png"
+    },
+    {
+      "hash": "c5d08b76fe94a7f86eeaba096e0cf32a45957fd8",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_45.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_45_2.png"
+    },
+    {
+      "hash": "1ebb6e59168a267bb6b5051d82249f4567bce16f",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_46.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_46_2.png"
+    },
+    {
+      "hash": "52e3ba7e5f70e28d427a1e19e367bca62a546271",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_48.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_48_2.png"
+    },
+    {
+      "hash": "d17f409b0d5f066ba4d43836d4c43645f2263137",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Capa_49.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_49_2.png"
+    },
+    {
+      "hash": "f6bf733b5f64c1889e46b571820673c4cbd6e7d2",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row3\\Humdinger_threatens.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Humdinger_threatens_2.png"
+    },
+    {
+      "hash": "936b10a489e74d80e0b2327e0807790316cd8cc9",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Ampliación_generativa.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Ampliación_generativa_2.png"
+    },
+    {
+      "hash": "f31666ec1dfd5f1fff295e4eadc66ffef93f644b",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_29.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_29_2.png"
+    },
+    {
+      "hash": "8cac04f93e2af61612b53db9a688cb28ebb92143",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_31.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_31_2.png"
+    },
+    {
+      "hash": "b456ca923c7b0ef7b95952b0776abf7363a4d84a",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_63.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_63_2.png"
+    },
+    {
+      "hash": "2880bff0e3cc5412e09146d37a51d29bf5843061",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_65.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_65_2.png"
+    },
+    {
+      "hash": "5ecbd1691062cc4f461908adb0eb1c8b72dd968d",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_66.png",
+      "category": "letras",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\letras\\Capa_66_2.png"
+    },
+    {
+      "hash": "fa93cfeeb2e01d032eac494e151c4eb5a947fd5f",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_68.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_68_2.png"
+    },
+    {
+      "hash": "4b4386b47a4f0034356e30345281d4ab520649c3",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\misc\\row4\\Capa_70_copia.png",
+      "category": "paisaje",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\paisaje\\Capa_70_copia_2.png"
+    },
+    {
+      "hash": "784e033d57f628edd6f8bd0d0e44a88bb275efd3",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\Capa_34.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_34.png"
+    },
+    {
+      "hash": "815c1cb00612176158b6b8e21510ab85625249a9",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\Capa_59.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_59.png"
+    },
+    {
+      "hash": "9bad51ceb344af4ec7beb7aa6ccc94ec8131ab76",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\Capa_60.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_60.png"
+    },
+    {
+      "hash": "31a4930d1e1d13a4b39f1fd118bbdc94ec6e2172",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\Capa_61.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_61.png"
+    },
+    {
+      "hash": "6edbe5167530003972567e56b994dd94d38e3814",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\Capa_62.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\Capa_62.png"
+    },
+    {
+      "hash": "f389046a9b6c2270e7efd5bd0640c55f5ab7df4b",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta_2.png"
+    },
+    {
+      "hash": "aa248212e2bb577312253c5a3eaf31910c5b30df",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta3_copia.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta3_copia_2.png"
+    },
+    {
+      "hash": "c36537c07e82ddea8a05bd46167ad7ff2aedd7b1",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta5.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta5_2.png"
+    },
+    {
+      "hash": "135aa2035032014978cbc278753513d3f6b393a0",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta5_copia.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta5_copia_3.png"
+    },
+    {
+      "hash": "fa26ff5c44df349d670e252b3d61226be649128d",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta5_copia_2.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta5_copia_2_2.png"
+    },
+    {
+      "hash": "159156b20d2f50c5cb61c93d16154221364b7ba4",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta6.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta6_2.png"
+    },
+    {
+      "hash": "726881a59b8f200acd2eb1cb91650f8370430225",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta6_copia.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta6_copia_2.png"
+    },
+    {
+      "hash": "e9773fff542fca7ebf0bc4cf3da6f7d2cda8525f",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\vegetation\\row4\\planta7.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta7_2.png"
+    },
+    {
+      "hash": "9addfbe091419f5e2062403bb9aff01b91edf5af",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\group_composites\\dinos.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\dinos.png"
+    },
+    {
+      "hash": "e2d7b00808a368a23ab3eda4d723cdf5884c84d2",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\group_composites\\perros_2.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\perros_2.png"
+    },
+    {
+      "hash": "75dd11ff14bfab8a845e89da33dbb0d47e86a109",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\group_composites\\ROW4.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\ROW4.png"
+    },
+    {
+      "hash": "67d16feb9dcdbb8a328fe7b707170b7d288701cf",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\group_composites\\row2.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\row2.png"
+    },
+    {
+      "hash": "963da0c986202e8b8cbad41986e94c1a5ef3cdc2",
+      "source": "project",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\project\\images\\group_composites\\row3.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\row3.png"
+    },
+    {
+      "hash": "ad6c5156fffd20ef743df1738dc4dc01a43baff7",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\capa42_composite.png",
+      "category": "fondo",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\fondo\\capa42_composite.png"
+    },
+    {
+      "hash": "4d3653dc553888de19cd463349c43b2f191c0d2a",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\Captura_de_pantalla_2026-03-08_a_las_21.35.14_composite.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\Captura_de_pantalla_2026-03-08_a_las_21.35.14_composite.png"
+    },
+    {
+      "hash": "7dbbadec8fc5411ea290139397cda1b47856eeaa",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\Captura_de_pantalla_2026-03-08_a_las_21.35.14_topil.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\Captura_de_pantalla_2026-03-08_a_las_21.35.14_topil.png"
+    },
+    {
+      "hash": "f506f50e904b39e4c9bffd903f574ec2ef35c4b7",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\ChatGPT_Image_4_mar_2026,_23_30_36_copia_composite.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\ChatGPT_Image_4_mar_2026__23_30_36_copia_composite.png"
+    },
+    {
+      "hash": "b4e9b5a83abc1b556a237a3f541a4e26d30f4137",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\ChatGPT_Image_4_mar_2026,_23_30_36_copia_topil.png",
+      "category": "animales",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\animales\\ChatGPT_Image_4_mar_2026__23_30_36_copia_topil.png"
+    },
+    {
+      "hash": "ca649897defb7b05cf98a444b515b6f4aeff5407",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\planta7_composite.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta7_composite.png"
+    },
+    {
+      "hash": "20025d63512d0ac94fe585fd15f6e2cdc09e69a6",
+      "source": "_tmp",
+      "source_path": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo1\\_tmp\\planta7_topil.png",
+      "category": "plantas",
+      "target": "C:\\trabajos\\trabajo-oficina\\react\\trabajos-react\\demo2\\assets\\body\\plantas\\planta7_topil.png"
+    }
+  ]
+}

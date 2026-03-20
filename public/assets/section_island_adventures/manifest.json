@@ -1,0 +1,3036 @@
+{
+  "source_psd": "C:/trabajos/trabajo-oficina/react/trabajos-react/dinoworld2.psd",
+  "output_root": "assets/section_island_adventures",
+  "rules": {
+    "categories": [
+      "fondo",
+      "letras",
+      "paisaje",
+      "vegetales",
+      "personajes",
+      "ambiente"
+    ],
+    "deduplication": "sha256 exact binary match",
+    "note": "Layers classified by name/path/kind heuristics; unknown layers go to ambiente."
+  },
+  "summary": {
+    "layers_input": 184,
+    "layers_exported_unique": 156,
+    "duplicates_removed": 28,
+    "missing_source": 0,
+    "by_category": {
+      "fondo": 2,
+      "letras": 40,
+      "paisaje": 5,
+      "vegetales": 5,
+      "personajes": 65,
+      "ambiente": 39
+    }
+  },
+  "layers": [
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 0",
+      "layer_path": "Capa 0",
+      "group_path": "",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        0,
+        0,
+        3287,
+        4167
+      ],
+      "hash": "df22d787e51c0045031698e62505adf8456cfab4494c9dfcc3dcd59043f48c48",
+      "category": "fondo",
+      "output_path": "assets/section_island_adventures/fondo/001_capa_0.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 2",
+      "layer_path": "Capa 2",
+      "group_path": "",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        0,
+        0,
+        3287,
+        12888
+      ],
+      "hash": "0e36dabc189ca735c3b5c746fc099679c751ee2e55849e88a70397f5085f6d4a",
+      "category": "fondo",
+      "output_path": "assets/section_island_adventures/fondo/002_capa_2.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Chase with Dinos (29)",
+      "layer_path": "row5/TAKECARE/Chase with Dinos (29)",
+      "group_path": "row5/TAKECARE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        -298,
+        8748,
+        1565,
+        9891
+      ],
+      "hash": "435cf3d81fd4319c1dfb02555846e3bf00b48be7852c44ca896d72f111cd1c3a",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/003_row5_takecare_chase_with_dinos_29.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 43",
+      "layer_path": "row5/TAKECARE/Capa 43",
+      "group_path": "row5/TAKECARE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        -103,
+        8693,
+        1565,
+        9883
+      ],
+      "hash": "17ec0c6f1b2b1d28210dfa33bbd508a24ab8e2a073022a700252153a8e1c65cc",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/004_row5_takecare_capa_43.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "TAKE CARE",
+      "layer_path": "row5/TAKECARE/TAKE CARE",
+      "group_path": "row5/TAKECARE",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        732,
+        8765,
+        1026,
+        8811
+      ],
+      "hash": "5a46ab2b0a623b25dcf61e76583b6d22ef11e8fddc03dcbfce098e213d0c7b85",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/005_row5_takecare_take_care.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Skye Airplane (9)_NIN",
+      "layer_path": "row5/EXPLORE/Skye Airplane (9)_NIN",
+      "group_path": "row5/EXPLORE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1797,
+        8771,
+        3747,
+        9868
+      ],
+      "hash": "0dbe1df785e0efae501369eb5087f9d5090d2b4e19c43c17ca8fd27b590d18b6",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/006_row5_explore_skye_airplane_9_nin.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 43 copia",
+      "layer_path": "row5/EXPLORE/Capa 43 copia",
+      "group_path": "row5/EXPLORE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1788,
+        8693,
+        3456,
+        9883
+      ],
+      "hash": "956f34ade1d2f33e4870c0c1e2f045bca22d7253d583d01f19775521a0a0b36b",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/007_row5_explore_capa_43_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "EXPLORE",
+      "layer_path": "row5/EXPLORE/EXPLORE",
+      "group_path": "row5/EXPLORE",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        2649,
+        8766,
+        2887,
+        8812
+      ],
+      "hash": "f7243ace975d430aa16cf72058b50c032764e120f314782a5fe936272dfe836a",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/008_row5_explore_explore.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 72",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 72",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1873,
+        7270,
+        2720,
+        8326
+      ],
+      "hash": "729f0c407af3926275694a8b886037e433d12de89130c6c4bf5340427d54d7b6",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/009_row4_personaliza_copia_grupo_3_copia_3_capa_72.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 42",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 42",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2030,
+        7431,
+        2534,
+        8106
+      ],
+      "hash": "e480bfb5f616bc44dce904f457b5b77308381486fc06610a8ac9c760ca42fbaa",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/010_row4_personaliza_copia_grupo_3_copia_3_capa_42.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "ChatGPT Image 11 mar 2026, 12_44_54",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/ChatGPT Image 11 mar 2026, 12_44_54",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        2018,
+        7466,
+        2534,
+        8161
+      ],
+      "hash": "e1ab22ee6b005b5c3179f2188c1885fd97d9cf522ebbf813a924d00c547aa7ba",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/011_row4_personaliza_copia_grupo_3_copia_3_chatgpt_image_11_mar_2026_12_44_54.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 79",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 79",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        965,
+        7346,
+        1537,
+        7468
+      ],
+      "hash": "06ba514176b710f2b3e79cd78fe42be3dcc44abcc0b4ef4a46e22da545f9be59",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/012_row4_personaliza_copia_grupo_3_copia_3_capa_79.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 80",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 80",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        533,
+        8125,
+        953,
+        8259
+      ],
+      "hash": "67cdea628dd4901fd5a457ec7bb8d3b5bfddaac5b97392fb940ccd47dc0aa59f",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/013_row4_personaliza_copia_grupo_3_copia_3_capa_80.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 81",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 81",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1210,
+        8126,
+        1612,
+        8291
+      ],
+      "hash": "f2f09dfa838f1c18c070faa51c6f5a4d36b1c38fdd1509effdc44b8f4faaa680",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/014_row4_personaliza_copia_grupo_3_copia_3_capa_81.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 78",
+      "layer_path": "row4/personaliza copia/Grupo 3 copia 3/Capa 78",
+      "group_path": "row4/personaliza copia/Grupo 3 copia 3",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        468,
+        7371,
+        1653,
+        8129
+      ],
+      "hash": "62e543990a12828e6227438717e394646d6e2228091f46de42d673333d9ef4b1",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/015_row4_personaliza_copia_grupo_3_copia_3_capa_78.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 34",
+      "layer_path": "row4/Grupo 5/barra/Capa 34",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        410,
+        7023,
+        2878,
+        7158
+      ],
+      "hash": "9953bdaeae1b1e4002e95c0042f963665e017da727698c3b9b4a4f33be39dcc7",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/016_row4_grupo_5_barra_capa_34.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 36",
+      "layer_path": "row4/Grupo 5/barra/Capa 36",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        718,
+        7050,
+        1144,
+        7137
+      ],
+      "hash": "23bde48f4b16f923facdefefa21afa9bd3a0f6f3d72614e69683ac805fed90e0",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/017_row4_grupo_5_barra_capa_36.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row4/Grupo 5/barra/Capa 36 copia",
+      "source_path": "assets/dinoworld2_layers/row4/grupo_5/barra/018_capa_36_copia.png",
+      "duplicate_of": "assets/section_island_adventures/ambiente/017_row4_grupo_5_barra_capa_36.png",
+      "hash": "23bde48f4b16f923facdefefa21afa9bd3a0f6f3d72614e69683ac805fed90e0"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 36 copia 2",
+      "layer_path": "row4/Grupo 5/barra/Capa 36 copia 2",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2197,
+        7050,
+        2623,
+        7137
+      ],
+      "hash": "a795a5bdd1c542ccb65e5e6ac24575e872e80e4544999d4ad8497ca1a8f82b01",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/019_row4_grupo_5_barra_capa_36_copia_2.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row4/Grupo 5/barra/Capa 36 copia 3",
+      "source_path": "assets/dinoworld2_layers/row4/grupo_5/barra/020_capa_36_copia_3.png",
+      "duplicate_of": "assets/section_island_adventures/ambiente/019_row4_grupo_5_barra_capa_36_copia_2.png",
+      "hash": "a795a5bdd1c542ccb65e5e6ac24575e872e80e4544999d4ad8497ca1a8f82b01"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "CUSTOMIZE",
+      "layer_path": "row4/Grupo 5/barra/CUSTOMIZE",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        801,
+        7076,
+        1059,
+        7107
+      ],
+      "hash": "089b3f9cd673d3ab4dd70c196676cf13273858b27e8bb349d68a8d2777c934fd",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/021_row4_grupo_5_barra_customize.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "RESCUES",
+      "layer_path": "row4/Grupo 5/barra/RESCUES",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        1329,
+        7076,
+        1523,
+        7107
+      ],
+      "hash": "2f7be93fe97d176806cfeb29d6503f8c6b1fdd470bd3c77f0ba430b921936d3d",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/022_row4_grupo_5_barra_rescues.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "VEHICULOS",
+      "layer_path": "row4/Grupo 5/barra/VEHICULOS",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        1789,
+        7075,
+        2038,
+        7107
+      ],
+      "hash": "3791b95b57f28ad6f1a3eeed3db3f3af330422fddcf2d5a3afd26f2da034cbac",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/023_row4_grupo_5_barra_vehiculos.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "DINOSAURIOS",
+      "layer_path": "row4/Grupo 5/barra/DINOSAURIOS",
+      "group_path": "row4/Grupo 5/barra",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        2258,
+        7076,
+        2564,
+        7107
+      ],
+      "hash": "094f7c8381382eea93ae0dc26d5019346c0432a6534f7596223c44991e983a1b",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/024_row4_grupo_5_barra_dinosaurios.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "BY COMBINING THEIR EQUIPMENT, HELMET, TOOLS, COLORS...ALL KINDS",
+      "layer_path": "row4/Grupo 5/BY COMBINING THEIR EQUIPMENT, HELMET, TOOLS, COLORS...ALL KINDS",
+      "group_path": "row4/Grupo 5",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        677,
+        7788,
+        1443,
+        7974
+      ],
+      "hash": "6bc6ab6eb2faf701b9143c28cdacd10221d78f65ad625372d5e06c60c978d2d4",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/025_row4_grupo_5_by_combining_their_equipment_helmet_tools_colors_all_kinds.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "CUSTOMIZE YOUR FAVORITE HEROES",
+      "layer_path": "row4/Grupo 5/CUSTOMIZE YOUR FAVORITE HEROES",
+      "group_path": "row4/Grupo 5",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        678,
+        7594,
+        1275,
+        7723
+      ],
+      "hash": "09dba8305a1d5ab0fa755dc778b65a95e7e98d4a8940c35ec69cad00192f1fdf",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/026_row4_grupo_5_customize_your_favorite_heroes.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "LIANA copia",
+      "layer_path": "row3/plantas/LIANA copia",
+      "group_path": "row3/plantas",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1670,
+        6220,
+        2250,
+        6517
+      ],
+      "hash": "c61fae0354cc58943430828e86b1c5a1fbc4b8d39f9397e3f1cde1ae90602dbf",
+      "category": "vegetales",
+      "output_path": "assets/section_island_adventures/vegetales/027_row3_plantas_liana_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "planta3",
+      "layer_path": "row3/plantas/planta3",
+      "group_path": "row3/plantas",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        1497,
+        5936,
+        3156,
+        6665
+      ],
+      "hash": "e748c2167a1c726d5d7ca9bcefa4f56380a7d986789ca83d304af98204b51021",
+      "category": "vegetales",
+      "output_path": "assets/section_island_adventures/vegetales/028_row3_plantas_planta3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "planta7",
+      "layer_path": "row3/plantas/planta7",
+      "group_path": "row3/plantas",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        -293,
+        6030,
+        1171,
+        6571
+      ],
+      "hash": "725eceee1a9f0eb29c662ef52bc4f4d35db551a506a03cd705961e27a3d386e0",
+      "category": "vegetales",
+      "output_path": "assets/section_island_adventures/vegetales/029_row3_plantas_planta7.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "LIANA",
+      "layer_path": "row3/plantas/LIANA",
+      "group_path": "row3/plantas",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        934,
+        6300,
+        1514,
+        6644
+      ],
+      "hash": "58f967428bab271e558d2f020b64600c1729e5305d460846dbdbd4a9ed1f0e52",
+      "category": "vegetales",
+      "output_path": "assets/section_island_adventures/vegetales/030_row3_plantas_liana.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "PLANTA9",
+      "layer_path": "row3/plantas/PLANTA9",
+      "group_path": "row3/plantas",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        2498,
+        5998,
+        3510,
+        6587
+      ],
+      "hash": "6bbc94a9fb9094caa66dd624be6bd1a5449a338bf0cfbf7e8b47c524132a6372",
+      "category": "vegetales",
+      "output_path": "assets/section_island_adventures/vegetales/031_row3_plantas_planta9.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Relleno generativo 2 copia",
+      "layer_path": "row3/Relleno generativo 2 copia",
+      "group_path": "row3",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        0,
+        3726,
+        3287,
+        6429
+      ],
+      "hash": "74ed4d2302c3205a9e8e7ea63a1b9091260cc177079bce372e1c75f47b8bce19",
+      "category": "paisaje",
+      "output_path": "assets/section_island_adventures/paisaje/032_row3_relleno_generativo_2_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 31",
+      "layer_path": "row3/selección perros/Capa 31",
+      "group_path": "row3/selección perros",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        243,
+        5112,
+        636,
+        5499
+      ],
+      "hash": "b8fbeffb23d161ea0519361e20bcac08a92c7d5f4090344b6651b0174d186a98",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/033_row3_seleccion_perros_capa_31.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "zuma",
+      "layer_path": "row3/selección perros/zuma",
+      "group_path": "row3/selección perros",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1130,
+        5576,
+        1499,
+        5917
+      ],
+      "hash": "f6b4478383fb82c5c38c3ed6a6256ecf3fb2a2caea3e0f94b8db35f3f6ab70dc",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/034_row3_seleccion_perros_zuma.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "ROCKY",
+      "layer_path": "row3/selección perros/ROCKY",
+      "group_path": "row3/selección perros",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        687,
+        5572,
+        1063,
+        5920
+      ],
+      "hash": "8a51e28d3cdebfdbb4605498ef9a3db410101b17f4ea02842b107a93301181b9",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/035_row3_seleccion_perros_rocky.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 32",
+      "layer_path": "row3/selección perros/Capa 32",
+      "group_path": "row3/selección perros",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1130,
+        5132,
+        1529,
+        5481
+      ],
+      "hash": "d2f81771053fdc51c057730b4e5428084a5ec3d705b552ac9190c2c8631edfc8",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/036_row3_seleccion_perros_capa_32.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "marshal",
+      "layer_path": "row3/selección perros/marshal",
+      "group_path": "row3/selección perros",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        697,
+        5123,
+        1060,
+        5501
+      ],
+      "hash": "3b110f40d855abbaac86a150c710ca241a9b22add4ff87a997941affd0b7b09f",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/037_row3_seleccion_perros_marshal.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rubble copia",
+      "layer_path": "row3/selección perros/rubble copia",
+      "group_path": "row3/selección perros",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        264,
+        5566,
+        636,
+        5917
+      ],
+      "hash": "2afa2e969c3bd24b6ae5119ec0db5f25dd1bf5d757e41726c22586de58628ef3",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/038_row3_seleccion_perros_rubble_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 56",
+      "layer_path": "row3/selección perros/SKYE/Capa 56",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2183,
+        5797,
+        2823,
+        5917
+      ],
+      "hash": "6a388405136e5d3238aa1ad3c77bc682766bced6a6a8a26023eccfc4b3dc6a96",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/039_row3_seleccion_perros_skye_capa_56.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 55",
+      "layer_path": "row3/selección perros/SKYE/Capa 55",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2465,
+        5077,
+        2920,
+        5823
+      ],
+      "hash": "6ddbe9e9d0d7a6e810e4b7c1f1703a8da6158898a429b1d1dcdeb8bb7b532768",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/040_row3_seleccion_perros_skye_capa_55.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 23",
+      "layer_path": "row3/selección perros/SKYE/Capa 23",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1902,
+        5443,
+        2255,
+        5678
+      ],
+      "hash": "9fd515a6bedce1173fa22d4888b7ad3a6fe712976d06c49b18932b5476efab3e",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/041_row3_seleccion_perros_skye_capa_23.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 67",
+      "layer_path": "row3/selección perros/SKYE/Capa 67",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2784,
+        5030,
+        2981,
+        5254
+      ],
+      "hash": "09085e9e63057fc2ad3e597242f599d97598c9861c7d3c4ccec6c93c11cc8380",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/042_row3_seleccion_perros_skye_capa_67.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 61",
+      "layer_path": "row3/selección perros/SKYE/SCREEN/Capa 61",
+      "group_path": "row3/selección perros/SKYE/SCREEN",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1746,
+        5420,
+        2351,
+        5817
+      ],
+      "hash": "bf29a595f2f168bfd7bd070b5c4c18f122301694516677cd1e62e57f7f96b3b6",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/043_row3_seleccion_perros_skye_screen_capa_61.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 59",
+      "layer_path": "row3/selección perros/SKYE/SCREEN/Capa 59",
+      "group_path": "row3/selección perros/SKYE/SCREEN",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1769,
+        5446,
+        2321,
+        5765
+      ],
+      "hash": "1da64b8a6bd7f8e3a29a9ca4ec0898e9e13c58080d5ba8b11f04c2b8eb82df08",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/044_row3_seleccion_perros_skye_screen_capa_59.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Gameplay (3)",
+      "layer_path": "row3/selección perros/SKYE/SCREEN/Gameplay (3)",
+      "group_path": "row3/selección perros/SKYE/SCREEN",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1759,
+        5439,
+        2350,
+        5772
+      ],
+      "hash": "5f31aa6e1081123a0af8790e2798733ff3a6e409f2212b0114f7bbdc5e4c9edb",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/045_row3_seleccion_perros_skye_screen_gameplay_3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "SKYE",
+      "layer_path": "row3/selección perros/SKYE/SKYE",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        1790,
+        5046,
+        2269,
+        5193
+      ],
+      "hash": "22d4e18afc301c0e54bf77e8ebf75c1cda6a7ec52e06b7c2006e7acf76897e46",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/046_row3_seleccion_perros_skye_skye.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "skye2",
+      "layer_path": "row3/selección perros/SKYE/skye2",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        2159,
+        5118,
+        2985,
+        6020
+      ],
+      "hash": "64adaed37892c024785c15b715555c5ce223788615ab0afaf5ce25962c4b7e77",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/047_row3_seleccion_perros_skye_skye2.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "GOTTA FLY!",
+      "layer_path": "row3/selección perros/SKYE/GOTTA FLY!",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        1751,
+        5299,
+        2117,
+        5376
+      ],
+      "hash": "8ee5ad0a31acbbd73286416d378d9ba82dd4ecc727be74157444b0c5a1e00855",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/048_row3_seleccion_perros_skye_gotta_fly.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "THIS PUP´S",
+      "layer_path": "row3/selección perros/SKYE/THIS PUP´S",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        1818,
+        5251,
+        2013,
+        5280
+      ],
+      "hash": "a9524c79566bda1a8c0c2ba0de59b73c44d54d11f3d896da0ac566c907729865",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/049_row3_seleccion_perros_skye_this_pup_s.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 66",
+      "layer_path": "row3/selección perros/SKYE/Capa 66",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1756,
+        5241,
+        1799,
+        5280
+      ],
+      "hash": "92ad1954e9baa3a87f539b2fbd4d422efba26e2f5f2ca7c4d2031d3fe84c4bce",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/050_row3_seleccion_perros_skye_capa_66.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 63 copia",
+      "layer_path": "row3/selección perros/SKYE/Capa 63 copia",
+      "group_path": "row3/selección perros/SKYE",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2124,
+        5286,
+        2167,
+        5325
+      ],
+      "hash": "2f7551bd4f439f289039635c7f3b3b50563b4b42e789d1d59b160c0f43de9d49",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/051_row3_seleccion_perros_skye_capa_63_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 56",
+      "layer_path": "row3/selección perros/zuma/Capa 56",
+      "group_path": "row3/selección perros/zuma",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2183,
+        5797,
+        2823,
+        5917
+      ],
+      "hash": "9359a1662f1457e93874f8c0801a406b2e1f3a16b1ae29a6b24c738e6eef70e4",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/052_row3_seleccion_perros_zuma_capa_56.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 55",
+      "layer_path": "row3/selección perros/zuma/Capa 55",
+      "group_path": "row3/selección perros/zuma",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2465,
+        5077,
+        2920,
+        5823
+      ],
+      "hash": "9476b2afb3bebb64713b05ed2ffa1b1448b4de492ae47a3e019eb3a9f6fc6be3",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/053_row3_seleccion_perros_zuma_capa_55.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 23",
+      "layer_path": "row3/selección perros/zuma/Capa 23",
+      "group_path": "row3/selección perros/zuma",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1902,
+        5443,
+        2255,
+        5678
+      ],
+      "hash": "717e385c3bfb8e5eab32026caae69ddb5414920e6a41360e1d3602295bc43ccb",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/054_row3_seleccion_perros_zuma_capa_23.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 67",
+      "layer_path": "row3/selección perros/zuma/Capa 67",
+      "group_path": "row3/selección perros/zuma",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2784,
+        5030,
+        2981,
+        5254
+      ],
+      "hash": "774268d5f039cb1c724991dbc929020d9da9a361a4f5844efe4a51d388623ce0",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/055_row3_seleccion_perros_zuma_capa_67.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 61",
+      "layer_path": "row3/selección perros/zuma/SCREEN/Capa 61",
+      "group_path": "row3/selección perros/zuma/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1746,
+        5420,
+        2351,
+        5817
+      ],
+      "hash": "63534f4a43eaf9619a8b7d4c39bf550c3741afdf7a91df4c2927e11284ced936",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/056_row3_seleccion_perros_zuma_screen_capa_61.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 59",
+      "layer_path": "row3/selección perros/zuma/SCREEN/Capa 59",
+      "group_path": "row3/selección perros/zuma/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1769,
+        5446,
+        2321,
+        5765
+      ],
+      "hash": "36c162ae3a918c1ca8f7ac4614c0d1843ce0b2acd5f9ed15ffbf6ef00f43bfee",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/057_row3_seleccion_perros_zuma_screen_capa_59.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Gameplay (3)",
+      "layer_path": "row3/selección perros/zuma/SCREEN/Gameplay (3)",
+      "group_path": "row3/selección perros/zuma/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1759,
+        5439,
+        2350,
+        5772
+      ],
+      "hash": "9fdc52c15e75ffab0e219cb819b54393aa040f4aa8b4bb8caa802acc2143c20c",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/058_row3_seleccion_perros_zuma_screen_gameplay_3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "ZUMA",
+      "layer_path": "row3/selección perros/zuma/ZUMA",
+      "group_path": "row3/selección perros/zuma",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1756,
+        5046,
+        2328,
+        5193
+      ],
+      "hash": "1325d57f0bd47836dfef3dbe370f90a83ccc1a06098f6eb7efb3d30596873b94",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/059_row3_seleccion_perros_zuma_zuma.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "DIVE IN!",
+      "layer_path": "row3/selección perros/zuma/FRASE/DIVE IN!",
+      "group_path": "row3/selección perros/zuma/FRASE",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1790,
+        5300,
+        2091,
+        5388
+      ],
+      "hash": "9b0759893944e85dc9f5e7cdf27610b8d8f015866d027882c3249fde999d7315",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/060_row3_seleccion_perros_zuma_frase_dive_in.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "LET´S",
+      "layer_path": "row3/selección perros/zuma/FRASE/LET´S",
+      "group_path": "row3/selección perros/zuma/FRASE",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1843,
+        5251,
+        1940,
+        5280
+      ],
+      "hash": "d834dbd3a01b3a7e9e2d3ba6ef5813434c3f1ef4200189581a48c8149cf0ece3",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/061_row3_seleccion_perros_zuma_frase_let_s.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 66",
+      "layer_path": "row3/selección perros/zuma/FRASE/Capa 66",
+      "group_path": "row3/selección perros/zuma/FRASE",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1786,
+        5241,
+        1829,
+        5280
+      ],
+      "hash": "764f2a2dcfd4e1ba5f1d94e02dcd9de0d2a9f70f5afa9f7c3f88e7ee74fb6f52",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/062_row3_seleccion_perros_zuma_frase_capa_66.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/zuma/FRASE/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/zuma/frase/063_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/062_row3_seleccion_perros_zuma_frase_capa_66.png",
+      "hash": "764f2a2dcfd4e1ba5f1d94e02dcd9de0d2a9f70f5afa9f7c3f88e7ee74fb6f52"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "zuma2",
+      "layer_path": "row3/selección perros/zuma/zuma2",
+      "group_path": "row3/selección perros/zuma",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2241,
+        5073,
+        2915,
+        6087
+      ],
+      "hash": "32a10e4131a498367fde82ca1a9fa3dfc9adbd3218c9af99c455cbb70abac640",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/064_row3_seleccion_perros_zuma_zuma2.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/Capa 56",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/065_capa_56.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/052_row3_seleccion_perros_zuma_capa_56.png",
+      "hash": "9359a1662f1457e93874f8c0801a406b2e1f3a16b1ae29a6b24c738e6eef70e4"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/Capa 55",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/066_capa_55.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/053_row3_seleccion_perros_zuma_capa_55.png",
+      "hash": "9476b2afb3bebb64713b05ed2ffa1b1448b4de492ae47a3e019eb3a9f6fc6be3"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/Capa 23",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/067_capa_23.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/054_row3_seleccion_perros_zuma_capa_23.png",
+      "hash": "717e385c3bfb8e5eab32026caae69ddb5414920e6a41360e1d3602295bc43ccb"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 71",
+      "layer_path": "row3/selección perros/ROCKY/Capa 71",
+      "group_path": "row3/selección perros/ROCKY",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2789,
+        5023,
+        3002,
+        5265
+      ],
+      "hash": "a9ad39af79aa9bee45516a38947fdfa5db5eeda73cfb98993f08e1e1f92a96d9",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/068_row3_seleccion_perros_rocky_capa_71.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/SCREEN/Capa 61",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/screen/069_capa_61.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/056_row3_seleccion_perros_zuma_screen_capa_61.png",
+      "hash": "63534f4a43eaf9619a8b7d4c39bf550c3741afdf7a91df4c2927e11284ced936"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/SCREEN/Capa 59",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/screen/070_capa_59.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/057_row3_seleccion_perros_zuma_screen_capa_59.png",
+      "hash": "36c162ae3a918c1ca8f7ac4614c0d1843ce0b2acd5f9ed15ffbf6ef00f43bfee"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/SCREEN/Gameplay (3)",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/screen/071_gameplay_3.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/058_row3_seleccion_perros_zuma_screen_gameplay_3.png",
+      "hash": "9fdc52c15e75ffab0e219cb819b54393aa040f4aa8b4bb8caa802acc2143c20c"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Rocky",
+      "layer_path": "row3/selección perros/ROCKY/Rocky",
+      "group_path": "row3/selección perros/ROCKY",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1766,
+        5071,
+        2363,
+        5199
+      ],
+      "hash": "4e0592416506647b72f9779fc367d22809da3c4c5f13ac22d4a2d81d941d2dcf",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/072_row3_seleccion_perros_rocky_rocky.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "REUSE IT!",
+      "layer_path": "row3/selección perros/ROCKY/FRASE/REUSE IT!",
+      "group_path": "row3/selección perros/ROCKY/FRASE",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1790,
+        5300,
+        2149,
+        5388
+      ],
+      "hash": "f3f4a42f25648ff97905d220b5264da67433bef4b29e9741f643f58fa562b85b",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/073_row3_seleccion_perros_rocky_frase_reuse_it.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "DON´T LOSE IT",
+      "layer_path": "row3/selección perros/ROCKY/FRASE/DON´T LOSE IT",
+      "group_path": "row3/selección perros/ROCKY/FRASE",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1842,
+        5251,
+        2095,
+        5280
+      ],
+      "hash": "dcc3e0648157c60bf6ea495ff5670f8702f0303b2552e8df85db3fce321c943d",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/074_row3_seleccion_perros_rocky_frase_don_t_lose_it.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 66",
+      "layer_path": "row3/selección perros/ROCKY/FRASE/Capa 66",
+      "group_path": "row3/selección perros/ROCKY/FRASE",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1786,
+        5241,
+        1829,
+        5280
+      ],
+      "hash": "986a562532c8e3f045d8f41dd787b959bf2fa6dd69c417ca1c62313287722dda",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/075_row3_seleccion_perros_rocky_frase_capa_66.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/ROCKY/FRASE/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rocky/frase/076_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/075_row3_seleccion_perros_rocky_frase_capa_66.png",
+      "hash": "986a562532c8e3f045d8f41dd787b959bf2fa6dd69c417ca1c62313287722dda"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rocky2",
+      "layer_path": "row3/selección perros/ROCKY/rocky2",
+      "group_path": "row3/selección perros/ROCKY",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2198,
+        5086,
+        2950,
+        6128
+      ],
+      "hash": "0dd8e38938fd1c84cef4dc6dd9c7aeaabb50e75035abede067322284eb45970a",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/077_row3_seleccion_perros_rocky_rocky2.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 56",
+      "layer_path": "row3/selección perros/CHASE azul/Capa 56",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2183,
+        5797,
+        2823,
+        5917
+      ],
+      "hash": "d188c2955171fad52fea42b599bf0da10a0476ecd05453e5084d066936a54bf7",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/078_row3_seleccion_perros_chase_azul_capa_56.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 55",
+      "layer_path": "row3/selección perros/CHASE azul/Capa 55",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2465,
+        5077,
+        2920,
+        5823
+      ],
+      "hash": "f8d28537b10c9860d6c59ec6714f1969a5d61328af167456935d785e44cb4cda",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/079_row3_seleccion_perros_chase_azul_capa_55.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 23",
+      "layer_path": "row3/selección perros/CHASE azul/Capa 23",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1902,
+        5443,
+        2255,
+        5678
+      ],
+      "hash": "af1f0a296d86627e2093f667c2574b66b2975340d722493c7080f345097504fb",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/080_row3_seleccion_perros_chase_azul_capa_23.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "THE CASE",
+      "layer_path": "row3/selección perros/CHASE azul/THE CASE",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1789,
+        5291,
+        2174,
+        5383
+      ],
+      "hash": "1020df33ad41adfa1fa4d80b64c1bcac8f64d37e7ea14dd2b89bf28238e8b908",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/081_row3_seleccion_perros_chase_azul_the_case.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "CHASE IS ON",
+      "layer_path": "row3/selección perros/CHASE azul/CHASE IS ON",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1852,
+        5223,
+        2233,
+        5269
+      ],
+      "hash": "55a35e96efa7e96f6d81534ef1035cb4047f155d21723845e7f659361db97dbb",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/082_row3_seleccion_perros_chase_azul_chase_is_on.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 65",
+      "layer_path": "row3/selección perros/CHASE azul/Capa 65",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2783,
+        5027,
+        2997,
+        5270
+      ],
+      "hash": "5ccb5254c2a465ad9521e683199e10180aa107fe485ea2f80acf96e7447a60ce",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/083_row3_seleccion_perros_chase_azul_capa_65.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "“",
+      "layer_path": "row3/selección perros/CHASE azul/“",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1791,
+        5220,
+        1833,
+        5257
+      ],
+      "hash": "5b5a1f5b694a0d9ad5c91f3e7f8c844d97f6f4f853591251b5d8b9638154b6e1",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/084_row3_seleccion_perros_chase_azul.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/CHASE azul/Capa 63",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/chase_azul/085_capa_63.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/075_row3_seleccion_perros_rocky_frase_capa_66.png",
+      "hash": "986a562532c8e3f045d8f41dd787b959bf2fa6dd69c417ca1c62313287722dda"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/CHASE azul/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/chase_azul/086_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/075_row3_seleccion_perros_rocky_frase_capa_66.png",
+      "hash": "986a562532c8e3f045d8f41dd787b959bf2fa6dd69c417ca1c62313287722dda"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 61",
+      "layer_path": "row3/selección perros/CHASE azul/pantalla/Capa 61",
+      "group_path": "row3/selección perros/CHASE azul/pantalla",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1746,
+        5420,
+        2351,
+        5817
+      ],
+      "hash": "d1edeca344ea4df3af71a5b304c8f48cd4921e0ebeada0a3dc8cbe387048368b",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/087_row3_seleccion_perros_chase_azul_pantalla_capa_61.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 59",
+      "layer_path": "row3/selección perros/CHASE azul/pantalla/Capa 59",
+      "group_path": "row3/selección perros/CHASE azul/pantalla",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1769,
+        5446,
+        2321,
+        5765
+      ],
+      "hash": "82c4e2db60455013290392b931c68bdcad6aa4fb7144753fdae46b32de6920f1",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/088_row3_seleccion_perros_chase_azul_pantalla_capa_59.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Gameplay (14)",
+      "layer_path": "row3/selección perros/CHASE azul/pantalla/Gameplay (14)",
+      "group_path": "row3/selección perros/CHASE azul/pantalla",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        1759,
+        5446,
+        2327,
+        5766
+      ],
+      "hash": "7266b633aecac2fa1070073f73edae95f3f7e33cf229f2f3da03cfd47e18c1ab",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/089_row3_seleccion_perros_chase_azul_pantalla_gameplay_14.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "CHASE",
+      "layer_path": "row3/selección perros/CHASE azul/CHASE",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1780,
+        5054,
+        2254,
+        5164
+      ],
+      "hash": "7bab5376aca3ff409670f3c314eaf8239729f79aae2254c32f04ac3b5ea4aed3",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/090_row3_seleccion_perros_chase_azul_chase.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "chase2",
+      "layer_path": "row3/selección perros/CHASE azul/chase2",
+      "group_path": "row3/selección perros/CHASE azul",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2286,
+        5005,
+        2885,
+        6048
+      ],
+      "hash": "f21cbe48623a1bea07668643881a29d72ba2fecc6e8c0cdb2cef67302b40eebb",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/091_row3_seleccion_perros_chase_azul_chase2.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/RUBBLE/Capa 56",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rubble/092_capa_56.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/078_row3_seleccion_perros_chase_azul_capa_56.png",
+      "hash": "d188c2955171fad52fea42b599bf0da10a0476ecd05453e5084d066936a54bf7"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/RUBBLE/Capa 55",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rubble/093_capa_55.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/079_row3_seleccion_perros_chase_azul_capa_55.png",
+      "hash": "f8d28537b10c9860d6c59ec6714f1969a5d61328af167456935d785e44cb4cda"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/RUBBLE/Capa 23",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rubble/094_capa_23.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/080_row3_seleccion_perros_chase_azul_capa_23.png",
+      "hash": "af1f0a296d86627e2093f667c2574b66b2975340d722493c7080f345097504fb"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 68",
+      "layer_path": "row3/selección perros/RUBBLE/Capa 68",
+      "group_path": "row3/selección perros/RUBBLE",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2780,
+        5022,
+        2985,
+        5256
+      ],
+      "hash": "13f21d1df45ec055f9a82ccd292edc70776cf3f08d867ba3bd5b2fc56b32b021",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/095_row3_seleccion_perros_rubble_capa_68.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 61",
+      "layer_path": "row3/selección perros/RUBBLE/SCREEN/Capa 61",
+      "group_path": "row3/selección perros/RUBBLE/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1746,
+        5420,
+        2351,
+        5817
+      ],
+      "hash": "4e25934372292ae050eb24399ddfe3bef347bd1504706d3e1d610d7a7f0a6de2",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/096_row3_seleccion_perros_rubble_screen_capa_61.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 59",
+      "layer_path": "row3/selección perros/RUBBLE/SCREEN/Capa 59",
+      "group_path": "row3/selección perros/RUBBLE/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1769,
+        5446,
+        2321,
+        5765
+      ],
+      "hash": "185e5410aa98961f442603e2ba59c217c3ff4c6dab54fc324aa0ec2c6454b7b4",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/097_row3_seleccion_perros_rubble_screen_capa_59.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Gameplay (3)",
+      "layer_path": "row3/selección perros/RUBBLE/SCREEN/Gameplay (3)",
+      "group_path": "row3/selección perros/RUBBLE/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1759,
+        5439,
+        2350,
+        5772
+      ],
+      "hash": "e772532d5e0a59f6da5fcc3650c90d9cc0d5468180f925dc12eda5e9dd070077",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/098_row3_seleccion_perros_rubble_screen_gameplay_3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rubble2",
+      "layer_path": "row3/selección perros/RUBBLE/rubble2",
+      "group_path": "row3/selección perros/RUBBLE",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2160,
+        5401,
+        2966,
+        6013
+      ],
+      "hash": "597c8d88e1df28de962659d05a83afd2c0128b86607cb3954c6df7da4246a64f",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/099_row3_seleccion_perros_rubble_rubble2.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "RUBBLE",
+      "layer_path": "row3/selección perros/RUBBLE/RUBBLE",
+      "group_path": "row3/selección perros/RUBBLE",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1751,
+        5054,
+        2428,
+        5185
+      ],
+      "hash": "790d7f23e8eebd674b9cfc674a337e20ee197de918a852ab7f9fb3d7269ba3a7",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/100_row3_seleccion_perros_rubble_rubble.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "DOUBLE!",
+      "layer_path": "row3/selección perros/RUBBLE/frase/DOUBLE!",
+      "group_path": "row3/selección perros/RUBBLE/frase",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1841,
+        5289,
+        2150,
+        5374
+      ],
+      "hash": "7ec6a3441fb2b1c9f90ae29f51c722ba2e37151438978137b71dde7d16e9fa20",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/101_row3_seleccion_perros_rubble_frase_double.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "RUBBLE ON THE",
+      "layer_path": "row3/selección perros/RUBBLE/frase/RUBBLE ON THE",
+      "group_path": "row3/selección perros/RUBBLE/frase",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1863,
+        5242,
+        2139,
+        5270
+      ],
+      "hash": "a90e7955a851d8be9b5f8bdeedd9f535c66052a9e4579c400ab75a082dad6bce",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/102_row3_seleccion_perros_rubble_frase_rubble_on_the.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 66",
+      "layer_path": "row3/selección perros/RUBBLE/frase/Capa 66",
+      "group_path": "row3/selección perros/RUBBLE/frase",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1806,
+        5231,
+        1849,
+        5270
+      ],
+      "hash": "d8c703fc9802bba418ddea39dd32b61bf7bc94f464b0e927257a1a024b97dd08",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/103_row3_seleccion_perros_rubble_frase_capa_66.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/RUBBLE/frase/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/rubble/frase/104_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/103_row3_seleccion_perros_rubble_frase_capa_66.png",
+      "hash": "d8c703fc9802bba418ddea39dd32b61bf7bc94f464b0e927257a1a024b97dd08"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 56",
+      "layer_path": "row3/selección perros/DALMATA copia/Capa 56",
+      "group_path": "row3/selección perros/DALMATA copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2183,
+        5797,
+        2823,
+        5917
+      ],
+      "hash": "bcc41109b2ec20e4c63ce51d65e9d9d03f98181f00e35bd8c64de510e9361386",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/105_row3_seleccion_perros_dalmata_copia_capa_56.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 55",
+      "layer_path": "row3/selección perros/DALMATA copia/Capa 55",
+      "group_path": "row3/selección perros/DALMATA copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2465,
+        5077,
+        2920,
+        5823
+      ],
+      "hash": "08c7c57073146676662c6e7025d88de16e4bccb239be464c830a19aa968e44de",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/106_row3_seleccion_perros_dalmata_copia_capa_55.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 23",
+      "layer_path": "row3/selección perros/DALMATA copia/Capa 23",
+      "group_path": "row3/selección perros/DALMATA copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1902,
+        5443,
+        2255,
+        5678
+      ],
+      "hash": "ff2eddc6abb9eb5fd5d9008dc95a4802fd74ac1f15a7307fe1ee101d60057b04",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/107_row3_seleccion_perros_dalmata_copia_capa_23.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "FIRED",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 2/FIRED",
+      "group_path": "row3/selección perros/DALMATA copia/Grupo 2",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1778,
+        5318,
+        1966,
+        5367
+      ],
+      "hash": "ff8c929777be7873d80748b75935754cd0bd54d898c088aafe69c6278586164d",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/108_row3_seleccion_perros_dalmata_copia_grupo_2_fired.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "I'M",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 2/I'M",
+      "group_path": "row3/selección perros/DALMATA copia/Grupo 2",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1855,
+        5239,
+        1961,
+        5297
+      ],
+      "hash": "d91bfcc8a31d1eff1d61ef7387d562077662e3bb3323f067cdbfb240b417d8cf",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/109_row3_seleccion_perros_dalmata_copia_grupo_2_i_m.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "UP!",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 2/UP!",
+      "group_path": "row3/selección perros/DALMATA copia/Grupo 2",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1985,
+        5240,
+        2165,
+        5370
+      ],
+      "hash": "50e233194ff136026a9b7037a4357b6c0c3d13f5cb38be009335765b9da30ee3",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/110_row3_seleccion_perros_dalmata_copia_grupo_2_up.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 64",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 2/Capa 64",
+      "group_path": "row3/selección perros/DALMATA copia/Grupo 2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1775,
+        5242,
+        1814,
+        5277
+      ],
+      "hash": "277865b33aa47f4e9d22b591bc0ebcb175200a1e3b80ccdce21188e5e603d7fa",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/111_row3_seleccion_perros_dalmata_copia_grupo_2_capa_64.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 63 copia",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 2/Capa 63 copia",
+      "group_path": "row3/selección perros/DALMATA copia/Grupo 2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2179,
+        5241,
+        2217,
+        5276
+      ],
+      "hash": "ff113496c3692a7e04f8ea9172532e80f21a7d2b385c7d6541f67e1cac6137e4",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/112_row3_seleccion_perros_dalmata_copia_grupo_2_capa_63_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 57",
+      "layer_path": "row3/selección perros/DALMATA copia/Capa 57",
+      "group_path": "row3/selección perros/DALMATA copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2788,
+        5020,
+        2976,
+        5233
+      ],
+      "hash": "02651cba1d5e7d96bfa4d651740698f773dced28a5617803b3997886b78b0b1a",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/113_row3_seleccion_perros_dalmata_copia_capa_57.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 1/Capa 61",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/dalmata_copia/grupo_1/114_capa_61.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/096_row3_seleccion_perros_rubble_screen_capa_61.png",
+      "hash": "4e25934372292ae050eb24399ddfe3bef347bd1504706d3e1d610d7a7f0a6de2"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 1/Capa 59",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_perros/dalmata_copia/grupo_1/115_capa_59.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/097_row3_seleccion_perros_rubble_screen_capa_59.png",
+      "hash": "185e5410aa98961f442603e2ba59c217c3ff4c6dab54fc324aa0ec2c6454b7b4"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Gameplay (14)",
+      "layer_path": "row3/selección perros/DALMATA copia/Grupo 1/Gameplay (14)",
+      "group_path": "row3/selección perros/DALMATA copia/Grupo 1",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        1759,
+        5446,
+        2327,
+        5766
+      ],
+      "hash": "d68750876c0564e3eace59c953c8b41e0ef3dbdeb56c781ea3f87e2193fded67",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/116_row3_seleccion_perros_dalmata_copia_grupo_1_gameplay_14.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "marshal",
+      "layer_path": "row3/selección perros/DALMATA copia/marshal",
+      "group_path": "row3/selección perros/DALMATA copia",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1767,
+        5055,
+        2385,
+        5153
+      ],
+      "hash": "08e43fb3a3d2716269176dc9a5ad65e08b158ee31f0b23c762354b1b4c99d41b",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/117_row3_seleccion_perros_dalmata_copia_marshal.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "marshall2",
+      "layer_path": "row3/selección perros/DALMATA copia/marshall2",
+      "group_path": "row3/selección perros/DALMATA copia",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2197,
+        4994,
+        2887,
+        6057
+      ],
+      "hash": "4b4d5e548436ad6b4aab8a7b8881185c37b580c0f265b799e86a7b4e057290ec",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/118_row3_seleccion_perros_dalmata_copia_marshall2.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 56",
+      "layer_path": "row3/selección OTHERS/REX2/Capa 56",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2183,
+        5797,
+        2823,
+        5917
+      ],
+      "hash": "624cc233dec92f860f143c16bf01e568d24e37514c2cf849674111ef7daaebd5",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/119_row3_seleccion_others_rex2_capa_56.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 55",
+      "layer_path": "row3/selección OTHERS/REX2/Capa 55",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2465,
+        5077,
+        2920,
+        5823
+      ],
+      "hash": "f58d63e4d10a644351e1be96467ce1aed0e5d485ce3234c43d23e7700d9c7a4f",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/120_row3_seleccion_others_rex2_capa_55.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 23",
+      "layer_path": "row3/selección OTHERS/REX2/Capa 23",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1902,
+        5443,
+        2255,
+        5678
+      ],
+      "hash": "30e6e5f326185c959905b55e5e4249c5a47f409079d3054f5d31eb9caab3d70f",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/121_row3_seleccion_others_rex2_capa_23.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 62",
+      "layer_path": "row3/selección OTHERS/REX2/Capa 62",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2782,
+        5027,
+        2980,
+        5252
+      ],
+      "hash": "188e9cfd339986dd5ef71c8aae67276b20e1e5e427a30b5a10124750b8c81994",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/122_row3_seleccion_others_rex2_capa_62.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 61",
+      "layer_path": "row3/selección OTHERS/REX2/SCREEN/Capa 61",
+      "group_path": "row3/selección OTHERS/REX2/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1746,
+        5420,
+        2351,
+        5817
+      ],
+      "hash": "9c5defe291284a9bf926fa5f2593a999a1a23fe607ee7eeb59526f815faefa57",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/123_row3_seleccion_others_rex2_screen_capa_61.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 59",
+      "layer_path": "row3/selección OTHERS/REX2/SCREEN/Capa 59",
+      "group_path": "row3/selección OTHERS/REX2/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1769,
+        5446,
+        2321,
+        5765
+      ],
+      "hash": "a6822624aa0eea563ea7b276b2a81b496e884480435bf01eda606964916ad899",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/124_row3_seleccion_others_rex2_screen_capa_59.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Gameplay (3)",
+      "layer_path": "row3/selección OTHERS/REX2/SCREEN/Gameplay (3)",
+      "group_path": "row3/selección OTHERS/REX2/SCREEN",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1759,
+        5439,
+        2350,
+        5772
+      ],
+      "hash": "3b661401e8cf9daf20ed76829ec9a170ecd8155d3b1a04937c066fdb05f5838a",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/125_row3_seleccion_others_rex2_screen_gameplay_3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "REX",
+      "layer_path": "row3/selección OTHERS/REX2/REX",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1792,
+        5046,
+        2172,
+        5193
+      ],
+      "hash": "bccfd8d8cf13b85f43111ce8e6631ece8444b2cca0488646ade38f6a1b751b35",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/126_row3_seleccion_others_rex2_rex.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rex",
+      "layer_path": "row3/selección OTHERS/REX2/rex",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2212,
+        5001,
+        2934,
+        6034
+      ],
+      "hash": "ab8baffc4875df3828aeaeca63a041e4b145e5ed896056b0f722bafe04ed618d",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/127_row3_seleccion_others_rex2_rex.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "TO SAVE!",
+      "layer_path": "row3/selección OTHERS/REX2/TO SAVE!",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1783,
+        5294,
+        2149,
+        5386
+      ],
+      "hash": "4870f337c6fadc369fb1fdd6267febe55e0f40623c507f41e7af6c8e4bcdedd6",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/128_row3_seleccion_others_rex2_to_save.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "WE´VE GOT DINOS",
+      "layer_path": "row3/selección OTHERS/REX2/WE´VE GOT DINOS",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1846,
+        5234,
+        2153,
+        5263
+      ],
+      "hash": "2f9beb549e04433e608891e97f4ce83bfaadc0793de54aa9032bd52b7e7ac86e",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/129_row3_seleccion_others_rex2_we_ve_got_dinos.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 66",
+      "layer_path": "row3/selección OTHERS/REX2/Capa 66",
+      "group_path": "row3/selección OTHERS/REX2",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1782,
+        5224,
+        1825,
+        5263
+      ],
+      "hash": "0627fbd5e84795f7a371f2dd8c4337aac619657be239b10d7ab221d4503f2e4c",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/130_row3_seleccion_others_rex2_capa_66.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/REX2/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/rex2/131_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/130_row3_seleccion_others_rex2_capa_66.png",
+      "hash": "0627fbd5e84795f7a371f2dd8c4337aac619657be239b10d7ab221d4503f2e4c"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY/Capa 56",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy/132_capa_56.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/119_row3_seleccion_others_rex2_capa_56.png",
+      "hash": "624cc233dec92f860f143c16bf01e568d24e37514c2cf849674111ef7daaebd5"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY/Capa 55",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy/133_capa_55.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/120_row3_seleccion_others_rex2_capa_55.png",
+      "hash": "f58d63e4d10a644351e1be96467ce1aed0e5d485ce3234c43d23e7700d9c7a4f"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY/Capa 23",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy/134_capa_23.png",
+      "duplicate_of": "assets/section_island_adventures/personajes/121_row3_seleccion_others_rex2_capa_23.png",
+      "hash": "30e6e5f326185c959905b55e5e4249c5a47f409079d3054f5d31eb9caab3d70f"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "TIMMY",
+      "layer_path": "row3/selección OTHERS/TIMMY/TIMMY",
+      "group_path": "row3/selección OTHERS/TIMMY",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1743,
+        5462,
+        2415,
+        5609
+      ],
+      "hash": "2e79e2bc2b5a75bff9f3ded2cc4318ad93099c92772798a97081e0476560c7d5",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/135_row3_seleccion_others_timmy_timmy.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "timmyrex",
+      "layer_path": "row3/selección OTHERS/TIMMY/timmyrex",
+      "group_path": "row3/selección OTHERS/TIMMY",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        1982,
+        4951,
+        2952,
+        6075
+      ],
+      "hash": "1fb4fe18bacf1875249212114a4a1e10e35bbf2ef4a29154ba84291053e7a506",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/136_row3_seleccion_others_timmy_timmyrex.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "TO SAVE!",
+      "layer_path": "row3/selección OTHERS/TIMMY/Grupo 4/TO SAVE!",
+      "group_path": "row3/selección OTHERS/TIMMY/Grupo 4",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1783,
+        5715,
+        2149,
+        5807
+      ],
+      "hash": "122ad065247a425a7b741b2fba85441ce3f415ba1a6b3c7adb44fc973d7faa5f",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/137_row3_seleccion_others_timmy_grupo_4_to_save.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "WE´VE GOT DINOS",
+      "layer_path": "row3/selección OTHERS/TIMMY/Grupo 4/WE´VE GOT DINOS",
+      "group_path": "row3/selección OTHERS/TIMMY/Grupo 4",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1846,
+        5655,
+        2153,
+        5684
+      ],
+      "hash": "6bfad761ab8e23daf9aa53aeef99f21b808bd65d3f357d9f1464055686032b91",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/138_row3_seleccion_others_timmy_grupo_4_we_ve_got_dinos.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 66",
+      "layer_path": "row3/selección OTHERS/TIMMY/Grupo 4/Capa 66",
+      "group_path": "row3/selección OTHERS/TIMMY/Grupo 4",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1782,
+        5645,
+        1825,
+        5684
+      ],
+      "hash": "4d56a99cd3079d07702cb879b3d4977341cd2b1241ae1d88dc4817481345f881",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/139_row3_seleccion_others_timmy_grupo_4_capa_66.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY/Grupo 4/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy/grupo_4/140_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/ambiente/139_row3_seleccion_others_timmy_grupo_4_capa_66.png",
+      "hash": "4d56a99cd3079d07702cb879b3d4977341cd2b1241ae1d88dc4817481345f881"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 56",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Capa 56",
+      "group_path": "row3/selección OTHERS/TIMMY copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2183,
+        5797,
+        2823,
+        5917
+      ],
+      "hash": "5d400dbf868fe27a647ddb85340c4f4f402ef2f498c3527f676406bc20f09eff",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/141_row3_seleccion_others_timmy_copia_capa_56.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Capa 56 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy_copia/142_capa_56_copia.png",
+      "duplicate_of": "assets/section_island_adventures/ambiente/141_row3_seleccion_others_timmy_copia_capa_56.png",
+      "hash": "5d400dbf868fe27a647ddb85340c4f4f402ef2f498c3527f676406bc20f09eff"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 55",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Capa 55",
+      "group_path": "row3/selección OTHERS/TIMMY copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        2465,
+        5077,
+        2920,
+        5823
+      ],
+      "hash": "15002b2e448f5c87ecb4c6091f88ef8291faaa0cbe21c37dabaa4f75dbb5929f",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/143_row3_seleccion_others_timmy_copia_capa_55.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 23",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Capa 23",
+      "group_path": "row3/selección OTHERS/TIMMY copia",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        1902,
+        5443,
+        2255,
+        5678
+      ],
+      "hash": "dc7b94e4caa8ce397f5db78b2215a43467e8d68e5d4fd86f98fb19fbe1efeff7",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/144_row3_seleccion_others_timmy_copia_capa_23.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rhubarb",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/rhubarb",
+      "group_path": "row3/selección OTHERS/TIMMY copia",
+      "kind": "type",
+      "visible": false,
+      "bbox": [
+        1780,
+        5492,
+        2390,
+        5584
+      ],
+      "hash": "42815040b2e8e459ea3174f2ccf8b828b2933ca73fe6683b194d1465f155d956",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/145_row3_seleccion_others_timmy_copia_rhubarb.png"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Grupo 4/TO SAVE!",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy_copia/grupo_4/146_to_save.png",
+      "duplicate_of": "assets/section_island_adventures/letras/137_row3_seleccion_others_timmy_grupo_4_to_save.png",
+      "hash": "122ad065247a425a7b741b2fba85441ce3f415ba1a6b3c7adb44fc973d7faa5f"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Grupo 4/WE´VE GOT DINOS",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy_copia/grupo_4/147_we_ve_got_dinos.png",
+      "duplicate_of": "assets/section_island_adventures/letras/138_row3_seleccion_others_timmy_grupo_4_we_ve_got_dinos.png",
+      "hash": "6bfad761ab8e23daf9aa53aeef99f21b808bd65d3f357d9f1464055686032b91"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Grupo 4/Capa 66",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy_copia/grupo_4/148_capa_66.png",
+      "duplicate_of": "assets/section_island_adventures/ambiente/139_row3_seleccion_others_timmy_grupo_4_capa_66.png",
+      "hash": "4d56a99cd3079d07702cb879b3d4977341cd2b1241ae1d88dc4817481345f881"
+    },
+    {
+      "status": "duplicate_removed",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/Grupo 4/Capa 63 copia",
+      "source_path": "assets/dinoworld2_layers/row3/seleccion_others/timmy_copia/grupo_4/149_capa_63_copia.png",
+      "duplicate_of": "assets/section_island_adventures/ambiente/139_row3_seleccion_others_timmy_grupo_4_capa_66.png",
+      "hash": "4d56a99cd3079d07702cb879b3d4977341cd2b1241ae1d88dc4817481345f881"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rhubarb",
+      "layer_path": "row3/selección OTHERS/TIMMY copia/rhubarb",
+      "group_path": "row3/selección OTHERS/TIMMY copia",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        2209,
+        5052,
+        2829,
+        6074
+      ],
+      "hash": "a28eaea5f06b88e6b270d64cf1fc1b0fdf781d0888d66915c97287c556d71b9a",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/150_row3_seleccion_others_timmy_copia_rhubarb.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rex copia 3",
+      "layer_path": "row3/selección OTHERS/rex copia 3",
+      "group_path": "row3/selección OTHERS",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        202,
+        5050,
+        718,
+        5560
+      ],
+      "hash": "26c7b9dbfb5c0683cd72621e8cad7e6e82ff1c8c50f92d14c39c2e04c0761201",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/151_row3_seleccion_others_rex_copia_3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rex copia 4",
+      "layer_path": "row3/selección OTHERS/rex copia 4",
+      "group_path": "row3/selección OTHERS",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        265,
+        5112,
+        638,
+        5484
+      ],
+      "hash": "376aae7a6a60d86f1b66fd7d8f577aa078298f26b02076bcad84f4cfa7bf004d",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/152_row3_seleccion_others_rex_copia_4.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "timmy",
+      "layer_path": "row3/selección OTHERS/timmy",
+      "group_path": "row3/selección OTHERS",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        705,
+        5128,
+        1075,
+        5497
+      ],
+      "hash": "3d66d5eb62a71a5e63134de1c97d7298e2fb1f7ee9770fcaecd7ebbff996f324",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/153_row3_seleccion_others_timmy.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "rhubarb",
+      "layer_path": "row3/selección OTHERS/rhubarb",
+      "group_path": "row3/selección OTHERS",
+      "kind": "smartobject",
+      "visible": false,
+      "bbox": [
+        1144,
+        5128,
+        1494,
+        5497
+      ],
+      "hash": "8d088c0a79103fbd6c7652506aaf1f9a21eed5d599605aa9ae117c6d97a8f0c0",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/154_row3_seleccion_others_rhubarb.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "switch3",
+      "layer_path": "row3/switch3",
+      "group_path": "row3",
+      "kind": "smartobject",
+      "visible": true,
+      "bbox": [
+        514,
+        4905,
+        1150,
+        4991
+      ],
+      "hash": "b19e2e22141a30068c71e7c0f7e4b6fc77ed6ed63f17c0c3432002ba3925a762",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/155_row3_switch3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "ChatGPT Image 24 feb 2026, 17_37_05",
+      "layer_path": "row3/texto/ChatGPT Image 24 feb 2026, 17_37_05",
+      "group_path": "row3/texto",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1046,
+        4099,
+        2241,
+        4721
+      ],
+      "hash": "b40d290f5242cad65c03fdb49959fb6eb341210c7ce256249d50bed7e48ecd03",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/156_row3_texto_chatgpt_image_24_feb_2026_17_37_05.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 27",
+      "layer_path": "row3/texto/Capa 27",
+      "group_path": "row3/texto",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1358,
+        4131,
+        1874,
+        4249
+      ],
+      "hash": "c8e95581ed2146b9fef3e1da6d09c624e982019be95f5a1757634fe6517b075d",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/157_row3_texto_capa_27.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "back",
+      "layer_path": "row2/back",
+      "group_path": "row2",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        0,
+        2004,
+        3287,
+        3948
+      ],
+      "hash": "fa7d57c604f8f51189998b91f5e9a81939fb056b2e5448e950dcc9c4e589dfb8",
+      "category": "paisaje",
+      "output_path": "assets/section_island_adventures/paisaje/158_row2_back.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "stomparround@2x",
+      "layer_path": "row2/stomparround@2x",
+      "group_path": "row2",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        313,
+        2273,
+        1541,
+        3595
+      ],
+      "hash": "ea8f6ab3c1190dea009c61e656d04f542d610bf2bf2b3a6d067d14617f4f563a",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/159_row2_stomparround_2x.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 15",
+      "layer_path": "row2/bloque videoerecha/Capa 15",
+      "group_path": "row2/bloque videoerecha",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1756,
+        2571,
+        3036,
+        3390
+      ],
+      "hash": "1a55b5a97bc55caa662e35ffb6b9966938263821ffcd6983d119ec2526bdb095",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/160_row2_bloque_videoerecha_capa_15.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 14",
+      "layer_path": "row2/bloque videoerecha/Capa 14",
+      "group_path": "row2/bloque videoerecha",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1748,
+        2513,
+        3036,
+        3462
+      ],
+      "hash": "441d0c9a5922fec50a136529f55f0957c87a2d03c32ed6e9649441d4a8365321",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/161_row2_bloque_videoerecha_capa_14.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "SEE VIDEO",
+      "layer_path": "row2/bloque videoerecha/SEE VIDEO",
+      "group_path": "row2/bloque videoerecha",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        2192,
+        3373,
+        2390,
+        3411
+      ],
+      "hash": "09eb22cd7e13bab915654d786d2bd1e1a694e1cc02054b38ff4f64721139de22",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/162_row2_bloque_videoerecha_see_video.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Discover how !",
+      "layer_path": "row2/bloque videoerecha/Discover how !",
+      "group_path": "row2/bloque videoerecha",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        2101,
+        2385,
+        2746,
+        2442
+      ],
+      "hash": "c87f05a520250d1b592a95c5cdb06d70265ebf918c943966b5b152bdac1cfa3e",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/163_row2_bloque_videoerecha_discover_how.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 16",
+      "layer_path": "row2/bloque videoerecha/Capa 16",
+      "group_path": "row2/bloque videoerecha",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2145,
+        3382,
+        2171,
+        3412
+      ],
+      "hash": "28bcced5d4e9d1af01519ff2d6d8a0d3c7c7fa4bcfa5a69125fd731073fb0513",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/164_row2_bloque_videoerecha_capa_16.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 3",
+      "layer_path": "row1/Capa 3",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        531,
+        333,
+        2711,
+        1073
+      ],
+      "hash": "827eb3f86921f3ed052ad9401db4274650a3c68acda5ef1a9a1fd09f5e9a7652",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/165_row1_capa_3.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 1",
+      "layer_path": "row1/Capa 1",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        930,
+        703,
+        2357,
+        1714
+      ],
+      "hash": "4e84ba6575644f057b0097bb4157a53b9a4bbb8907fff381777d25fce5fb3e0b",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/166_row1_capa_1.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 46",
+      "layer_path": "row1/Capa 46",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1811,
+        1534,
+        2411,
+        1771
+      ],
+      "hash": "46daab6137c5a4344dc0f06bd6c1853fc46ed5c698de978e3d9d3cac8141d152",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/167_row1_capa_46.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 6",
+      "layer_path": "row1/Capa 6",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2635,
+        1400,
+        2979,
+        1714
+      ],
+      "hash": "f5b69d8c176f1f56fefd0cda580ff44e748d939c7b38b269933a7f23f1c81e07",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/168_row1_capa_6.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 7",
+      "layer_path": "row1/Capa 7",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        339,
+        1451,
+        690,
+        1797
+      ],
+      "hash": "52caa60325de33d8791fbeed8ee57dd4a1f539fe955eb7d77b9e2895126db2bb",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/169_row1_capa_7.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 5",
+      "layer_path": "row1/Capa 5",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2433,
+        380,
+        2819,
+        713
+      ],
+      "hash": "cefb8d5b6c96439809bb3bacefeba8398432279fbdc9c4027deba9eea3a540d7",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/170_row1_capa_5.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Shore",
+      "layer_path": "row1/screen2/Shore",
+      "group_path": "row1/screen2",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2435,
+        962,
+        2900,
+        1324
+      ],
+      "hash": "da4adcf1f190c58e1a57428bfc8f48eaecc5ebab0d04eee1ea11fd9130973d06",
+      "category": "paisaje",
+      "output_path": "assets/section_island_adventures/paisaje/171_row1_screen2_shore.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 49",
+      "layer_path": "row1/screen2/Capa 49",
+      "group_path": "row1/screen2",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2407,
+        962,
+        2913,
+        1324
+      ],
+      "hash": "563b426e8080f4c2137c0bf72174a3d3a4e71572eb2460bd85ca6201af9178aa",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/172_row1_screen2_capa_49.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "DINOIZQ",
+      "layer_path": "row1/DINOIZQ",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        541,
+        402,
+        854,
+        732
+      ],
+      "hash": "3c5e0567c07ffb71b53dd816e52ad861698b82eb67a827302f5dee7f904fe192",
+      "category": "personajes",
+      "output_path": "assets/section_island_adventures/personajes/173_row1_dinoizq.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Volcano",
+      "layer_path": "row1/volcan/Volcano",
+      "group_path": "row1/volcan",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        478,
+        861,
+        916,
+        1181
+      ],
+      "hash": "a451eca5e86b6bcb59bd9d8509581ef603c3df6531b6bdf75e46d8c01a576d31",
+      "category": "paisaje",
+      "output_path": "assets/section_island_adventures/paisaje/174_row1_volcan_volcano.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 50",
+      "layer_path": "row1/volcan/Capa 50",
+      "group_path": "row1/volcan",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        476,
+        833,
+        916,
+        1213
+      ],
+      "hash": "8c6a62fdd8d4919831e7ea1f645dc95187a0a37a3ab595f396d856a1b1126ada",
+      "category": "paisaje",
+      "output_path": "assets/section_island_adventures/paisaje/175_row1_volcan_capa_50.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 53",
+      "layer_path": "row1/Capa 53",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        636,
+        1264,
+        897,
+        1427
+      ],
+      "hash": "daf20e10ab1525eefcb2402a4cdbc20bf284bcc340d351f9f92ba5a55f1f43f3",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/176_row1_capa_53.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 52",
+      "layer_path": "row1/Capa 52",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": false,
+      "bbox": [
+        812,
+        1748,
+        1105,
+        1945
+      ],
+      "hash": "89f4af393f171dac6c4fb4d7ae9b27233109bcba1efde4617424bc11a7543698",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/177_row1_capa_52.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 48",
+      "layer_path": "row1/Capa 48",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        2282,
+        785,
+        2435,
+        941
+      ],
+      "hash": "dcf00310d67a30799a80847e489257cbae007d3dc7c86768ce7aa25a72d950f2",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/178_row1_capa_48.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "on an island full of adventures",
+      "layer_path": "row1/on an island full of adventures",
+      "group_path": "row1",
+      "kind": "type",
+      "visible": true,
+      "bbox": [
+        1228,
+        209,
+        2061,
+        353
+      ],
+      "hash": "803c3cd5655eb70d3195c958eb794981b36c58eb9af216fa38fd603b8a2749db",
+      "category": "letras",
+      "output_path": "assets/section_island_adventures/letras/179_row1_on_an_island_full_of_adventures.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "AVIÓN",
+      "layer_path": "row1/AVIÓN",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        1241,
+        507,
+        1621,
+        666
+      ],
+      "hash": "b281e5acd8657831c7e0935cc5ba999d4466ef821d910ed33b40eee13478b733",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/180_row1_avion.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "LINEAS",
+      "layer_path": "row1/LINEAS",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        889,
+        546,
+        2608,
+        1673
+      ],
+      "hash": "741f640cb990873609ec0c5d00cd3e80edf73acb19c8936dec5185c9b6edf658",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/181_row1_lineas.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 51",
+      "layer_path": "row1/Capa 51",
+      "group_path": "row1",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        713,
+        1604,
+        952,
+        1711
+      ],
+      "hash": "bb5efb72dcc16fcc0c6c8de0a7debe532652f7498cceb10288e13a51f250ec09",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/182_row1_capa_51.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 21 copia",
+      "layer_path": "Capa 21 copia",
+      "group_path": "",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        0,
+        3879,
+        3287,
+        4105
+      ],
+      "hash": "4925dbe392caa85fe0e96b523d85904eb9aee2be15355874d2b10bb598ed2525",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/183_capa_21_copia.png"
+    },
+    {
+      "status": "ok",
+      "source": "dinoworld2.psd",
+      "layer_name": "Capa 13",
+      "layer_path": "Capa 13",
+      "group_path": "",
+      "kind": "pixel",
+      "visible": true,
+      "bbox": [
+        0,
+        1821,
+        3287,
+        2150
+      ],
+      "hash": "452e830aa822a8d6c623f3c3af9146fc3f207936affceb1a57fd771bce3ef901",
+      "category": "ambiente",
+      "output_path": "assets/section_island_adventures/ambiente/184_capa_13.png"
+    }
+  ]
+}
