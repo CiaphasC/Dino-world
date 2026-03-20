@@ -338,14 +338,22 @@ body {
   overflow: visible;
   isolation: isolate;
   background: var(--bg-cream);
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 40vh;
+  padding-top: 5vh;
   padding-bottom: clamp(3rem, 8vh, 7rem);
   z-index: 50;
 }
 
 .body-stage::before {
-  display: none;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(to bottom, rgba(255, 255, 225, 0) 0%, var(--bg-cream) 100%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 .body-canvas {
@@ -2087,7 +2095,7 @@ body {
         });
 
         bodyScrollTimeline.fromTo('.body-row3-layer-wrapper', { y: '30vh' }, { y: '0vh', ease: 'none' }, 0);
-        bodyScrollTimeline.fromTo('.body-row4-group', { y: '60vh' }, { y: '0vh', ease: 'none' }, 0);
+        gsap.set('.body-row4-group', { y: 0, scale: 1 });
         bodyScrollTimeline.fromTo(
           '.body-row2-divider-wrapper',
           { y: '15vh', scale: 0.8 },
@@ -2111,15 +2119,18 @@ body {
           }
         );
 
-        gsap.to('.body-row4-group', {
-          y: '+=15',
-          scale: 1.01,
-          transformOrigin: 'center bottom',
-          duration: 3.5,
-          yoyo: true,
-          repeat: -1,
-          ease: 'sine.inOut',
-        });
+
+        var refreshScrollTriggers = function () {
+          window.requestAnimationFrame(function () {
+            ScrollTrigger.refresh();
+          });
+        };
+
+        if (document.readyState === 'complete') {
+          refreshScrollTriggers();
+        } else {
+          window.addEventListener('load', refreshScrollTriggers, { once: true });
+        }
 
         gsap.to('.body-row2-divider-wrapper .scene-sprite', {
           y: '-=6',
