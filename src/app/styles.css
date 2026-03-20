@@ -413,7 +413,7 @@ body {
 
 .intro-char {
   display: inline-block;
-  text-shadow: 0 4px 0 #697193;
+  text-shadow: none;
 }
 
 .intro-space {
